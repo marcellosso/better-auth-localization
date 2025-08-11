@@ -75,3 +75,8 @@ export const ZH_HANS = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "无法解除最后一个账户的链接",
 	ACCOUNT_NOT_FOUND: "找不到账户",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "zh-Hant": ZH_HANT,
+    "zh-Hans": ZH_HANS,
+} as const;

@@ -40,3 +40,7 @@ export const ID_ID = {
 		"Anda tidak dapat menghapus tautan akun terakhir Anda",
 	ACCOUNT_NOT_FOUND: "Akun tidak ditemukan",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "id-ID": ID_ID,
+} as const;

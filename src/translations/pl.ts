@@ -39,3 +39,7 @@ export const PL_PL = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Nie możesz odłączyć swojego ostatniego konta",
 	ACCOUNT_NOT_FOUND: "Nie znaleziono konta",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "pl-PL": PL_PL,
+} as const;

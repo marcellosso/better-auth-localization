@@ -39,3 +39,7 @@ export const IT_IT = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Non puoi scollegare il tuo ultimo account",
 	ACCOUNT_NOT_FOUND: "Account non trovato",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "it-IT": IT_IT,
+} as const;

@@ -39,3 +39,7 @@ export const KO_KO = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "마지막 계정의 연결을 해제할 수 없습니다",
 	ACCOUNT_NOT_FOUND: "계정을 찾을 수 없습니다",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "ko-KR": KO_KO,
+} as const;

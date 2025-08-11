@@ -39,3 +39,7 @@ export const HI_HI = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "आखिरी खाते का लिंक हटाने में विफल",
 	ACCOUNT_NOT_FOUND: "खाता नहीं मिला",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "hi-HI": HI_HI,
+} as const;

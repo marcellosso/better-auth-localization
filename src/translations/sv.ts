@@ -37,3 +37,7 @@ export const SV_SE = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Du kan inte koppla bort det sista kontot",
 	ACCOUNT_NOT_FOUND: "Konto hittades inte",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "sv-SE": SV_SE,
+} as const;

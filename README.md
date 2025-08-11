@@ -147,12 +147,25 @@ For a complete and specific list, refer to the [Better Auth documentation](https
 
 We welcome and appreciate contributions! Help us expand language support by adding new translations.
 
-To add a new language:
+### Adding a new language (no merge conflicts)
 
-1. Create a new translation file in `src/utils/translations/`
-2. Add all error code translations
-3. Export it in the main translations object
-4. Submit a pull request
+This repo auto-generates the translations index to avoid PR conflicts when multiple languages are added in parallel.
+
+1. Create a new file in `src/translations/`, for example `nl.ts`.
+2. Export your translation object and a `LOCALES` map from that file:
+   ```ts
+   import { ErrorCodesType } from "../types";
+
+   export const NL_NL = { /* ...all error codes... */ } satisfies ErrorCodesType;
+
+   export const LOCALES = {
+     "nl-NL": NL_NL,
+   } as const;
+   ```
+3. Do not edit or commit `src/translations/index.ts`.
+4. Submit your pull request. The index is generated automatically by the build and tests.
+
+The build runs the generator automatically to ensure the index stays up to date.
 
 
 ## License

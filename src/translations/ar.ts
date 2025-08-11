@@ -39,3 +39,7 @@ export const AR_SA = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "لا يمكن إلغاء ربط الحساب الأخير",
 	ACCOUNT_NOT_FOUND: "الحساب غير موجود",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "ar-SA": AR_SA,
+} as const;

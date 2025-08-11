@@ -19,14 +19,15 @@
 		}
 	},
 	"scripts": {
-		"build": "tsup",
-		"dev": "tsup --watch",
-		"test": "vitest",
-		"test:ci": "vitest run",
+    "generate:translations": "node scripts/generate-translations-index.cjs",
+    "build": "node scripts/generate-translations-index.cjs && tsup",
+    "dev": "node scripts/generate-translations-index.cjs && tsup --watch",
+    "test": "node scripts/generate-translations-index.cjs && vitest",
+    "test:ci": "node scripts/generate-translations-index.cjs && vitest run",
 		"lint": "biome check .",
 		"lint:fix": "biome check --write .",
 		"format": "biome format --write .",
-		"tsc": "tsc --noEmit",
+    "tsc": "node scripts/generate-translations-index.cjs && tsc --noEmit",
 		"release": "pnpm build && changeset publish"
 	},
 	"keywords": [

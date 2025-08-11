@@ -39,3 +39,7 @@ export const JA_JP = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "最後のアカウントの連携を解除できません",
 	ACCOUNT_NOT_FOUND: "アカウントが見つかりません",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "ja-JP": JA_JP,
+} as const;

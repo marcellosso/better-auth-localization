@@ -49,3 +49,9 @@ export const DE_DE_FORMAL = {
 		"Sitzung abgelaufen. Bitte melden Sie sich erneut an, um diese Aktion auszuführen.",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Sie können das letzte Konto nicht trennen",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "de-DE": DE_DE_INFORMAL,
+    "de-DE-formal": DE_DE_FORMAL,
+    "de-DE-informal": DE_DE_INFORMAL,
+} as const;

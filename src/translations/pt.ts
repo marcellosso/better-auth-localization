@@ -79,3 +79,8 @@ export const PT_PT = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Não pode desassociar a sua última conta",
 	ACCOUNT_NOT_FOUND: "Conta não encontrada",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "pt-BR": PT_BR,
+    "pt-PT": PT_PT,
+} as const;

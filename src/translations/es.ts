@@ -39,3 +39,7 @@ export const ES_ES = {
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "No puede desvincular su última cuenta",
 	ACCOUNT_NOT_FOUND: "Cuenta no encontrada",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "es-ES": ES_ES,
+} as const;

@@ -39,3 +39,7 @@ export const EL_GR = {
 		"Αποτυχία αποσύνδεσης του τελευταίου λογαριασμού",
 	ACCOUNT_NOT_FOUND: "Ο λογαριασμός δεν βρέθηκε",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "el-GR": EL_GR,
+} as const;

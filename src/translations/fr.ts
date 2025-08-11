@@ -41,3 +41,7 @@ export const FR_FR = {
 		"Vous ne pouvez pas dissocier votre dernier compte",
 	ACCOUNT_NOT_FOUND: "Compte non trouvé",
 } satisfies ErrorCodesType;
+
+export const LOCALES = {
+    "fr-FR": FR_FR,
+} as const;
