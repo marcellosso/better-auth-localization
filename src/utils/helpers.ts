@@ -31,9 +31,9 @@ export const deepMergeTranslations = <
 >(
 	defaultTranslations: Record<string, PartialErrorCodesType>,
 	customTranslations?: Translations<TCustomTranslations>,
-): Translations<TCustomTranslations> => {
+): typeof defaultTranslations & Translations<TCustomTranslations> => {
 	if (!customTranslations) {
-		return defaultTranslations as Translations<TCustomTranslations>;
+		return defaultTranslations as typeof defaultTranslations & Translations<TCustomTranslations>;
 	}
 
 	const result: Record<string, PartialErrorCodesType> = {};
@@ -59,5 +59,5 @@ export const deepMergeTranslations = <
 		}
 	}
 
-	return result as Translations<TCustomTranslations>;
+	return result as typeof defaultTranslations & Translations<TCustomTranslations>;
 };
