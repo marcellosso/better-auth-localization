@@ -116,7 +116,10 @@ export const localization = <
 
 						if (!hasBody(returned) || !isErrorBody(returned.body)) return;
 
-						const { body, statusCode } = returned as { body: { code: keyof ErrorCodesType; message: string }; statusCode: Status };
+						const { body, statusCode } = returned as {
+							body: { code: keyof ErrorCodesType; message: string };
+							statusCode: Status;
+						};
 
 						const locale = await resolveLocale(request);
 
@@ -142,6 +145,7 @@ export const localization = <
 	} satisfies BetterAuthPlugin;
 };
 
+export { betterAuthLocalizationClientPlugin } from "./client";
 export type {
 	AvailableLocales,
 	BuiltInLocales,
@@ -150,5 +154,3 @@ export type {
 	LocalizationOptions,
 	PartialErrorCodesType,
 } from "./types";
-
-export { betterAuthLocalizationClientPlugin } from "./client";

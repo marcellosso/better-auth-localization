@@ -13,8 +13,7 @@ export const MR_MR = {
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "सत्र तयार करण्यात अयशस्वी",
 	FAILED_TO_GET_SESSION: "सत्र मिळवण्यात अयशस्वी",
-	SESSION_EXPIRED:
-		"सत्राची मुदत संपली आहे. ही कृती करण्यासाठी कृपया पुन्हा लॉगिन करा.",
+	SESSION_EXPIRED: "सत्राची मुदत संपली आहे. ही कृती करण्यासाठी कृपया पुन्हा लॉगिन करा.",
 
 	// Authentication errors
 	INVALID_PASSWORD: "अवैध पासवर्ड",

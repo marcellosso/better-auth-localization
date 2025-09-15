@@ -1,4 +1,8 @@
-import type { ErrorCodesType, PartialErrorCodesType, Translations } from "../types";
+import type {
+	ErrorCodesType,
+	PartialErrorCodesType,
+	Translations,
+} from "../types";
 
 export const isErrorBody = (
 	body: unknown,
@@ -33,7 +37,8 @@ export const deepMergeTranslations = <
 	customTranslations?: Translations<TCustomTranslations>,
 ): typeof defaultTranslations & Translations<TCustomTranslations> => {
 	if (!customTranslations) {
-		return defaultTranslations as typeof defaultTranslations & Translations<TCustomTranslations>;
+		return defaultTranslations as typeof defaultTranslations &
+			Translations<TCustomTranslations>;
 	}
 
 	const result: Record<string, PartialErrorCodesType> = {};
@@ -42,7 +47,9 @@ export const deepMergeTranslations = <
 		result[locale] = { ...translations };
 	}
 
-	for (const [locale, customTranslation] of Object.entries(customTranslations)) {
+	for (const [locale, customTranslation] of Object.entries(
+		customTranslations,
+	)) {
 		if (customTranslation) {
 			if (result[locale]) {
 				result[locale] = {
