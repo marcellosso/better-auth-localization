@@ -9,7 +9,8 @@ export const FR_FR = {
 	USER_EMAIL_NOT_FOUND: "E-mail de l'utilisateur non trouvé",
 	USER_ALREADY_HAS_PASSWORD:
 		"L'utilisateur a déjà un mot de passe. Veuillez le fournir pour supprimer le compte.",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "Utilisateur déjà existant. Utilisez un autre e-mail.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"Utilisateur déjà existant. Utilisez un autre e-mail.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "Échec de la création de la session",

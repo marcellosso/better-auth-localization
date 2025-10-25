@@ -158,22 +158,25 @@ We welcome and appreciate contributions! Help us expand language support by addi
 
 This repo auto-generates the translations index to avoid PR conflicts when multiple languages are added in parallel.
 
-1. Create a new file in `src/translations/`, for example `nl.ts`.
-2. Export your translation object and a `LOCALES` map from that file:
-   ```ts
-   import type { ErrorCodesType } from "../types";
-
-   export const NL_NL = { /* ...all error codes... */ } satisfies ErrorCodesType;
-
-   export const LOCALES = {
-     "nl-NL": NL_NL,
-   } as const;
+1. Run the locale creation script:
+   ```bash
+   npm run generate:locale
+   # or
+   pnpm generate:locale
+   # or
+   yarn generate:locale
    ```
-3. Do not edit or commit `src/translations/index.ts`.
-4. Submit your pull request. The index is generated automatically by the build and tests.
+2. Select your desired locale from the interactive list (e.g., `nl_NL`, `fr_CA`, `es_MX`)
+3. The script will automatically:
+   - Create the main translation file with the correct structure
+   - Generate plugin-specific translation files with proper types
+   - Update all necessary LOCALES objects
+   - Use the correct error code types for each plugin
+4. Translate the generated content to match your locale
+5. Do not edit or commit `src/translations/index.ts`.
+6. Submit your pull request. The index is generated automatically by the build and tests.
 
 The build runs the generator automatically to ensure the index stays up to date.
-
 
 ## License
 

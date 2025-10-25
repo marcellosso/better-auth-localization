@@ -9,7 +9,8 @@ export const KO_KO = {
 	USER_EMAIL_NOT_FOUND: "사용자의 이메일을 찾을 수 없습니다",
 	USER_ALREADY_HAS_PASSWORD:
 		"사용자가 이미 비밀번호를 설정했습니다. 계정을 삭제하려면 해당 비밀번호를 제공하십시오.",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "이미 존재하는 사용자입니다. 다른 이메일을 사용하세요.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"이미 존재하는 사용자입니다. 다른 이메일을 사용하세요.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "세션 생성 실패",

@@ -8,7 +8,8 @@ export const DA_DK = {
 	USER_ALREADY_EXISTS: "Brugeren eksisterer allerede",
 	USER_EMAIL_NOT_FOUND: "Brugerens e-mail blev ikke fundet",
 	USER_ALREADY_HAS_PASSWORD: "Brugeren har allerede en adgangskode",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "Brugeren eksisterer allerede. Brug en anden e-mail.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"Brugeren eksisterer allerede. Brug en anden e-mail.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "Fejl under oprettelse af session",

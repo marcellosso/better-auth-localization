@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { deepMergeTranslations, hasBody, isErrorBody } from "../../utils/helpers";
+import {
+	deepMergeTranslations,
+	hasBody,
+	isErrorBody,
+} from "../../utils/helpers";
 
 describe("hasBody", () => {
 	it("should return true for object with body property", () => {
@@ -60,8 +64,6 @@ describe("isErrorBody", () => {
 	});
 });
 
-
-
 describe("deepMergeTranslations", () => {
 	const defaultTranslations = {
 		"pt-BR": {
@@ -93,7 +95,10 @@ describe("deepMergeTranslations", () => {
 			},
 		};
 
-		const result = deepMergeTranslations(defaultTranslations, customTranslations);
+		const result = deepMergeTranslations(
+			defaultTranslations,
+			customTranslations,
+		);
 
 		expect(result["pt-BR"]).toEqual({
 			USER_NOT_FOUND: "Usuário não encontrado", // preserved from default
@@ -101,7 +106,7 @@ describe("deepMergeTranslations", () => {
 			ACCOUNT_NOT_FOUND: "Custom account message", // overridden by custom
 		});
 
-		expect(result["en-US"]).toEqual(defaultTranslations["en-US"]); 
+		expect(result["en-US"]).toEqual(defaultTranslations["en-US"]);
 	});
 
 	it("should add new locale when not present in defaults", () => {
@@ -112,7 +117,10 @@ describe("deepMergeTranslations", () => {
 			},
 		};
 
-		const result = deepMergeTranslations(defaultTranslations, customTranslations);
+		const result = deepMergeTranslations(
+			defaultTranslations,
+			customTranslations,
+		);
 
 		expect(result["fr-FR"]).toEqual({
 			USER_NOT_FOUND: "Utilisateur non trouvé",
@@ -134,7 +142,10 @@ describe("deepMergeTranslations", () => {
 			},
 		};
 
-		const result = deepMergeTranslations(defaultTranslations, customTranslations);
+		const result = deepMergeTranslations(
+			defaultTranslations,
+			customTranslations,
+		);
 
 		expect(result["pt-BR"]).toEqual({
 			USER_NOT_FOUND: "Custom user message", // overridden
@@ -154,7 +165,10 @@ describe("deepMergeTranslations", () => {
 			"pt-BR": {},
 		};
 
-		const result = deepMergeTranslations(defaultTranslations, customTranslations);
+		const result = deepMergeTranslations(
+			defaultTranslations,
+			customTranslations,
+		);
 
 		// Should remain unchanged since custom translation is empty
 		expect(result["pt-BR"]).toEqual(defaultTranslations["pt-BR"]);
@@ -165,10 +179,13 @@ describe("deepMergeTranslations", () => {
 			"pt-BR": {
 				USER_NOT_FOUND: "Custom message",
 			},
-			"en-US": undefined, 
+			"en-US": undefined,
 		} as any;
 
-		const result = deepMergeTranslations(defaultTranslations, customTranslations);
+		const result = deepMergeTranslations(
+			defaultTranslations,
+			customTranslations,
+		);
 
 		expect(result["pt-BR"]).toEqual({
 			USER_NOT_FOUND: "Custom message",

@@ -9,7 +9,8 @@ export const HI_HI = {
 	USER_EMAIL_NOT_FOUND: "उपयोगकर्ता का ईमेल नहीं मिला",
 	USER_ALREADY_HAS_PASSWORD:
 		"उपयोगकर्ता ने पहले से पासवर्ड सेट किया है। खाता हटाने के लिए कृपया वह पासवर्ड प्रदान करें।",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "उपयोगकर्ता पहले से मौजूद है। दूसरा ईमेल उपयोग करें।",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"उपयोगकर्ता पहले से मौजूद है। दूसरा ईमेल उपयोग करें।",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "सत्र बनाने में विफल",

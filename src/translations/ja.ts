@@ -9,7 +9,8 @@ export const JA_JP = {
 	USER_EMAIL_NOT_FOUND: "ユーザーのメールアドレスが見つかりません",
 	USER_ALREADY_HAS_PASSWORD:
 		"ユーザーは既にパスワードを設定しています。アカウントを削除するには、そのパスワードを入力してください。",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "ユーザーは既に存在します。別のメールアドレスを使用してください。",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"ユーザーは既に存在します。別のメールアドレスを使用してください。",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "セッションの作成に失敗しました",

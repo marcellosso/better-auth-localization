@@ -3,9 +3,10 @@ import type { localization } from "./index";
 
 type BetterAuthLocalizationPlugin = typeof localization;
 
-export const betterAuthLocalizationClientPlugin = () => {
-	return {
-		id: "localization",
-		$InferServerPlugin: {} as ReturnType<BetterAuthLocalizationPlugin>,
-	} satisfies BetterAuthClientPlugin;
-};
+export const betterAuthLocalizationClientPlugin =
+	(): BetterAuthClientPlugin => {
+		return {
+			id: "localization",
+			$InferServerPlugin: {} as ReturnType<BetterAuthLocalizationPlugin>,
+		} satisfies BetterAuthClientPlugin;
+	};

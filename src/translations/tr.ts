@@ -9,7 +9,8 @@ export const TR_TR = {
 	USER_EMAIL_NOT_FOUND: "Kullanıcı e-posta adresi bulunamadı",
 	USER_ALREADY_HAS_PASSWORD:
 		"Kullanıcının zaten bir şifresi var. Hesabı silmek için lütfen şifreyi girin.",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "Kullanıcı zaten mevcut. Başka bir e-posta adresi kullanın.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"Kullanıcı zaten mevcut. Başka bir e-posta adresi kullanın.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "Oturum oluşturulamadı",

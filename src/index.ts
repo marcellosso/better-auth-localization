@@ -55,11 +55,19 @@ import { getTranslation } from "./utils/translations";
  * })
  * ```
  */
-export const localization = <
+export function localization<
 	TCustomTranslations extends Record<string, PartialErrorCodesType> = {},
 >(
 	options: LocalizationOptions<TCustomTranslations>,
-) => {
+): {
+	id: string;
+	hooks: {
+		after: Array<{
+			matcher: (ctx: any) => boolean;
+			handler: ReturnType<typeof createAuthMiddleware>;
+		}>;
+	};
+} {
 	const {
 		defaultLocale = "default",
 		fallbackLocale = "default",
@@ -116,7 +124,10 @@ export const localization = <
 
 						if (!hasBody(returned) || !isErrorBody(returned.body)) return;
 
-						const { body, statusCode } = returned as { body: { code: keyof ErrorCodesType; message: string }; statusCode: Status };
+						const { body, statusCode } = returned as {
+							body: { code: keyof ErrorCodesType; message: string };
+							statusCode: Status;
+						};
 
 						const locale = await resolveLocale(request);
 
@@ -133,7 +144,7 @@ export const localization = <
 						if (translatedMessage) {
 							return ctx.error(statusCode || "UNPROCESSABLE_ENTITY", {
 								message: translatedMessage,
-								code: body.code,
+								code: String(body.code),
 							});
 						}
 					}),
@@ -141,8 +152,9 @@ export const localization = <
 			],
 		},
 	} satisfies BetterAuthPlugin;
-};
+}
 
+export { betterAuthLocalizationClientPlugin } from "./client";
 export type {
 	AvailableLocales,
 	BuiltInLocales,
@@ -151,5 +163,3 @@ export type {
 	LocalizationOptions,
 	PartialErrorCodesType,
 } from "./types";
-
-export { betterAuthLocalizationClientPlugin } from "./client";

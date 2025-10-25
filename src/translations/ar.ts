@@ -9,7 +9,8 @@ export const AR_SA = {
 	USER_EMAIL_NOT_FOUND: "البريد الإلكتروني للمستخدم غير موجود",
 	USER_ALREADY_HAS_PASSWORD:
 		"المستخدم لديه كلمة مرور بالفعل. يرجى إدخال كلمة المرور الحالية لحذف الحساب.",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "المستخدم موجود مسبقًا. استخدم بريدًا إلكترونيًا آخر.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"المستخدم موجود مسبقًا. استخدم بريدًا إلكترونيًا آخر.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "فشل في إنشاء الجلسة",

@@ -8,7 +8,8 @@ export const EL_GR = {
 	USER_ALREADY_EXISTS: "Ο χρήστης υπάρχει ήδη",
 	USER_EMAIL_NOT_FOUND: "Το email του χρήστη δεν βρέθηκε",
 	USER_ALREADY_HAS_PASSWORD: "Ο χρήστης έχει ήδη κωδικό",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "Ο χρήστης υπάρχει ήδη. Χρησιμοποιήστε άλλο email.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"Ο χρήστης υπάρχει ήδη. Χρησιμοποιήστε άλλο email.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "Αποτυχία δημιουργίας συνεδρίας",

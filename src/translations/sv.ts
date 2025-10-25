@@ -8,7 +8,8 @@ export const SV_SE = {
 	USER_ALREADY_EXISTS: "Användaren finns redan",
 	USER_EMAIL_NOT_FOUND: "Användarens e-post hittades inte",
 	USER_ALREADY_HAS_PASSWORD: "Användaren har redan ett lösenord",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "Användaren finns redan. Använd en annan e-postadress.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"Användaren finns redan. Använd en annan e-postadress.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "Lyckades inte skapa session",

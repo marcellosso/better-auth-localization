@@ -9,7 +9,8 @@ export const NL_NL_INFORMAL = {
 	USER_EMAIL_NOT_FOUND: "E-mailadres van gebruiker niet gevonden",
 	USER_ALREADY_HAS_PASSWORD:
 		"Gebruiker heeft al een wachtwoord. Voer het in om het account te verwijderen.",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "Gebruiker bestaat al. Gebruik een ander e-mailadres.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"Gebruiker bestaat al. Gebruik een ander e-mailadres.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "Sessie kon niet worden aangemaakt",
