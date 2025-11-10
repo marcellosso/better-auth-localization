@@ -9,7 +9,8 @@ export const CKB_IQ = {
 	USER_EMAIL_NOT_FOUND: "ئیمەیڵی بەکارهێنەر نەدۆزرایەوە",
 	USER_ALREADY_HAS_PASSWORD:
 		"بەکارهێنەر پێشتر وشەی نهێنی هەیە. تکایە وشەی نهێنی ئێستا بنوسە بۆ سڕینەوەی هەژمارەکە.",
-	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: "بەکارهێنەر پێشتر هەیە. تکایە ئیمەیڵێکی تر بەکاربهێنە.",
+	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
+		"بەکارهێنەر پێشتر هەیە. تکایە ئیمەیڵێکی تر بەکاربهێنە.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "نەتوانرا سێشن دروست بکرێت",

@@ -1,9 +1,6 @@
 import type { Auth } from "better-auth";
 import type {
 	AdminOptions,
-	OrganizationOptions,
-	TWO_FACTOR_ERROR_CODES,
-	USERNAME_ERROR_CODES,
 	admin,
 	anonymous,
 	apiKey,
@@ -12,8 +9,11 @@ import type {
 	genericOAuth,
 	haveIBeenPwned,
 	multiSession,
+	OrganizationOptions,
 	organization,
 	phoneNumber,
+	TWO_FACTOR_ERROR_CODES,
+	USERNAME_ERROR_CODES,
 } from "better-auth/plugins";
 import type { passkey } from "better-auth/plugins/passkey";
 import type { defaultTranslations } from "../translations";
