@@ -1,5 +1,12 @@
 # better-auth-localization
 
+## 2.2.2
+
+### Patch Changes
+
+- - Added support for az-AZ (Azerbaijani) (thanks @mehdiasadli)
+  - Added support for bn-BD (Bengali) (thanks @ktisakib)
+
 ## 2.2.1
 
 ### Patch Changes
