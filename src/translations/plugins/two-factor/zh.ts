@@ -1,6 +1,6 @@
 import type { TwoFactorErrorCodesType } from "../../../types";
 
-export const ZH_HANT = {
+export const ZH_HANS = {
 	// Two Factor related errors
 	OTP_NOT_ENABLED: "一次性密码未启用",
 	OTP_HAS_EXPIRED: "一次性密码已过期",
@@ -13,7 +13,7 @@ export const ZH_HANT = {
 	INVALID_TWO_FACTOR_COOKIE: "无效的双因素认证Cookie",
 } satisfies TwoFactorErrorCodesType;
 
-export const ZH_HANS = {
+export const ZH_HANT = {
 	// Two Factor related errors
 	OTP_NOT_ENABLED: "一次性密碼未啟用",
 	OTP_HAS_EXPIRED: "一次性密碼已過期",

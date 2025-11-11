@@ -1,6 +1,6 @@
 import type { PhoneNumberErrorCodesType } from "../../../types";
 
-export const ZH_HANT = {
+export const ZH_HANS = {
 	// Phone number related errors
 	INVALID_PHONE_NUMBER: "无效的电话号码",
 	PHONE_NUMBER_EXIST: "电话号码已存在",
@@ -12,7 +12,7 @@ export const ZH_HANT = {
 	PHONE_NUMBER_NOT_VERIFIED: "电话号码未验证",
 } satisfies PhoneNumberErrorCodesType;
 
-export const ZH_HANS = {
+export const ZH_HANT = {
 	// Phone number related errors
 	INVALID_PHONE_NUMBER: "無效的電話號碼",
 	PHONE_NUMBER_EXIST: "電話號碼已存在",
