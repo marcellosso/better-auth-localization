@@ -1,6 +1,6 @@
 import type { UsernameErrorCodesType } from "../../../types";
 
-export const ZH_HANT = {
+export const ZH_HANS = {
 	// Username related errors
 	INVALID_USERNAME_OR_PASSWORD: "无效的用户名或密码",
 	USERNAME_IS_ALREADY_TAKEN: "用户名已被使用。请尝试其他用户名。",
@@ -10,7 +10,7 @@ export const ZH_HANT = {
 	INVALID_DISPLAY_USERNAME: "无效的显示名称",
 } satisfies UsernameErrorCodesType;
 
-export const ZH_HANS = {
+export const ZH_HANT = {
 	// Username related errors
 	INVALID_USERNAME_OR_PASSWORD: "無效的用戶名或密碼",
 	USERNAME_IS_ALREADY_TAKEN: "用戶名已被使用。請嘗試其他用戶名。",

@@ -1,6 +1,6 @@
 import type { DeviceAuthorizationErrorCodesType } from "../../../types";
 
-export const ZH_HANT = {
+export const ZH_HANS = {
 	// Device authorization related errors
 	INVALID_DEVICE_CODE: "无效的设备代码",
 	EXPIRED_DEVICE_CODE: "设备代码已过期",
@@ -14,7 +14,7 @@ export const ZH_HANT = {
 	AUTHENTICATION_REQUIRED: "需要身份验证",
 } satisfies DeviceAuthorizationErrorCodesType;
 
-export const ZH_HANS = {
+export const ZH_HANT = {
 	// Device authorization related errors
 	INVALID_DEVICE_CODE: "無效的設備代碼",
 	EXPIRED_DEVICE_CODE: "設備代碼已過期",

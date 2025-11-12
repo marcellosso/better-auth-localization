@@ -1,6 +1,6 @@
 import type { PasskeyErrorCodesType } from "../../../types";
 
-export const ZH_HANT = {
+export const ZH_HANS = {
 	// Passkey related errors
 	CHALLENGE_NOT_FOUND: "未找到挑战",
 	YOU_ARE_NOT_ALLOWED_TO_REGISTER_THIS_PASSKEY: "您无权注册此通行密钥",
@@ -11,7 +11,7 @@ export const ZH_HANT = {
 	FAILED_TO_UPDATE_PASSKEY: "通行密钥更新失败",
 } satisfies PasskeyErrorCodesType;
 
-export const ZH_HANS = {
+export const ZH_HANT = {
 	// Passkey related errors
 	CHALLENGE_NOT_FOUND: "未找到挑戰",
 	YOU_ARE_NOT_ALLOWED_TO_REGISTER_THIS_PASSKEY: "您無權註冊此通行密鑰",

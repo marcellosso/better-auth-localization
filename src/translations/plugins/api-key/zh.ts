@@ -1,6 +1,6 @@
 import type { ApiKeyErrorCodesType } from "../../../types";
 
-export const ZH_HANT = {
+export const ZH_HANS = {
 	// Api key related errors
 	INVALID_METADATA_TYPE: "元数据必须是对象或undefined",
 	REFILL_AMOUNT_AND_INTERVAL_REQUIRED: "提供重新填充间隔时需要重新填充数量",
@@ -30,7 +30,7 @@ export const ZH_HANT = {
 	NAME_REQUIRED: "API密钥名称是必需的。",
 } satisfies ApiKeyErrorCodesType;
 
-export const ZH_HANS = {
+export const ZH_HANT = {
 	// Api key related errors
 	INVALID_METADATA_TYPE: "元數據必須是對象或undefined",
 	REFILL_AMOUNT_AND_INTERVAL_REQUIRED: "提供重新填充間隔時需要重新填充數量",
