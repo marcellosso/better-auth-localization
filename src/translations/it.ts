@@ -10,7 +10,7 @@ export const IT_IT = createTranslationObject("it-IT", {
 	USER_ALREADY_HAS_PASSWORD:
 		"L'utente ha già una password. Forniscila per eliminare l'account.",
 	USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL:
-		"Utente già esistente. Usa un altro email.",
+		"Utente già esistente. Usa un'altra email.",
 
 	// Session related errors
 	FAILED_TO_CREATE_SESSION: "Errore nella creazione della sessione",
