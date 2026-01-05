@@ -1,5 +1,12 @@
 # better-auth-localization
 
+## 2.2.3
+
+### Patch Changes
+
+- - Added support for Ukrainian (uk-UA) (thanks @tarasromil)
+  - Added support for Vietnamese (vi-VN) (thanks @trinhvanminh)
+
 ## 2.2.2
 
 ### Patch Changes

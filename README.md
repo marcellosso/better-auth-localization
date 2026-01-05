@@ -139,6 +139,10 @@ Currently supported languages:
 - 🇩🇰 **Danish (da-DK)** - ✅ Complete (Thanks @BjornFrancke)
 - 🇷🇴 **Romanian (ro-RO)** - ✅ Complete (Thanks @danielavornic)
 - 🇮🇶 **Kurdish Sorani (ckb-IQ)** - ✅ Complete (Thanks @didar-dev)
+- 🇧🇩 **Bengali (bn-BD)** - ✅ Complete (Thanks @ktisakib)
+- 🇦🇿 **Azerbaijani (az-AZ)** - ✅ Complete (Thanks @mehdiasadli)
+- 🇻🇳 **Vietnamese (vi-VN)** - ✅ Complete (Thanks @trinhvanminh)
+- 🇺🇦 **Ukrainian (uk-UA)** - ✅ Complete (Thanks @tarasromil)
 
 ## Built-in Translations
 
