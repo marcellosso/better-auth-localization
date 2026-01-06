@@ -35,7 +35,6 @@ async function addLocaleToParentFile(newLocale) {
 	const parentFile = path.join(translationsDir, `${parentLocale}.ts`);
 
 	if (!fs.existsSync(parentFile)) {
-		// Create a new parent file with basic structure
 		const constants = [
 			'import { createTranslationObject } from "../utils/create-translation-object";',
 			"",
@@ -58,40 +57,26 @@ async function addLocaleToParentFile(newLocale) {
 		return;
 	}
 
-	const constantLine = `export const ${newConstant} = createTranslationObject("${newHyphenated}");`;
+	const constantLine = `\nexport const ${newConstant} = createTranslationObject("${newHyphenated}", {});`;
 
 	const lines = content.split("\n");
 	let insertIndex = -1;
 
-	for (let i = lines.length - 1; i >= 0; i--) {
-		if (
-			lines[i].startsWith("export const ") &&
-			lines[i].includes("createTranslationObject")
-		) {
-			insertIndex = i + 1;
-			break;
-		}
-	}
-
 	if (insertIndex === -1) {
-		// Fallback: add after imports
 		for (let i = 0; i < lines.length; i++) {
-			if (lines[i].startsWith("export const ")) {
-				insertIndex = i;
+			if (lines[i].startsWith("export const LOCALES")) {
+				insertIndex = i - 1;
 				break;
 			}
 		}
 	}
 
-	// Insert the new constant
 	lines.splice(insertIndex, 0, constantLine);
 
-	// Update LOCALES object
 	const updatedContent = lines.join("\n");
 	const newContent = updatedContent.replace(
 		/export const LOCALES = \{([^}]*)\} as const;/,
 		(_, content) => {
-			// Add new locale to LOCALES object
 			const newLocaleEntry = `\t"${newHyphenated}": ${newConstant},`;
 			return `export const LOCALES = {${content}${newLocaleEntry}\n} as const;`;
 		},
@@ -212,21 +197,15 @@ async function main() {
 		const { newLocale } = await prompts({
 			type: "text",
 			name: "newLocale",
-			message: "Select the new locale to create:",
-			choices: locales.map((pattern) => ({
-				title: pattern,
-				value: pattern,
-			})),
+			message: "Enter the new locale to create (e.g., nl_NL, fr_CA, es_MX):",
 		});
 
-		const trimmedLocale = newLocale;
+		const trimmedLocale = newLocale.trim();
 
 		console.log(`\n📝 Creating locale '${trimmedLocale}'...`);
 
-		// Add new locale to parent file
 		await addLocaleToParentFile(trimmedLocale);
 
-		// Add new locale to plugin files
 		const pluginFiles = await addLocaleToPluginFiles(trimmedLocale);
 
 		console.log("\n🎉 Successfully created locale!");
