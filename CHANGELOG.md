@@ -1,18 +1,25 @@
 # better-auth-localization
 
+## 2.3.0
+
+### Minor Changes
+
+- Added support for Czech (cs-CZ) (thanks @michaeldoubek)
+- Added support for Captcha plugin
+
 ## 2.2.3
 
 ### Patch Changes
 
-- - Added support for Ukrainian (uk-UA) (thanks @tarasromil)
-  - Added support for Vietnamese (vi-VN) (thanks @trinhvanminh)
+- Added support for Ukrainian (uk-UA) (thanks @tarasromil)
+- Added support for Vietnamese (vi-VN) (thanks @trinhvanminh)
 
 ## 2.2.2
 
 ### Patch Changes
 
-- - Added support for az-AZ (Azerbaijani) (thanks @mehdiasadli)
-  - Added support for bn-BD (Bengali) (thanks @ktisakib)
+- Added support for az-AZ (Azerbaijani) (thanks @mehdiasadli)
+- Added support for bn-BD (Bengali) (thanks @ktisakib)
 
 ## 2.2.1
 
@@ -24,9 +31,9 @@
 
 ### Minor Changes
 
-- - Added support for translations in plugins (thanks @ylyra)
+- Added support for translations in plugins (thanks @ylyra)
   - To contribute a new language, just run `pnpm generate:locale` and enter the language code, it will generate the new language files for you to edit and add translations (@ylyra is the best)
-  - Added support for ckb-IQ (Kurdish Sorani) (thanks @didar-dev)
+- Added support for ckb-IQ (Kurdish Sorani) (thanks @didar-dev)
 
 ## 2.1.10
 
