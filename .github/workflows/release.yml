@@ -28,6 +28,9 @@ jobs:
           node-version: 20.x
           cache: 'pnpm'
 
+      - name: Update npm to latest version for OIDC support
+        run: npm install -g npm@latest
+
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
