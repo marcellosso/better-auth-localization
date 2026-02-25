@@ -206,6 +206,7 @@ Currently supported languages:
 - 🇦🇿 **Azerbaijani (az-AZ)** - ✅ Complete (Thanks @mehdiasadli)
 - 🇻🇳 **Vietnamese (vi-VN)** - ✅ Complete (Thanks @trinhvanminh)
 - 🇺🇦 **Ukrainian (uk-UA)** - ✅ Complete (Thanks @tarasromil)
+- 🇨🇿 **Czech (cs-CZ)** - ✅ Complete (Thanks @michaeldoubek)
 
 ## Built-in Translations
 
