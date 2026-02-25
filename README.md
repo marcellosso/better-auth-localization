@@ -43,32 +43,95 @@ export const auth = betterAuth({
 
 ### Dynamic Locale Detection
 
-```typescript
+The `getLocale` option lets you **dynamically detect the locale** for each request.  
+It receives a **raw `Request` object**, so you can read cookies, headers, JWT tokens, database info, whatever makes sense in your app.
+
+This plugin does *not* know your user/session automatically. You decide how to extract the locale.
+
+---
+
+## Example
+
+```ts
 localization({
   defaultLocale: "pt-BR",
   fallbackLocale: "default",
-  getLocale: async (request) => {
+  getLocale: async (req) => {
     try {
-      // Use your existing locale detection logic
-      // This could come from cookies, database, JWT tokens, etc.
-      const userLocale = await getUserLocale(request);
-      
-      return userLocale || 'default';
-    } catch (error) {
-      console.warn('Error detecting locale:', error);
-      return 'default'; // Safe fallback
+      const locale = await getUserLocale(req);
+      return locale ?? "default";
+    } catch (err) {
+      console.warn("Error detecting locale:", err);
+      return "default";
     }
   }
-})
+});
+```
 
-// Example getUserLocale implementation (adapt to your needs)
-async function getUserLocale(request: Request): Promise<string | null> {
-  // Could check user preferences from database, cookies, headers, etc.
-  // return await db.user.getLocale(userId);
-  // return getCookieValue(request, 'locale');
-  // return request.headers.get('x-user-locale');
+---
+
+## Implementing `getUserLocale` (choose the strategy you prefer)
+
+Below are a few common ways to detect the locale.  
+Pick one or combine them depending on your app’s architecture.
+
+---
+
+### **1. Read locale directly from a cookie** (simplest)
+
+```ts
+async function getUserLocale(req: Request): Promise<string | null> {
+  const cookieHeader = req.headers.get("cookie");
+  const cookies = parseCookie(cookieHeader);
+  return cookies.locale ?? null;
 }
 ```
+
+---
+
+### **2. Read locale from a custom header**
+
+```ts
+async function getUserLocale(req: Request): Promise<string | null> {
+  return req.headers.get("x-user-locale");
+}
+```
+
+---
+
+### **3. Decode your session/JWT and read the user's preferred locale**
+
+Useful if your authentication stores user data inside a token.
+
+```ts
+async function getUserLocale(req: Request): Promise<string | null> {
+  const cookieHeader = req.headers.get("cookie");
+  const session = decodeSession(cookieHeader); // your own logic
+
+  return session?.user?.locale ?? null;
+}
+```
+
+---
+
+### **4. Look up user locale in your database**
+
+Only makes sense if your session/cookie includes a userId.
+
+```ts
+async function getUserLocale(req: Request): Promise<string | null> {
+  const cookieHeader = req.headers.get("cookie");
+  const session = decodeSession(cookieHeader); // extract userId
+  const userId = session?.userId;
+
+  if (!userId) return null;
+
+  const locale = await db.user.getLocale(userId);
+  return locale ?? null;
+}
+```
+
+If you have suggestions for more examples or want to see a built-in helper, feel free to open an issue!
 
 ### Custom Translations
 
