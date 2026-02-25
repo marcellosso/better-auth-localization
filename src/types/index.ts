@@ -14,6 +14,7 @@ import type {
 	phoneNumber,
 	TWO_FACTOR_ERROR_CODES,
 	USERNAME_ERROR_CODES,
+	captcha,
 } from "better-auth/plugins";
 import type { passkey } from "better-auth/plugins/passkey";
 import type { defaultTranslations } from "../translations";
@@ -67,6 +68,12 @@ export type AdminErrorCodesType = RemoveReadonly<
 	ReturnType<typeof admin<AdminOptions>>["$ERROR_CODES"]
 >;
 
+export type CaptchaErrorCodesType = {
+	VERIFICATION_FAILED?: string | undefined;
+	MISSING_RESPONSE?: string | undefined;
+	UNKNOWN_ERROR?: string | undefined;
+}
+
 export type ApiKeyErrorCodesType = RemoveReadonly<
 	ReturnType<typeof apiKey>["$ERROR_CODES"]
 >;
@@ -103,6 +110,7 @@ export type ErrorCodesType = Partial<
 		| HaveIBeenPwnedErrorCodesType
 		| MultiSessionErrorCodesType
 		| PasskeyErrorCodesType
+		| CaptchaErrorCodesType
 	>
 >;
 /**
