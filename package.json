@@ -63,13 +63,13 @@
 		"@biomejs/biome": "^2.1.3",
 		"@changesets/cli": "^2.29.5",
 		"@types/node": "^24.1.0",
-		"better-auth": "^1.3.27",
+		"better-auth": "^1.5.0",
 		"prompts": "^2.4.2",
 		"tsup": "^8.5.0",
 		"typescript": "^5.8.3",
 		"vitest": "^3.2.4"
 	},
 	"peerDependencies": {
-		"better-auth": "^1.4.19"
+		"better-auth": "^1.5.0"
 	}
 }
