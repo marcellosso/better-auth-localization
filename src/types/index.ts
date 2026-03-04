@@ -3,20 +3,19 @@ import type {
 	AdminOptions,
 	admin,
 	anonymous,
-	apiKey,
 	deviceAuthorization,
 	emailOTP,
 	genericOAuth,
 	haveIBeenPwned,
 	multiSession,
-	OrganizationOptions,
-	organization,
 	phoneNumber,
 	TWO_FACTOR_ERROR_CODES,
 	USERNAME_ERROR_CODES,
 	captcha,
 } from "better-auth/plugins";
-import type { passkey } from "better-auth/plugins/passkey";
+import type { ORGANIZATION_ERROR_CODES } from "better-auth/client/plugins";
+import type { apiKey } from "@better-auth/api-key";
+import type { passkey } from "@better-auth/passkey";
 import type { defaultTranslations } from "../translations";
 
 type Prettify<T> = {
@@ -37,7 +36,7 @@ type UnionToIntersection<U> = (U extends any ? (k: U) => void : never) extends (
 export type AuthErrorCodesType = RemoveReadonly<Auth["$ERROR_CODES"]>;
 
 export type OrganizationErrorCodesType = RemoveReadonly<
-	ReturnType<typeof organization<OrganizationOptions>>["$ERROR_CODES"]
+	typeof ORGANIZATION_ERROR_CODES
 >;
 
 export type TwoFactorErrorCodesType = RemoveReadonly<

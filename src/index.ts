@@ -1,5 +1,5 @@
 import type { BetterAuthPlugin, Status } from "better-auth";
-import { createAuthMiddleware } from "better-auth/plugins";
+import { createAuthMiddleware } from "better-auth/api";
 import { defaultTranslations } from "./translations";
 import type {
 	AvailableLocales,
