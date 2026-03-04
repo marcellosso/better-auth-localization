@@ -1,5 +1,11 @@
 # better-auth-localization
 
+## 3.0.0
+
+### Major Changes
+
+- Migrate to better-auth v1.5.0 (thanks @samerkh)
+
 ## 2.3.1
 
 ### Patch Changes
