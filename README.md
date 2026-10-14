@@ -209,6 +209,14 @@ Currently supported languages:
 - 🇻🇳 **Vietnamese (vi-VN)** - ✅ Complete (Thanks @trinhvanminh)
 - 🇺🇦 **Ukrainian (uk-UA)** - ✅ Complete (Thanks @tarasromil)
 - 🇨🇿 **Czech (cs-CZ)** - ✅ Complete (Thanks @michaeldoubek)
+  - 🇨🇿 **Czech (informal) (cs-CZ-informal) (default)**
+  - 🇨🇿 **Czech (formal) (cs-CZ-formal)**
+- 🇸🇰 **Slovak (sk-SK)** - 🟡 Partial (Thanks @branislavjuhaas)
+  - 🇸🇰 **Slovak (informal) (sk-SK-informal) (default)**
+  - 🇸🇰 **Slovak (formal) (sk-SK-formal)**
+- 🇹🇭 **Thai (th-TH)** - 🟡 Partial (Thanks @ArtifactyNight)
+
+Partial locales are missing some error codes; untranslated messages use `fallbackLocale`. Contributions to complete them are welcome.
 
 ## Built-in Translations
 
@@ -241,7 +249,7 @@ The plugin comes with built-in translations for all Better Auth error codes, inc
 - Two-factor authentication plugin
 - Username plugin
 
-For a complete and specific list, refer to the [Better Auth documentation](https://github.com/better-auth/better-auth/blob/canary/packages/core/src/error/codes.ts).
+For a complete and specific list, refer to the [Better Auth documentation](https://github.com/better-auth/better-auth/blob/main/packages/core/src/error/codes.ts).
 
 ## Contributing
 
@@ -265,7 +273,7 @@ This repo auto-generates the translations index to avoid PR conflicts when multi
    - Generate plugin-specific translation files with proper types
    - Update all necessary LOCALES objects
    - Use the correct error code types for each plugin
-4. Translate the generated content to match your locale
+4. Translate the generated content to match your locale. Every error code needs a translation; `pnpm test` fails and lists any missing codes.
 5. Do not edit or commit `src/translations/index.ts`.
 6. Submit your pull request. The index is generated automatically by the build and tests.
 
