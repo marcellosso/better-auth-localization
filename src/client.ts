@@ -3,10 +3,10 @@ import type { localization } from "./index";
 
 type BetterAuthLocalizationPlugin = typeof localization;
 
-export const betterAuthLocalizationClientPlugin =
-	(): BetterAuthClientPlugin => {
-		return {
-			id: "localization",
-			$InferServerPlugin: {} as ReturnType<BetterAuthLocalizationPlugin>,
-		} satisfies BetterAuthClientPlugin;
-	};
+// No return type annotation: widening to `BetterAuthClientPlugin` erases the
+// plugin's literal type and breaks the inferred types of the other client plugins.
+export const betterAuthLocalizationClientPlugin = () =>
+	({
+		id: "localization",
+		$InferServerPlugin: {} as ReturnType<BetterAuthLocalizationPlugin>,
+	}) satisfies BetterAuthClientPlugin;
