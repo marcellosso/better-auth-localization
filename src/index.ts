@@ -3,11 +3,14 @@ import { APIError, createAuthMiddleware, isAPIError } from "better-auth/api";
 import { defaultTranslations } from "./translations";
 import type {
 	AvailableLocales,
+	ErrorCodesType,
 	LocalizationOptions,
 	PartialErrorCodesType,
 } from "./types";
 import { deepMergeTranslations, isErrorBody } from "./utils/helpers";
 import { getTranslation } from "./utils/translations";
+
+const PLUGIN_ID = "better-auth-localization";
 
 /**
  * Better Auth localization plugin
@@ -60,6 +63,7 @@ export function localization<
 	options: LocalizationOptions<TCustomTranslations>,
 ): {
 	id: string;
+	init: NonNullable<BetterAuthPlugin["init"]>;
 	hooks: {
 		after: Array<{
 			matcher: (ctx: any) => boolean;
@@ -110,8 +114,74 @@ export function localization<
 			}
 		: () => currLocale;
 
+	const translateMessage = async (
+		body: { code: keyof ErrorCodesType; message: string },
+		request: Request | undefined,
+	) => {
+		const locale = await resolveLocale(request);
+
+		if (locale === "default") return;
+
+		const translatedMessage = getTranslation(
+			body.code,
+			locale,
+			currFallbackLocale,
+			mergedTranslations,
+			body.message,
+		);
+
+		if (translatedMessage && translatedMessage !== body.message) {
+			return translatedMessage;
+		}
+	};
+
+	const translateResponse = async (response: Response, request: Request) => {
+		if (
+			response.ok ||
+			!response.headers.get("content-type")?.includes("application/json")
+		) {
+			return response;
+		}
+
+		const body: unknown = await response
+			.clone()
+			.json()
+			.catch(() => undefined);
+		if (!isErrorBody(body)) return response;
+
+		const translatedMessage = await translateMessage(body, request);
+		if (!translatedMessage) return response;
+
+		return new Response(
+			JSON.stringify({ ...body, message: translatedMessage }),
+			{
+				status: response.status,
+				statusText: response.statusText,
+				headers: response.headers,
+			},
+		);
+	};
+
 	return {
-		id: "better-auth-localization",
+		id: PLUGIN_ID,
+		init(ctx) {
+			// Plugins such as captcha reject requests from `onRequest` with their own
+			// Response. better-auth returns it directly, skipping endpoint hooks and
+			// `onResponse`, so translate those responses by wrapping `onRequest`.
+			for (const plugin of ctx.options.plugins ?? []) {
+				const { onRequest } = plugin;
+				if (!onRequest || plugin.id === PLUGIN_ID) continue;
+
+				plugin.onRequest = async (request, context) => {
+					const result = await onRequest(request, context);
+					if (!result || !("response" in result)) return result;
+
+					return {
+						response: await translateResponse(result.response, request),
+					};
+				};
+			}
+		},
 		hooks: {
 			after: [
 				{
@@ -123,21 +193,11 @@ export function localization<
 
 						if (!isAPIError(returned) || !isErrorBody(returned.body)) return;
 
-						const locale = await resolveLocale(request);
-
-						if (locale === "default") return;
-
 						const { body } = returned;
 
-						const translatedMessage = getTranslation(
-							body.code,
-							locale,
-							currFallbackLocale,
-							mergedTranslations,
-							body.message,
-						);
+						const translatedMessage = await translateMessage(body, request);
 
-						if (translatedMessage && translatedMessage !== body.message) {
+						if (translatedMessage) {
 							// Rebuild the error with better-auth's APIError (not ctx.error, which
 							// creates a plain better-call error) so `instanceof APIError` checks keep
 							// working, and keep the original status, extra body fields and headers.
