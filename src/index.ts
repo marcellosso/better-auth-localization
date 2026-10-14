@@ -215,6 +215,11 @@ export function localization<
 }
 
 export { betterAuthLocalizationClientPlugin } from "./client";
+export {
+	defaultTranslations,
+	type TranslateErrorOptions,
+	translateError,
+} from "./translate";
 export type {
 	AvailableLocales,
 	BuiltInLocales,
