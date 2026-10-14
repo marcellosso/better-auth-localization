@@ -1,6 +1,6 @@
 {
 	"name": "better-auth-localization",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"author": "Marcel Losso",
 	"description": " A custom plugin for better-auth that allows you to localize your error messages.",
 	"main": "dist/index.js",
