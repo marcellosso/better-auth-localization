@@ -39,6 +39,32 @@ export const RO_RO = createTranslationObject("ro-RO", {
 	EMAIL_CAN_NOT_BE_UPDATED: "Email-ul nu poate fi actualizat",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Nu se poate deconecta ultimul cont",
 	ACCOUNT_NOT_FOUND: "Contul nu a fost găsit",
+	INVALID_USER: "Utilizator invalid",
+	TOKEN_EXPIRED: "Token-ul a expirat",
+	CHANGE_EMAIL_DISABLED: "Schimbarea adresei de email este dezactivată",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Autentificarea prin navigare între site-uri a fost blocată. Această solicitare pare a fi un atac CSRF.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Email-ul de verificare nu este activat",
+	EMAIL_ALREADY_VERIFIED: "Adresa de email a fost deja verificată",
+	EMAIL_MISMATCH: "Adresele de email nu coincid",
+	SESSION_NOT_FRESH: "Sesiunea nu este recentă",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Contul asociat există deja",
+	INVALID_ORIGIN: "Origine invalidă",
+	INVALID_CALLBACK_URL: "callbackURL invalid",
+	INVALID_REDIRECT_URL: "redirectURL invalid",
+	INVALID_ERROR_CALLBACK_URL: "errorCallbackURL invalid",
+	INVALID_NEW_USER_CALLBACK_URL: "newUserCallbackURL invalid",
+	MISSING_OR_NULL_ORIGIN: "Antetul Origin lipsește sau este nul",
+	CALLBACK_URL_REQUIRED: "callbackURL este necesar",
+	FAILED_TO_CREATE_VERIFICATION: "Nu s-a putut crea verificarea",
+	FIELD_NOT_ALLOWED: "Setarea acestui câmp nu este permisă",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "Validarea asincronă nu este acceptată",
+	VALIDATION_ERROR: "Eroare de validare",
+	MISSING_FIELD: "Câmpul este necesar",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"Metoda POST necesită activarea deferSessionRefresh în configurația sesiunii",
+	BODY_MUST_BE_AN_OBJECT: "Corpul cererii trebuie să fie un obiect",
+	PASSWORD_ALREADY_SET: "Utilizatorul are deja o parolă setată",
 });
 
 export const LOCALES = {

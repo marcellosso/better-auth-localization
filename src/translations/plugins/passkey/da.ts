@@ -10,6 +10,13 @@ export const DA_DK = {
 	AUTHENTICATION_FAILED: "Godkendelse mislykkedes",
 	UNABLE_TO_CREATE_SESSION: "Kunne ikke oprette session",
 	FAILED_TO_UPDATE_PASSKEY: "Kunne ikke opdatere adgangsnøgle",
+	PREVIOUSLY_REGISTERED: "Tidligere registreret",
+	REGISTRATION_CANCELLED: "Registrering annulleret",
+	AUTH_CANCELLED: "Godkendelse annulleret",
+	SESSION_REQUIRED: "Registrering af adgangsnøgle kræver en godkendt session",
+	RESOLVE_USER_REQUIRED:
+		"Registrering af adgangsnøgle kræver enten en godkendt session eller et resolveUser-callback, når requireSession er false",
+	RESOLVED_USER_INVALID: "Den fundne bruger er ugyldig",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

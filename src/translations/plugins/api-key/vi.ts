@@ -33,6 +33,17 @@ export const VI_VN = {
 		"Thuộc tính bạn đang cố đặt chỉ có thể được cấu hình trên instance xác thực phía server",
 	FAILED_TO_UPDATE_API_KEY: "Không thể cập nhật API key",
 	NAME_REQUIRED: "Tên API key là bắt buộc",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "ID tham chiếu từ API key không hợp lệ",
+	ORGANIZATION_ID_REQUIRED:
+		"Cần có ID tổ chức cho các API key thuộc về tổ chức",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Bạn không phải là thành viên của tổ chức sở hữu API key này",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Bạn không có quyền thực hiện hành động này trên API key của tổ chức",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Không tìm thấy cấu hình API key mặc định",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Cần có plugin tổ chức cho các API key thuộc về tổ chức. Vui lòng cài đặt và cấu hình plugin tổ chức",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

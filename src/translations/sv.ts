@@ -38,6 +38,34 @@ export const SV_SE = createTranslationObject("sv-SE", {
 	EMAIL_CAN_NOT_BE_UPDATED: "E-postadress kan inte uppdateras",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Du kan inte koppla bort det sista kontot",
 	ACCOUNT_NOT_FOUND: "Konto hittades inte",
+
+	// Additional errors
+	INVALID_USER: "Ogiltig användare",
+	TOKEN_EXPIRED: "Token har gått ut",
+	CHANGE_EMAIL_DISABLED: "Ändring av e-postadress är inaktiverad",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Inloggning via navigering mellan webbplatser blockerades. Denna begäran verkar vara en CSRF-attack.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Verifieringsmejl är inte aktiverat",
+	EMAIL_ALREADY_VERIFIED: "E-postadressen är redan verifierad",
+	EMAIL_MISMATCH: "E-postadresserna matchar inte",
+	SESSION_NOT_FRESH: "Sessionen är inte ny",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Länkat konto finns redan",
+	INVALID_ORIGIN: "Ogiltigt ursprung",
+	INVALID_CALLBACK_URL: "Ogiltig callbackURL",
+	INVALID_REDIRECT_URL: "Ogiltig redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "Ogiltig errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "Ogiltig newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Origin saknas eller är null",
+	CALLBACK_URL_REQUIRED: "callbackURL krävs",
+	FAILED_TO_CREATE_VERIFICATION: "Kunde inte skapa verifiering",
+	FIELD_NOT_ALLOWED: "Fältet får inte anges",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "Asynkron validering stöds inte",
+	VALIDATION_ERROR: "Valideringsfel",
+	MISSING_FIELD: "Fältet krävs",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"POST-metoden kräver att deferSessionRefresh är aktiverat i sessionskonfigurationen",
+	BODY_MUST_BE_AN_OBJECT: "Body måste vara ett objekt",
+	PASSWORD_ALREADY_SET: "Användaren har redan ett lösenord",
 });
 
 export const LOCALES = {

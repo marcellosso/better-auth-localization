@@ -8,6 +8,7 @@ export const UK_UA = {
 	USERNAME_TOO_LONG: "Ім'я користувача занадто довге",
 	INVALID_USERNAME: "Невірне ім'я користувача",
 	INVALID_DISPLAY_USERNAME: "Невірне відображуване ім'я",
+	USERNAME_IS_IMMUTABLE: "Ім'я користувача не можна змінити",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

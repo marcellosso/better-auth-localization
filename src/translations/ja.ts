@@ -40,6 +40,32 @@ export const JA_JP = createTranslationObject("ja-JP", {
 	EMAIL_CAN_NOT_BE_UPDATED: "メールアドレスを更新できません",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "最後のアカウントの連携を解除できません",
 	ACCOUNT_NOT_FOUND: "アカウントが見つかりません",
+	INVALID_USER: "無効なユーザーです",
+	TOKEN_EXPIRED: "トークンの有効期限が切れています",
+	CHANGE_EMAIL_DISABLED: "メールアドレスの変更は無効になっています",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"クロスサイトナビゲーションによるログインがブロックされました。このリクエストはCSRF攻撃の可能性があります。",
+	VERIFICATION_EMAIL_NOT_ENABLED: "確認メールは有効になっていません",
+	EMAIL_ALREADY_VERIFIED: "メールアドレスはすでに確認済みです",
+	EMAIL_MISMATCH: "メールアドレスが一致しません",
+	SESSION_NOT_FRESH: "セッションが最新ではありません",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "連携済みのアカウントがすでに存在します",
+	INVALID_ORIGIN: "無効なオリジンです",
+	INVALID_CALLBACK_URL: "無効な callbackURL です",
+	INVALID_REDIRECT_URL: "無効な redirectURL です",
+	INVALID_ERROR_CALLBACK_URL: "無効な errorCallbackURL です",
+	INVALID_NEW_USER_CALLBACK_URL: "無効な newUserCallbackURL です",
+	MISSING_OR_NULL_ORIGIN: "Origin がないか null です",
+	CALLBACK_URL_REQUIRED: "callbackURL は必須です",
+	FAILED_TO_CREATE_VERIFICATION: "確認を作成できませんでした",
+	FIELD_NOT_ALLOWED: "このフィールドは設定できません",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "非同期検証はサポートされていません",
+	VALIDATION_ERROR: "検証エラー",
+	MISSING_FIELD: "このフィールドは必須です",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"POST メソッドを使用するには、セッション設定で deferSessionRefresh を有効にする必要があります",
+	BODY_MUST_BE_AN_OBJECT: "Body はオブジェクトである必要があります",
+	PASSWORD_ALREADY_SET: "ユーザーにはすでにパスワードが設定されています",
 });
 
 export const LOCALES = {

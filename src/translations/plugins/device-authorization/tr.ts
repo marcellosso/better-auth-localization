@@ -12,6 +12,8 @@ export const TR_TR = {
 	POLLING_TOO_FREQUENTLY: "Çok sık sorgulama",
 	INVALID_DEVICE_CODE_STATUS: "Geçersiz cihaz kodu durumu",
 	AUTHENTICATION_REQUIRED: "Kimlik doğrulama gerekli",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Cihaz kodu doğrulayan bir oturum tarafından henüz talep edilmedi; onaylamadan veya reddetmeden önce oturum açıkken `user_code` ile `GET /device` çağrısı yapın",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

@@ -33,6 +33,18 @@ export const SV_SE = {
 		"egenskapen du försöker ställa in kan endast ställas in från serverautentiseringsinstansen.",
 	FAILED_TO_UPDATE_API_KEY: "misslyckades att uppdatera API-nyckel",
 	NAME_REQUIRED: "API-nyckelnamn krävs.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"Referens-ID:t från API-nyckeln är ogiltigt.",
+	ORGANIZATION_ID_REQUIRED:
+		"Organisations-ID krävs för API-nycklar som ägs av en organisation.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Du är inte medlem i organisationen som äger denna API-nyckel.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Du har inte behörighet att utföra denna åtgärd på organisationens API-nycklar.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Ingen standardkonfiguration för API-nycklar hittades.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Organisationspluginet krävs för API-nycklar som ägs av en organisation. Installera och konfigurera organisationspluginet.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

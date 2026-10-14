@@ -75,6 +75,27 @@ export const EL_GR = {
 		"Δεν έχετε άδεια να αποκτήσετε πρόσβαση σε αυτή την οργάνωση ως ιδιοκτήτης",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Δεν είστε μέλος αυτής της οργάνωσης",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Το slug της οργάνωσης χρησιμοποιείται ήδη",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Απαιτείται επαλήθευση email για προβολή ή λίστα προσκλήσεων για το email της συνεδρίας",
+	MISSING_AC_INSTANCE:
+		"Ο Δυναμικός Έλεγχος Πρόσβασης απαιτεί ένα προκαθορισμένο ac instance στο πρόσθετο auth του διακομιστή. Δείτε τα logs του διακομιστή για περισσότερες πληροφορίες",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Πρέπει να ανήκετε σε οργάνωση για να δημιουργήσετε ρόλο",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Δεν επιτρέπεται να δημιουργήσετε ρόλο",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "Δεν επιτρέπεται να ενημερώσετε ρόλο",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Δεν επιτρέπεται να διαγράψετε ρόλο",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Δεν επιτρέπεται να διαβάσετε ρόλο",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Δεν επιτρέπεται να δείτε τη λίστα ρόλων",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Δεν επιτρέπεται να ανακτήσετε ρόλο",
+	TOO_MANY_ROLES: "Αυτή η οργάνωση έχει πάρα πολλούς ρόλους",
+	INVALID_RESOURCE: "Το δικαίωμα που δόθηκε περιλαμβάνει μη έγκυρο resource",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Αυτό το όνομα ρόλου χρησιμοποιείται ήδη",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Δεν είναι δυνατή η διαγραφή προκαθορισμένου ρόλου",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Δεν είναι δυνατή η διαγραφή ρόλου που έχει ανατεθεί σε μέλη. Παρακαλώ αναθέστε πρώτα τα μέλη σε άλλο ρόλο",
+	INVALID_TEAM_ID: "Το αναγνωριστικό ομάδας περιέχει δεσμευμένο χαρακτήρα",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

@@ -1,13 +1,12 @@
-import type { BetterAuthPlugin, Status } from "better-auth";
-import { createAuthMiddleware } from "better-auth/api";
+import type { BetterAuthPlugin } from "better-auth";
+import { APIError, createAuthMiddleware, isAPIError } from "better-auth/api";
 import { defaultTranslations } from "./translations";
 import type {
 	AvailableLocales,
-	ErrorCodesType,
 	LocalizationOptions,
 	PartialErrorCodesType,
 } from "./types";
-import { deepMergeTranslations, hasBody, isErrorBody } from "./utils/helpers";
+import { deepMergeTranslations, isErrorBody } from "./utils/helpers";
 import { getTranslation } from "./utils/translations";
 
 /**
@@ -29,7 +28,7 @@ import { getTranslation } from "./utils/translations";
  *
  * @example
  * ```typescript
- * betterLocalbetterAuthLocalizationization({
+ * localization({
  *   defaultLocale: "es-ES",
  *   fallbackLocale: "default",
  *   translations: {
@@ -122,16 +121,13 @@ export function localization<
 
 						const { returned } = ctx.context;
 
-						if (!hasBody(returned) || !isErrorBody(returned.body)) return;
-
-						const { body, statusCode } = returned as {
-							body: { code: keyof ErrorCodesType; message: string };
-							statusCode: Status;
-						};
+						if (!isAPIError(returned) || !isErrorBody(returned.body)) return;
 
 						const locale = await resolveLocale(request);
 
 						if (locale === "default") return;
+
+						const { body } = returned;
 
 						const translatedMessage = getTranslation(
 							body.code,
@@ -141,11 +137,15 @@ export function localization<
 							body.message,
 						);
 
-						if (translatedMessage) {
-							return ctx.error(statusCode || "UNPROCESSABLE_ENTITY", {
-								message: translatedMessage,
-								code: String(body.code),
-							});
+						if (translatedMessage && translatedMessage !== body.message) {
+							// Rebuild the error with better-auth's APIError (not ctx.error, which
+							// creates a plain better-call error) so `instanceof APIError` checks keep
+							// working, and keep the original status, extra body fields and headers.
+							throw new APIError(
+								returned.status,
+								{ ...body, message: translatedMessage },
+								returned.headers,
+							);
 						}
 					}),
 				},

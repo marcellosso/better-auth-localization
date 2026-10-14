@@ -40,6 +40,33 @@ export const EL_GR = createTranslationObject("el-GR", {
 	FAILED_TO_UNLINK_LAST_ACCOUNT:
 		"Αποτυχία αποσύνδεσης του τελευταίου λογαριασμού",
 	ACCOUNT_NOT_FOUND: "Ο λογαριασμός δεν βρέθηκε",
+	INVALID_USER: "Μη έγκυρος χρήστης",
+	TOKEN_EXPIRED: "Το token έχει λήξει",
+	CHANGE_EMAIL_DISABLED: "Η αλλαγή email είναι απενεργοποιημένη",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Η σύνδεση μέσω πλοήγησης από άλλον ιστότοπο αποκλείστηκε. Το αίτημα αυτό φαίνεται να είναι επίθεση CSRF.",
+	VERIFICATION_EMAIL_NOT_ENABLED:
+		"Το email επαλήθευσης δεν είναι ενεργοποιημένο",
+	EMAIL_ALREADY_VERIFIED: "Το email έχει ήδη επαληθευτεί",
+	EMAIL_MISMATCH: "Τα email δεν ταιριάζουν",
+	SESSION_NOT_FRESH: "Η συνεδρία δεν είναι πρόσφατη",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Ο συνδεδεμένος λογαριασμός υπάρχει ήδη",
+	INVALID_ORIGIN: "Μη έγκυρη προέλευση",
+	INVALID_CALLBACK_URL: "Μη έγκυρο callbackURL",
+	INVALID_REDIRECT_URL: "Μη έγκυρο redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "Μη έγκυρο errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "Μη έγκυρο newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Το Origin λείπει ή είναι null",
+	CALLBACK_URL_REQUIRED: "Το callbackURL είναι υποχρεωτικό",
+	FAILED_TO_CREATE_VERIFICATION: "Αποτυχία δημιουργίας επαλήθευσης",
+	FIELD_NOT_ALLOWED: "Δεν επιτρέπεται ο ορισμός του πεδίου",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "Η ασύγχρονη επικύρωση δεν υποστηρίζεται",
+	VALIDATION_ERROR: "Σφάλμα επικύρωσης",
+	MISSING_FIELD: "Το πεδίο είναι υποχρεωτικό",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"Η μέθοδος POST απαιτεί να είναι ενεργοποιημένο το deferSessionRefresh στις ρυθμίσεις της συνεδρίας",
+	BODY_MUST_BE_AN_OBJECT: "Το σώμα του αιτήματος πρέπει να είναι αντικείμενο",
+	PASSWORD_ALREADY_SET: "Ο χρήστης έχει ήδη ορίσει κωδικό",
 });
 
 export const LOCALES = {

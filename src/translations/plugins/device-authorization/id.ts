@@ -12,6 +12,8 @@ export const ID_ID = {
 	POLLING_TOO_FREQUENTLY: "Permintaan terlalu sering",
 	INVALID_DEVICE_CODE_STATUS: "Status kode perangkat tidak valid",
 	AUTHENTICATION_REQUIRED: "Autentikasi diperlukan",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Kode perangkat belum diklaim oleh sesi yang memverifikasi; panggil `GET /device` dengan `user_code` saat masuk sebelum menyetujui atau menolak",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

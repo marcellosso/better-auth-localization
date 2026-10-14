@@ -1,6 +1,6 @@
 import type { ApiKeyErrorCodesType } from "../../../types";
 
-export const HI_IN = {
+export const HI_HI = {
 	// Api key related errors
 	INVALID_METADATA_TYPE: "मेटाडेटा एक ऑब्जेक्ट या अपरिभाषित होना चाहिए",
 	REFILL_AMOUNT_AND_INTERVAL_REQUIRED:
@@ -31,8 +31,19 @@ export const HI_IN = {
 		"आप जो गुण सेट करने का प्रयास कर रहे हैं वह केवल सर्वर प्रमाणीकरण उदाहरण से सेट किया जा सकता है।",
 	FAILED_TO_UPDATE_API_KEY: "API कुंजी अपडेट करने में विफल",
 	NAME_REQUIRED: "API कुंजी नाम आवश्यक है।",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "API कुंजी से प्राप्त रेफ़रेंस ID अमान्य है।",
+	ORGANIZATION_ID_REQUIRED:
+		"संगठन के स्वामित्व वाली API कुंजियों के लिए संगठन ID आवश्यक है।",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"आप उस संगठन के सदस्य नहीं हैं जिसके पास यह API कुंजी है।",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"आपको संगठन की API कुंजियों पर यह कार्रवाई करने की अनुमति नहीं है।",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"कोई डिफ़ॉल्ट api-key कॉन्फ़िगरेशन नहीं मिला।",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"संगठन के स्वामित्व वाली API कुंजियों के लिए संगठन प्लगइन आवश्यक है। कृपया संगठन प्लगइन इंस्टॉल और कॉन्फ़िगर करें।",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {
-	"hi-IN": HI_IN,
+	"hi-HI": HI_HI,
 } as const;

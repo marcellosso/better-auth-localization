@@ -12,6 +12,8 @@ export const ES_ES = {
 	POLLING_TOO_FREQUENTLY: "Consultas demasiado frecuentes",
 	INVALID_DEVICE_CODE_STATUS: "Estado del código de dispositivo inválido",
 	AUTHENTICATION_REQUIRED: "Autenticación requerida",
+	DEVICE_CODE_NOT_CLAIMED:
+		"El código del dispositivo no ha sido reclamado por una sesión de verificación; llama a `GET /device` con el `user_code` con la sesión iniciada antes de aprobar o denegar",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

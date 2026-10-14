@@ -41,6 +41,35 @@ export const DE_DE_INFORMAL = createTranslationObject("de-DE", {
 	EMAIL_CAN_NOT_BE_UPDATED: "E-Mail-Adresse konnte nicht aktualisiert werden",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Du kannst das letzte Konto nicht trennen",
 	ACCOUNT_NOT_FOUND: "Konto nicht gefunden",
+
+	// Additional errors
+	INVALID_USER: "Ungültiger Benutzer",
+	TOKEN_EXPIRED: "Token abgelaufen",
+	CHANGE_EMAIL_DISABLED: "Das Ändern der E-Mail-Adresse ist deaktiviert",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Anmeldung über websiteübergreifende Navigation blockiert. Diese Anfrage scheint ein CSRF-Angriff zu sein.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Verifizierungs-E-Mail ist nicht aktiviert",
+	EMAIL_ALREADY_VERIFIED: "E-Mail-Adresse ist bereits verifiziert",
+	EMAIL_MISMATCH: "E-Mail-Adressen stimmen nicht überein",
+	SESSION_NOT_FRESH: "Sitzung ist nicht aktuell",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Verknüpftes Konto existiert bereits",
+	INVALID_ORIGIN: "Ungültiger Ursprung",
+	INVALID_CALLBACK_URL: "Ungültige callbackURL",
+	INVALID_REDIRECT_URL: "Ungültige redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "Ungültige errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "Ungültige newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Origin fehlt oder ist null",
+	CALLBACK_URL_REQUIRED: "callbackURL ist erforderlich",
+	FAILED_TO_CREATE_VERIFICATION: "Verifizierung konnte nicht erstellt werden",
+	FIELD_NOT_ALLOWED: "Dieses Feld darf nicht gesetzt werden",
+	ASYNC_VALIDATION_NOT_SUPPORTED:
+		"Asynchrone Validierung wird nicht unterstützt",
+	VALIDATION_ERROR: "Validierungsfehler",
+	MISSING_FIELD: "Feld ist erforderlich",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"Die POST-Methode erfordert, dass deferSessionRefresh in der Sitzungskonfiguration aktiviert ist",
+	BODY_MUST_BE_AN_OBJECT: "Body muss ein Objekt sein",
+	PASSWORD_ALREADY_SET: "Der Benutzer hat bereits ein Passwort festgelegt",
 });
 
 export const DE_DE_FORMAL = createTranslationObject("de-DE-formal", {

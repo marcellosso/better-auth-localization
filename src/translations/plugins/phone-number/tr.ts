@@ -10,6 +10,9 @@ export const TR_TR = {
 	OTP_EXPIRED: "Doğrulama kodu süresi doldu",
 	INVALID_OTP: "Geçersiz doğrulama kodu",
 	PHONE_NUMBER_NOT_VERIFIED: "Telefon numarası doğrulanmadı",
+	PHONE_NUMBER_NOT_EXIST: "Telefon numarası kayıtlı değil",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Telefon numarası güncellenemez",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP uygulanmamış",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

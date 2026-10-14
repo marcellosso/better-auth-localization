@@ -26,6 +26,15 @@ export const RU_RU = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"У вас нет разрешения обновлять пользователей",
 	YOU_CANNOT_REMOVE_YOURSELF: "Вы не можете удалить себя",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"У вас нет разрешения на установку несуществующего значения роли",
+	YOU_CANNOT_IMPERSONATE_ADMINS:
+		"Вы не можете выдавать себя за администраторов",
+	INVALID_ROLE_TYPE: "Недействительный тип роли",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"У вас нет разрешения на изменение email пользователей",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Пароль нельзя изменить через update-user. Используйте вместо этого endpoint set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

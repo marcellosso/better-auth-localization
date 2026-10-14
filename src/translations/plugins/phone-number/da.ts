@@ -10,6 +10,9 @@ export const DA_DK = {
 	OTP_EXPIRED: "Engangskode udløbet",
 	INVALID_OTP: "Ugyldig engangskode",
 	PHONE_NUMBER_NOT_VERIFIED: "Telefonnummer ikke verificeret",
+	PHONE_NUMBER_NOT_EXIST: "Telefonnummeret er ikke registreret",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Telefonnummeret kan ikke opdateres",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP er ikke implementeret",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

@@ -10,6 +10,9 @@ export const SV_SE = {
 	OTP_EXPIRED: "Verifieringskod har gått ut",
 	INVALID_OTP: "Ogiltig verifieringskod",
 	PHONE_NUMBER_NOT_VERIFIED: "Telefonnummer inte verifierat",
+	PHONE_NUMBER_NOT_EXIST: "Telefonnumret är inte registrerat",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Telefonnumret kan inte uppdateras",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP är inte implementerad",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

@@ -10,6 +10,14 @@ export const ID_ID = {
 	AUTHENTICATION_FAILED: "Autentikasi gagal",
 	UNABLE_TO_CREATE_SESSION: "Tidak dapat membuat sesi",
 	FAILED_TO_UPDATE_PASSKEY: "Gagal memperbarui kunci akses",
+	PREVIOUSLY_REGISTERED: "Sudah pernah terdaftar",
+	REGISTRATION_CANCELLED: "Pendaftaran dibatalkan",
+	AUTH_CANCELLED: "Autentikasi dibatalkan",
+	SESSION_REQUIRED:
+		"Pendaftaran kunci akses memerlukan sesi yang terautentikasi",
+	RESOLVE_USER_REQUIRED:
+		"Pendaftaran kunci akses memerlukan sesi yang terautentikasi atau callback resolveUser saat requireSession bernilai false",
+	RESOLVED_USER_INVALID: "Pengguna yang diselesaikan tidak valid",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

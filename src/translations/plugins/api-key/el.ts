@@ -38,6 +38,18 @@ export const EL_GR = {
 		"η ιδιότητα που προσπαθείτε να ορίσετε μπορεί να οριστεί μόνο από την παρουσία πιστοποίησης διακομιστή.",
 	FAILED_TO_UPDATE_API_KEY: "αποτυχία ενημέρωσης κλειδιού API",
 	NAME_REQUIRED: "το όνομα κλειδιού API απαιτείται.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"Το αναγνωριστικό αναφοράς από το κλειδί API δεν είναι έγκυρο.",
+	ORGANIZATION_ID_REQUIRED:
+		"Απαιτείται αναγνωριστικό οργάνωσης για κλειδιά API που ανήκουν σε οργάνωση.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Δεν είστε μέλος της οργάνωσης που κατέχει αυτό το κλειδί API.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Δεν έχετε δικαίωμα να εκτελέσετε αυτή την ενέργεια σε κλειδιά API οργάνωσης.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Δεν βρέθηκε προεπιλεγμένη διαμόρφωση κλειδιού API.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Απαιτείται το πρόσθετο οργάνωσης για κλειδιά API που ανήκουν σε οργάνωση. Παρακαλώ εγκαταστήστε και ρυθμίστε το πρόσθετο οργάνωσης.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

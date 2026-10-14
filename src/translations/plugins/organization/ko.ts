@@ -68,6 +68,26 @@ export const KO_KR = {
 		"소유자로서 이 조직에 접근할 권한이 없습니다",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"당신은 이 조직의 구성원이 아닙니다",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "이 조직 슬러그는 이미 사용 중입니다",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"세션 이메일의 초대를 보거나 목록으로 조회하려면 이메일 인증이 필요합니다",
+	MISSING_AC_INSTANCE:
+		"동적 접근 제어에는 서버 인증 플러그인에 미리 정의된 ac 인스턴스가 필요합니다. 자세한 내용은 서버 로그를 확인하세요",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"역할을 만들려면 조직에 속해 있어야 합니다",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "역할을 만들 권한이 없습니다",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "역할을 업데이트할 권한이 없습니다",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "역할을 삭제할 권한이 없습니다",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "역할을 읽을 권한이 없습니다",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "역할 목록을 조회할 권한이 없습니다",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "역할을 가져올 권한이 없습니다",
+	TOO_MANY_ROLES: "이 조직에 역할이 너무 많습니다",
+	INVALID_RESOURCE: "제공된 권한에 잘못된 리소스가 포함되어 있습니다",
+	ROLE_NAME_IS_ALREADY_TAKEN: "해당 역할 이름은 이미 사용 중입니다",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "사전 정의된 역할은 삭제할 수 없습니다",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"구성원에게 할당된 역할은 삭제할 수 없습니다. 먼저 구성원을 다른 역할로 재할당하세요",
+	INVALID_TEAM_ID: "팀 ID에 예약된 문자가 포함되어 있습니다",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

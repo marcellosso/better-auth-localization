@@ -28,6 +28,14 @@ export const ID_ID = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Anda tidak diizinkan untuk memperbarui pengguna",
 	YOU_CANNOT_REMOVE_YOURSELF: "Anda tidak dapat menghapus diri sendiri",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Anda tidak diizinkan menetapkan nilai peran yang tidak ada",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Anda tidak dapat meniru admin",
+	INVALID_ROLE_TYPE: "Jenis peran tidak valid",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Anda tidak diizinkan memperbarui email pengguna",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Kata sandi tidak dapat diperbarui melalui update-user. Gunakan endpoint set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

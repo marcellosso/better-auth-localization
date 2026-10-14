@@ -66,6 +66,27 @@ export const FA_IR = {
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"شما مجاز به دسترسی به این سازمان به عنوان مالک نیستید",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "شما عضو این سازمان نیستید",
+
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "شناسه (slug) سازمان قبلاً استفاده شده است",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"برای مشاهده یا فهرست کردن دعوت‌نامه‌های ایمیل نشست، تأیید ایمیل لازم است",
+	MISSING_AC_INSTANCE:
+		"کنترل دسترسی پویا نیازمند یک نمونه ac از پیش تعریف‌شده در افزونه احراز هویت سمت سرور است. برای اطلاعات بیشتر گزارش‌های سرور را بررسی کنید",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"برای ایجاد نقش باید عضو یک سازمان باشید",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "شما مجاز به ایجاد نقش نیستید",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "شما مجاز به به‌روزرسانی نقش نیستید",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "شما مجاز به حذف نقش نیستید",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "شما مجاز به مشاهده نقش نیستید",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "شما مجاز به فهرست کردن نقش‌ها نیستید",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "شما مجاز به دریافت نقش نیستید",
+	TOO_MANY_ROLES: "این سازمان تعداد زیادی نقش دارد",
+	INVALID_RESOURCE: "مجوز ارائه‌شده شامل منبع نامعتبر است",
+	ROLE_NAME_IS_ALREADY_TAKEN: "این نام نقش قبلاً استفاده شده است",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "نقش از پیش تعریف‌شده قابل حذف نیست",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"نقشی که به اعضا اختصاص داده شده قابل حذف نیست. لطفاً ابتدا اعضا را به نقش دیگری منتقل کنید",
+	INVALID_TEAM_ID: "شناسه تیم شامل نویسه رزروشده است",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

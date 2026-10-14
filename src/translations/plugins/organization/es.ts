@@ -74,6 +74,28 @@ export const ES_ES = {
 		"No tienes permiso para acceder a esta organización como propietario",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"No eres miembro de esta organización",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "El slug de la organización ya está en uso",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Se requiere verificación del email para ver o listar las invitaciones del email de la sesión",
+	MISSING_AC_INSTANCE:
+		"El Control de Acceso Dinámico requiere una instancia ac predefinida en el plugin de autenticación del servidor. Consulta los registros del servidor para más información",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Debes estar en una organización para crear un rol",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "No tienes permiso para crear un rol",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"No tienes permiso para actualizar un rol",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"No tienes permiso para eliminar un rol",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "No tienes permiso para leer un rol",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "No tienes permiso para listar roles",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "No tienes permiso para obtener un rol",
+	TOO_MANY_ROLES: "Esta organización tiene demasiados roles",
+	INVALID_RESOURCE: "El permiso proporcionado incluye un recurso no válido",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Ese nombre de rol ya está en uso",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "No se puede eliminar un rol predefinido",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"No se puede eliminar un rol asignado a miembros. Reasigna primero los miembros a otro rol",
+	INVALID_TEAM_ID: "El ID del equipo contiene un carácter reservado",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

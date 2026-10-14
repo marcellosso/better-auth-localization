@@ -11,6 +11,14 @@ export const DE_DE_INFORMAL = {
 	AUTHENTICATION_FAILED: "Authentifizierung fehlgeschlagen",
 	UNABLE_TO_CREATE_SESSION: "Session konnte nicht erstellt werden",
 	FAILED_TO_UPDATE_PASSKEY: "Passkey konnte nicht aktualisiert werden",
+	PREVIOUSLY_REGISTERED: "Bereits registriert",
+	REGISTRATION_CANCELLED: "Registrierung abgebrochen",
+	AUTH_CANCELLED: "Authentifizierung abgebrochen",
+	SESSION_REQUIRED:
+		"Die Passkey-Registrierung erfordert eine authentifizierte Sitzung",
+	RESOLVE_USER_REQUIRED:
+		"Die Passkey-Registrierung erfordert entweder eine authentifizierte Sitzung oder einen resolveUser-Callback, wenn requireSession false ist",
+	RESOLVED_USER_INVALID: "Der aufgelöste Benutzer ist ungültig",
 } satisfies PasskeyErrorCodesType;
 
 export const DE_DE_FORMAL = {

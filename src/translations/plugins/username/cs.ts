@@ -9,6 +9,7 @@ export const CS_CZ_INFORMAL = {
 	USERNAME_TOO_LONG: "Uživatelské jméno je příliš dlouhé",
 	INVALID_USERNAME: "Uživatelské jméno je ve špatném formátu",
 	INVALID_DISPLAY_USERNAME: "Uživatelské viditelné jméno je ve špatném formátu",
+	USERNAME_IS_IMMUTABLE: "Uživatelské jméno nelze změnit",
 } satisfies UsernameErrorCodesType;
 export const CS_CZ_FORMAL = {
 	...CS_CZ_INFORMAL,
@@ -17,7 +18,7 @@ export const CS_CZ_FORMAL = {
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {
-	"cs": CS_CZ_INFORMAL,
+	cs: CS_CZ_INFORMAL,
 	"cs-CZ-informal": CS_CZ_INFORMAL,
 	"cs-CZ-formal": CS_CZ_FORMAL,
 } as const;

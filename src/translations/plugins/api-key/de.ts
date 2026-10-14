@@ -34,6 +34,18 @@ export const DE_DE_INFORMAL = {
 		"Die Eigenschaft, die Sie zu setzen versuchen, kann nur von der Server-Authentifizierungsinstanz gesetzt werden.",
 	FAILED_TO_UPDATE_API_KEY: "API-Schlüssel konnte nicht aktualisiert werden",
 	NAME_REQUIRED: "API-Schlüsselname ist erforderlich.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"Die Referenz-ID des API-Schlüssels ist ungültig.",
+	ORGANIZATION_ID_REQUIRED:
+		"Für API-Schlüssel einer Organisation ist eine Organisations-ID erforderlich.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Sie sind kein Mitglied der Organisation, der dieser API-Schlüssel gehört.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Sie haben keine Berechtigung, diese Aktion für API-Schlüssel der Organisation auszuführen.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Keine Standardkonfiguration für API-Schlüssel gefunden.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Für API-Schlüssel einer Organisation ist das Organisations-Plugin erforderlich. Bitte installieren und konfigurieren Sie das Organisations-Plugin.",
 } satisfies ApiKeyErrorCodesType;
 
 export const DE_DE_FORMAL = {

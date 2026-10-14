@@ -27,6 +27,14 @@ export const SV_SE = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Du har inte behörighet att uppdatera användare",
 	YOU_CANNOT_REMOVE_YOURSELF: "Du kan inte ta bort dig själv",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Du får inte ange ett icke-existerande rollvärde",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Du kan inte imitera administratörer",
+	INVALID_ROLE_TYPE: "Ogiltig rolltyp",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Du får inte ändra användares e-postadress",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Lösenordet kan inte uppdateras via update-user. Använd slutpunkten set-user-password istället",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

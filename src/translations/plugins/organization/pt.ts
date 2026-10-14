@@ -74,6 +74,33 @@ export const PT_BR = {
 		"Você não tem permissão para acessar esta organização como proprietário",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Você não é membro desta organização",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "O slug da organização já está em uso",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"É necessário verificar o email para ver ou listar os convites do email da sessão",
+	MISSING_AC_INSTANCE:
+		"O Controle de Acesso Dinâmico exige uma instância ac predefinida no plugin de autenticação do servidor. Consulte os logs do servidor para mais informações",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Você precisa estar em uma organização para criar um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE:
+		"Você não tem permissão para criar um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Você não tem permissão para atualizar um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Você não tem permissão para excluir um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE:
+		"Você não tem permissão para ler um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Você não tem permissão para listar cargos",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE:
+		"Você não tem permissão para obter um cargo",
+	TOO_MANY_ROLES: "Esta organização tem cargos demais",
+	INVALID_RESOURCE: "A permissão informada inclui um recurso inválido",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Esse nome de cargo já está em uso",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Não é possível excluir um cargo predefinido",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Não é possível excluir um cargo atribuído a membros. Reatribua os membros a outro cargo primeiro",
+	INVALID_TEAM_ID: "O ID da equipe contém um caractere reservado",
 } satisfies OrganizationErrorCodesType;
 
 export const PT_PT = {
@@ -149,6 +176,29 @@ export const PT_PT = {
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"Não tem permissão para aceder a esta organização como proprietário",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "Não é membro desta organização",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "O slug da organização já está em uso",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"É necessário verificar o e-mail para ver ou listar os convites do e-mail da sessão",
+	MISSING_AC_INSTANCE:
+		"O Controlo de Acesso Dinâmico exige uma instância ac predefinida no plugin de autenticação do servidor. Consulte os registos do servidor para mais informações",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Tem de estar numa organização para criar um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Não tem permissão para criar um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Não tem permissão para actualizar um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Não tem permissão para eliminar um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Não tem permissão para ler um cargo",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Não tem permissão para listar cargos",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Não tem permissão para obter um cargo",
+	TOO_MANY_ROLES: "Esta organização tem demasiados cargos",
+	INVALID_RESOURCE: "A permissão indicada inclui um recurso inválido",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Esse nome de cargo já está em uso",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Não é possível eliminar um cargo predefinido",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Não é possível eliminar um cargo atribuído a membros. Reatribua primeiro os membros a outro cargo",
+	INVALID_TEAM_ID: "O ID da equipa contém um carácter reservado",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

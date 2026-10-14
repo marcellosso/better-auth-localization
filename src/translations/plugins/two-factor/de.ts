@@ -12,6 +12,11 @@ export const DE_DE_INFORMAL = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Zu viele Versuche. Bitte einen neuen Code anfordern.",
 	INVALID_TWO_FACTOR_COOKIE: "Ungültiger Zwei-Faktor-Authentifizierung Cookie",
+	OTP_NOT_CONFIGURED: "Einmalpasswort ist nicht verfügbar",
+	TOTP_ALREADY_ENABLED: "Zeitbasiertes Einmalpasswort ist bereits aktiviert",
+	TOTP_NOT_CONFIGURED: "Zeitbasiertes Einmalpasswort ist nicht verfügbar",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Zu viele fehlgeschlagene Verifizierungsversuche. Ihr Konto ist vorübergehend gesperrt. Bitte versuchen Sie es später erneut.",
 } satisfies TwoFactorErrorCodesType;
 
 export const DE_DE_FORMAL = {

@@ -32,6 +32,16 @@ export const JA_JP = {
 		"設定しようとしているプロパティは、サーバー認証インスタンスからのみ設定できます。",
 	FAILED_TO_UPDATE_API_KEY: "APIキーの更新に失敗しました",
 	NAME_REQUIRED: "APIキー名が必要です。",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "APIキーの参照IDが無効です。",
+	ORGANIZATION_ID_REQUIRED: "組織所有のAPIキーには組織IDが必要です。",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"このAPIキーを所有する組織のメンバーではありません。",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"組織のAPIキーに対してこの操作を行う権限がありません。",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"デフォルトのapi-key設定が見つかりません。",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"組織所有のAPIキーには組織プラグインが必要です。組織プラグインをインストールして設定してください。",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

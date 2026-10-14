@@ -1,6 +1,6 @@
 import type { UsernameErrorCodesType } from "../../../types";
 
-export const MR_IN = {
+export const MR_MR = {
 	// Username related errors
 	INVALID_USERNAME_OR_PASSWORD: "अवैध वापरकर्ता नाव किंवा पासवर्ड",
 	USERNAME_IS_ALREADY_TAKEN:
@@ -9,8 +9,9 @@ export const MR_IN = {
 	USERNAME_TOO_LONG: "वापरकर्ता नाव खूप मोठे आहे",
 	INVALID_USERNAME: "अवैध वापरकर्ता नाव",
 	INVALID_DISPLAY_USERNAME: "अवैध प्रदर्शन नाव",
+	USERNAME_IS_IMMUTABLE: "वापरकर्तानाव अपडेट करता येत नाही",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {
-	"mr-IN": MR_IN,
+	"mr-MR": MR_MR,
 } as const;

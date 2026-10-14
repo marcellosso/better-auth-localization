@@ -74,6 +74,30 @@ export const IT_IT = {
 		"Non sei autorizzato ad accedere a questa organizzazione come proprietario",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Non sei membro di questa organizzazione",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Lo slug dell'organizzazione è già in uso",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"È necessaria la verifica dell'email per visualizzare o elencare gli inviti dell'email della sessione",
+	MISSING_AC_INSTANCE:
+		"Il Controllo degli Accessi Dinamico richiede un'istanza ac predefinita nel plugin di autenticazione del server. Consulta i log del server per maggiori informazioni",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Devi far parte di un'organizzazione per creare un ruolo",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE:
+		"Non hai il permesso di creare un ruolo",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Non hai il permesso di aggiornare un ruolo",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Non hai il permesso di eliminare un ruolo",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Non hai il permesso di leggere un ruolo",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Non hai il permesso di elencare i ruoli",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Non hai il permesso di ottenere un ruolo",
+	TOO_MANY_ROLES: "Questa organizzazione ha troppi ruoli",
+	INVALID_RESOURCE: "Il permesso fornito include una risorsa non valida",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Questo nome di ruolo è già in uso",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Impossibile eliminare un ruolo predefinito",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Impossibile eliminare un ruolo assegnato a dei membri. Riassegna prima i membri a un altro ruolo",
+	INVALID_TEAM_ID: "L'ID del team contiene un carattere riservato",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

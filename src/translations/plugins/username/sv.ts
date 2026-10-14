@@ -9,6 +9,7 @@ export const SV_SE = {
 	USERNAME_TOO_LONG: "Användarnamn för långt",
 	INVALID_USERNAME: "Ogiltigt användarnamn",
 	INVALID_DISPLAY_USERNAME: "Ogiltigt visningsnamn",
+	USERNAME_IS_IMMUTABLE: "Användarnamnet kan inte ändras",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

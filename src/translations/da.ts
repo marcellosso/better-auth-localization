@@ -38,6 +38,34 @@ export const DA_DK = createTranslationObject("da-DK", {
 	EMAIL_CAN_NOT_BE_UPDATED: "E-mailen kan ikke opdateres",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Fejl ved afkobling af sidste konto",
 	ACCOUNT_NOT_FOUND: "Kontoen blev ikke fundet",
+
+	// Additional errors
+	INVALID_USER: "Ugyldig bruger",
+	TOKEN_EXPIRED: "Token udløbet",
+	CHANGE_EMAIL_DISABLED: "Ændring af e-mail er deaktiveret",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Login via navigation mellem websteder er blokeret. Denne anmodning ligner et CSRF-angreb.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Verifikations-e-mail er ikke aktiveret",
+	EMAIL_ALREADY_VERIFIED: "E-mailen er allerede verificeret",
+	EMAIL_MISMATCH: "E-mailadresserne stemmer ikke overens",
+	SESSION_NOT_FRESH: "Sessionen er ikke frisk",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Forbundet konto eksisterer allerede",
+	INVALID_ORIGIN: "Ugyldig oprindelse",
+	INVALID_CALLBACK_URL: "Ugyldig callbackURL",
+	INVALID_REDIRECT_URL: "Ugyldig redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "Ugyldig errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "Ugyldig newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Origin mangler eller er null",
+	CALLBACK_URL_REQUIRED: "callbackURL er påkrævet",
+	FAILED_TO_CREATE_VERIFICATION: "Kunne ikke oprette verifikation",
+	FIELD_NOT_ALLOWED: "Feltet må ikke angives",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "Asynkron validering understøttes ikke",
+	VALIDATION_ERROR: "Valideringsfejl",
+	MISSING_FIELD: "Feltet er påkrævet",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"POST-metoden kræver, at deferSessionRefresh er aktiveret i sessionskonfigurationen",
+	BODY_MUST_BE_AN_OBJECT: "Body skal være et objekt",
+	PASSWORD_ALREADY_SET: "Brugeren har allerede angivet en adgangskode",
 });
 
 export const LOCALES = {

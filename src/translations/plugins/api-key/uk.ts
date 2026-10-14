@@ -18,16 +18,13 @@ export const UK_UA = {
 		"час закінчення менший за попередньо визначене мінімальне значення.",
 	EXPIRES_IN_IS_TOO_LARGE:
 		"час закінчення більший за попередньо визначене максимальне значення.",
-	INVALID_REMAINING:
-		"залишкове значення занадто велике або занадто мале.",
-	INVALID_PREFIX_LENGTH:
-		"розмір префікса занадто великий або занадто малий.",
+	INVALID_REMAINING: "залишкове значення занадто велике або занадто мале.",
+	INVALID_PREFIX_LENGTH: "розмір префікса занадто великий або занадто малий.",
 	INVALID_NAME_LENGTH: "розмір імені занадто великий або занадто малий.",
 	METADATA_DISABLED: "метадані вимкнено.",
 	RATE_LIMIT_EXCEEDED: "ліміт запитів перевищено.",
 	NO_VALUES_TO_UPDATE: "немає значень для оновлення.",
-	KEY_DISABLED_EXPIRATION:
-		"користувацькі значення закінчення ключа вимкнено.",
+	KEY_DISABLED_EXPIRATION: "користувацькі значення закінчення ключа вимкнено.",
 	INVALID_API_KEY: "недійсний API ключ.",
 	INVALID_USER_ID_FROM_API_KEY: "ID користувача з API ключа недійсний.",
 	INVALID_API_KEY_GETTER_RETURN_TYPE:
@@ -36,6 +33,18 @@ export const UK_UA = {
 		"властивість, яку ви намагаєтесь встановити, може бути встановлена лише з екземпляра автентифікації сервера.",
 	FAILED_TO_UPDATE_API_KEY: "не вдалося оновити API ключ",
 	NAME_REQUIRED: "ім'я API ключа обов'язкове.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"Ідентифікатор посилання з API ключа недійсний.",
+	ORGANIZATION_ID_REQUIRED:
+		"Для API ключів, що належать організації, потрібен ID організації.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Ви не є учасником організації, якій належить цей API ключ.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Ви не маєте дозволу виконувати цю дію з API ключами організації.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Конфігурацію API ключа за замовчуванням не знайдено.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Для API ключів, що належать організації, потрібен плагін організації. Встановіть і налаштуйте плагін організації.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

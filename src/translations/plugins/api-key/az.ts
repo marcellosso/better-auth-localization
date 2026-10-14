@@ -35,8 +35,20 @@ export const AZ = {
 		"Təyin etməyə çalışdığınız xüsusiyyət yalnız serverdəki autentifikasiya nümunəsindən təyin oluna bilər.",
 	FAILED_TO_UPDATE_API_KEY: "API açarını yeniləmək alınmadı",
 	NAME_REQUIRED: "API açarının adı tələb olunur.",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "API açarındakı istinad ID-si yanlışdır.",
+	ORGANIZATION_ID_REQUIRED:
+		"Təşkilata aid API açarları üçün təşkilat ID-si tələb olunur.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Bu API açarına sahib olan təşkilatın üzvü deyilsiniz.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Təşkilat API açarları üzərində bu əməliyyatı yerinə yetirməyə icazəniz yoxdur.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Defolt API açarı konfiqurasiyası tapılmadı.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Təşkilata aid API açarları üçün təşkilat plagini tələb olunur. Zəhmət olmasa təşkilat plaginini quraşdırın və konfiqurasiya edin.",
 } satisfies ApiKeyErrorCodesType;
 export const AZ_AZ = {
+	...AZ,
 	// API açarı ilə bağlı səhvlər
 	INVALID_METADATA_TYPE: "metadata obyekt və ya undefined olmalıdır",
 	REFILL_AMOUNT_AND_INTERVAL_REQUIRED:

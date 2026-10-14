@@ -35,6 +35,18 @@ export const RO_RO = {
 		"proprietatea pe care încerci să o setezi poate fi setată doar din instanța de autentificare a serverului.",
 	FAILED_TO_UPDATE_API_KEY: "eșec la actualizarea cheii API",
 	NAME_REQUIRED: "numele cheii API este necesar.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"ID-ul de referință din cheia API este invalid.",
+	ORGANIZATION_ID_REQUIRED:
+		"ID-ul organizației este necesar pentru cheile API deținute de o organizație.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Nu sunteți membru al organizației care deține această cheie API.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Nu aveți permisiunea să efectuați această acțiune asupra cheilor API ale organizației.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Nu a fost găsită nicio configurație implicită pentru cheia API.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Cheile API deținute de o organizație necesită pluginul pentru organizații. Instalați și configurați pluginul pentru organizații.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

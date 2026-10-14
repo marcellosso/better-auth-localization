@@ -24,6 +24,14 @@ export const EL_GR = {
 	NO_DATA_TO_UPDATE: "Δεν υπάρχουν δεδομένα προς ενημέρωση",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS: "Δεν έχετε άδεια να ενημερώσετε χρήστες",
 	YOU_CANNOT_REMOVE_YOURSELF: "Δεν μπορείτε να αφαιρέσετε τον εαυτό σας",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Δεν επιτρέπεται να ορίσετε τιμή ρόλου που δεν υπάρχει",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Δεν μπορείτε να υποδυθείτε διαχειριστές",
+	INVALID_ROLE_TYPE: "Μη έγκυρος τύπος ρόλου",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Δεν επιτρέπεται να ενημερώσετε το email των χρηστών",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Ο κωδικός δεν μπορεί να ενημερωθεί μέσω update-user. Χρησιμοποιήστε το endpoint set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

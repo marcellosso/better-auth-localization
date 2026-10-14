@@ -34,6 +34,18 @@ export const DA_DK = {
 		"Egenskaben du forsøger at sætte kan kun sættes fra serverautentificeringsinstansen.",
 	FAILED_TO_UPDATE_API_KEY: "Kunne ikke opdatere API-nøgle",
 	NAME_REQUIRED: "API-nøglenavn er påkrævet.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"Reference-ID'et fra API-nøglen er ugyldigt.",
+	ORGANIZATION_ID_REQUIRED:
+		"Organisations-ID er påkrævet for API-nøgler, der ejes af en organisation.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Du er ikke medlem af organisationen, der ejer denne API-nøgle.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Du har ikke tilladelse til at udføre denne handling på organisationens API-nøgler.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Ingen standardkonfiguration for API-nøgler blev fundet.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Organisationsplugin'et er påkrævet for API-nøgler, der ejes af en organisation. Installer og konfigurer organisationsplugin'et.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

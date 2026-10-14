@@ -9,6 +9,7 @@ export const KO_KR = {
 	USERNAME_TOO_LONG: "사용자 이름이 너무 깁니다",
 	INVALID_USERNAME: "유효하지 않은 사용자 이름",
 	INVALID_DISPLAY_USERNAME: "유효하지 않은 표시 이름",
+	USERNAME_IS_IMMUTABLE: "사용자 이름은 업데이트할 수 없습니다",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

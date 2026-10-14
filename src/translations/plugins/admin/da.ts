@@ -27,6 +27,14 @@ export const DA_DK = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Du har ikke tilladelse til at opdatere brugere",
 	YOU_CANNOT_REMOVE_YOURSELF: "Du kan ikke fjerne dig selv",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Du må ikke angive en ikke-eksisterende rolleværdi",
+	YOU_CANNOT_IMPERSONATE_ADMINS:
+		"Du kan ikke udgive dig for at være administratorer",
+	INVALID_ROLE_TYPE: "Ugyldig rolletype",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL: "Du må ikke ændre brugeres e-mail",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Adgangskoden kan ikke opdateres via update-user. Brug i stedet set-user-password-endpointet",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

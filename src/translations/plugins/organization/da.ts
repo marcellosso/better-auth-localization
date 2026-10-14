@@ -74,6 +74,32 @@ export const DA_DK = {
 		"Du har ikke tilladelse til at få adgang til denne organisation som ejer",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Du er ikke medlem af denne organisation",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Organisationens slug er allerede i brug",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"E-mailverifikation er påkrævet for at se eller vise invitationer for sessionens e-mail",
+	MISSING_AC_INSTANCE:
+		"Dynamisk adgangskontrol kræver en foruddefineret ac-instans i serverens auth-plugin. Se serverlogfilerne for flere oplysninger",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Du skal være i en organisation for at oprette en rolle",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE:
+		"Du har ikke tilladelse til at oprette en rolle",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Du har ikke tilladelse til at opdatere en rolle",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Du har ikke tilladelse til at slette en rolle",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE:
+		"Du har ikke tilladelse til at læse en rolle",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Du har ikke tilladelse til at vise roller",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE:
+		"Du har ikke tilladelse til at hente en rolle",
+	TOO_MANY_ROLES: "Denne organisation har for mange roller",
+	INVALID_RESOURCE: "Den angivne tilladelse indeholder en ugyldig ressource",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Det rollenavn er allerede i brug",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "En foruddefineret rolle kan ikke slettes",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"En rolle, der er tildelt medlemmer, kan ikke slettes. Tildel først medlemmerne en anden rolle",
+	INVALID_TEAM_ID: "Team-ID indeholder et reserveret tegn",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

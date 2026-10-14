@@ -12,6 +12,8 @@ export const RU_RU = {
 	POLLING_TOO_FREQUENTLY: "Слишком частые запросы",
 	INVALID_DEVICE_CODE_STATUS: "Неверный статус кода устройства",
 	AUTHENTICATION_REQUIRED: "Требуется аутентификация",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Код устройства не был закреплен за проверяющей сессией; перед подтверждением или отклонением вызовите `GET /device` с `user_code`, будучи авторизованным",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

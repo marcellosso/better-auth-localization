@@ -12,8 +12,11 @@ export const AZ = {
 	POLLING_TOO_FREQUENTLY: "Sorğular çox tez-tez göndərilir",
 	INVALID_DEVICE_CODE_STATUS: "Yanlış cihaz kodu statusu",
 	AUTHENTICATION_REQUIRED: "Doğrulama tələb olunur",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Cihaz kodunu təsdiqləyən sessiya tərəfindən hələ götürülməyib; təsdiqləməzdən və ya rədd etməzdən əvvəl hesaba daxil olarkən `user_code` ilə `GET /device` sorğusu göndərin",
 } satisfies DeviceAuthorizationErrorCodesType;
 export const AZ_AZ = {
+	...AZ,
 	// Cihaz avtorizasiyası ilə bağlı səhvlər
 	INVALID_DEVICE_CODE: "Yanlış cihaz kodu",
 	EXPIRED_DEVICE_CODE: "Cihaz kodunun müddəti bitib",

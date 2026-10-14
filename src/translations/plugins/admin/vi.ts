@@ -24,6 +24,14 @@ export const VI_VN = {
 	NO_DATA_TO_UPDATE: "Không có dữ liệu để cập nhật",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS: "Bạn không có quyền cập nhật người dùng",
 	YOU_CANNOT_REMOVE_YOURSELF: "Bạn không thể tự xóa chính mình",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Bạn không được phép đặt giá trị vai trò không tồn tại",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Bạn không thể mạo danh quản trị viên",
+	INVALID_ROLE_TYPE: "Loại vai trò không hợp lệ",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Bạn không có quyền cập nhật email của người dùng",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Không thể cập nhật mật khẩu qua update-user. Hãy dùng endpoint set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

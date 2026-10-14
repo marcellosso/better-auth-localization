@@ -9,9 +9,13 @@ export const UK_UA = {
 	BACKUP_CODES_NOT_ENABLED: "Резервні коди не увімкнено",
 	INVALID_BACKUP_CODE: "Невірний резервний код",
 	INVALID_CODE: "Невірний код",
-	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
-		"Забагато спроб. Запросіть новий код.",
+	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE: "Забагато спроб. Запросіть новий код.",
 	INVALID_TWO_FACTOR_COOKIE: "Невірний cookie двофакторної автентифікації",
+	OTP_NOT_CONFIGURED: "OTP недоступний",
+	TOTP_ALREADY_ENABLED: "TOTP уже ввімкнено",
+	TOTP_NOT_CONFIGURED: "TOTP недоступний",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Забагато невдалих спроб перевірки. Ваш акаунт тимчасово заблоковано. Спробуйте пізніше.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

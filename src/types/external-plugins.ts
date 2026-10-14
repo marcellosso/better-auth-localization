@@ -1,0 +1,138 @@
+/**
+ * Error codes of the optional plugins published as separate packages.
+ *
+ * These are listed by hand instead of being inferred from the plugin types so the
+ * published declaration files never import packages the user may not have
+ * installed (e.g. `@better-auth/electron` requires `electron`).
+ * `src/tests/external-plugins.test.ts` checks that they match the installed
+ * packages.
+ */
+
+type ErrorCodes<K extends string> = { [P in K]?: string };
+
+/** `@better-auth/api-key` */
+export type ApiKeyErrorCode =
+	| "INVALID_METADATA_TYPE"
+	| "REFILL_AMOUNT_AND_INTERVAL_REQUIRED"
+	| "REFILL_INTERVAL_AND_AMOUNT_REQUIRED"
+	| "USER_BANNED"
+	| "UNAUTHORIZED_SESSION"
+	| "KEY_NOT_FOUND"
+	| "KEY_DISABLED"
+	| "KEY_EXPIRED"
+	| "USAGE_EXCEEDED"
+	| "KEY_NOT_RECOVERABLE"
+	| "EXPIRES_IN_IS_TOO_SMALL"
+	| "EXPIRES_IN_IS_TOO_LARGE"
+	| "INVALID_REMAINING"
+	| "INVALID_PREFIX_LENGTH"
+	| "INVALID_NAME_LENGTH"
+	| "METADATA_DISABLED"
+	| "RATE_LIMIT_EXCEEDED"
+	| "NO_VALUES_TO_UPDATE"
+	| "KEY_DISABLED_EXPIRATION"
+	| "INVALID_API_KEY"
+	| "INVALID_USER_ID_FROM_API_KEY"
+	| "INVALID_REFERENCE_ID_FROM_API_KEY"
+	| "INVALID_API_KEY_GETTER_RETURN_TYPE"
+	| "SERVER_ONLY_PROPERTY"
+	| "FAILED_TO_UPDATE_API_KEY"
+	| "NAME_REQUIRED"
+	| "ORGANIZATION_ID_REQUIRED"
+	| "USER_NOT_MEMBER_OF_ORGANIZATION"
+	| "INSUFFICIENT_API_KEY_PERMISSIONS"
+	| "NO_DEFAULT_API_KEY_CONFIGURATION_FOUND"
+	| "ORGANIZATION_PLUGIN_REQUIRED";
+
+/** `@better-auth/passkey` */
+export type PasskeyErrorCode =
+	| "CHALLENGE_NOT_FOUND"
+	| "YOU_ARE_NOT_ALLOWED_TO_REGISTER_THIS_PASSKEY"
+	| "FAILED_TO_VERIFY_REGISTRATION"
+	| "PASSKEY_NOT_FOUND"
+	| "AUTHENTICATION_FAILED"
+	| "UNABLE_TO_CREATE_SESSION"
+	| "USER_NOT_FOUND"
+	| "FAILED_TO_UPDATE_PASSKEY"
+	| "PREVIOUSLY_REGISTERED"
+	| "REGISTRATION_CANCELLED"
+	| "AUTH_CANCELLED"
+	| "UNKNOWN_ERROR"
+	| "SESSION_REQUIRED"
+	| "RESOLVE_USER_REQUIRED"
+	| "RESOLVED_USER_INVALID";
+
+/** `@better-auth/stripe` */
+export type StripeErrorCode =
+	| "UNAUTHORIZED"
+	| "INVALID_REQUEST_BODY"
+	| "SUBSCRIPTION_NOT_FOUND"
+	| "SUBSCRIPTION_PLAN_NOT_FOUND"
+	| "ALREADY_SUBSCRIBED_PLAN"
+	| "REFERENCE_ID_NOT_ALLOWED"
+	| "CUSTOMER_NOT_FOUND"
+	| "UNABLE_TO_CREATE_CUSTOMER"
+	| "UNABLE_TO_CREATE_BILLING_PORTAL"
+	| "STRIPE_SIGNATURE_NOT_FOUND"
+	| "STRIPE_WEBHOOK_SECRET_NOT_FOUND"
+	| "STRIPE_WEBHOOK_ERROR"
+	| "FAILED_TO_CONSTRUCT_STRIPE_EVENT"
+	| "FAILED_TO_FETCH_PLANS"
+	| "EMAIL_VERIFICATION_REQUIRED"
+	| "SUBSCRIPTION_NOT_ACTIVE"
+	| "SUBSCRIPTION_NOT_SCHEDULED_FOR_CANCELLATION"
+	| "SUBSCRIPTION_NOT_PENDING_CHANGE"
+	| "ORGANIZATION_NOT_FOUND"
+	| "ORGANIZATION_SUBSCRIPTION_NOT_ENABLED"
+	| "AUTHORIZE_REFERENCE_REQUIRED"
+	| "ORGANIZATION_HAS_ACTIVE_SUBSCRIPTION"
+	| "ORGANIZATION_REFERENCE_ID_REQUIRED";
+
+/** `@better-auth/electron` */
+export type ElectronErrorCode =
+	| "INVALID_CLIENT_ID"
+	| "INVALID_TOKEN"
+	| "STATE_MISMATCH"
+	| "MISSING_CODE_CHALLENGE"
+	| "INVALID_CODE_VERIFIER"
+	| "MISSING_STATE"
+	| "MISSING_PKCE";
+
+/**
+ * `@better-auth/sso`
+ *
+ * The SSO plugin doesn't expose `$ERROR_CODES`, so these are the user-facing
+ * codes it throws with a fixed message. Errors without a code, or whose message
+ * includes runtime details (e.g. algorithm names), are left untranslated.
+ */
+export type SSOErrorCode =
+	| "SINGLE_LOGOUT_NOT_ENABLED"
+	| "INVALID_LOGOUT_RESPONSE"
+	| "INVALID_LOGOUT_REQUEST"
+	| "LOGOUT_FAILED_AT_IDP"
+	| "IDP_SLO_NOT_SUPPORTED"
+	| "SAML_PROVIDER_NOT_FOUND"
+	| "SAML_INVALID_XML"
+	| "SAML_INVALID_ENCODING"
+	| "SAML_NO_ASSERTION"
+	| "SAML_ASSERTION_SIGNATURE_REQUIRED"
+	| "SAML_RESPONSE_INVALID_XML"
+	| "SAML_ASSERTION_MISSING"
+	| "SAML_AUDIENCE_MISSING"
+	| "SAML_AUDIENCE_MISMATCH"
+	| "SAML_BEARER_CONFIRMATION_MISSING"
+	| "SAML_RECIPIENT_MISSING"
+	| "SAML_RECIPIENT_MISMATCH"
+	| "SAML_DESTINATION_MISMATCH"
+	| "SSO_USER_RESOLUTION_FAILED"
+	| "SSO_PROVIDER_MUTATION_REJECTED"
+	| "SSO_PROVIDER_CHANGED"
+	| "DOMAIN_VERIFIED"
+	| "NO_PENDING_VERIFICATION"
+	| "INVALID_DOMAIN";
+
+export type ApiKeyErrorCodesType = ErrorCodes<ApiKeyErrorCode>;
+export type PasskeyErrorCodesType = ErrorCodes<PasskeyErrorCode>;
+export type StripeErrorCodesType = ErrorCodes<StripeErrorCode>;
+export type ElectronErrorCodesType = ErrorCodes<ElectronErrorCode>;
+export type SSOErrorCodesType = ErrorCodes<SSOErrorCode>;

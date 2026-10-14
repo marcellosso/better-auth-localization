@@ -12,6 +12,11 @@ export const VI_VN = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Số lần thử quá nhiều. Vui lòng yêu cầu mã mới.",
 	INVALID_TWO_FACTOR_COOKIE: "Cookie xác thực hai bước không hợp lệ",
+	OTP_NOT_CONFIGURED: "OTP không khả dụng",
+	TOTP_ALREADY_ENABLED: "TOTP đã được bật",
+	TOTP_NOT_CONFIGURED: "TOTP không khả dụng",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Quá nhiều lần xác minh thất bại. Tài khoản của bạn đã bị khóa tạm thời. Vui lòng thử lại sau.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

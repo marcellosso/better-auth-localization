@@ -10,6 +10,9 @@ export const UK_UA = {
 	OTP_EXPIRED: "Код підтвердження прострочено",
 	INVALID_OTP: "Невірний код підтвердження",
 	PHONE_NUMBER_NOT_VERIFIED: "Номер телефону не підтверджено",
+	PHONE_NUMBER_NOT_EXIST: "Номер телефону не зареєстровано",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Номер телефону не можна змінити",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP не реалізовано",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

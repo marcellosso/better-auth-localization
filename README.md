@@ -22,6 +22,8 @@ yarn add better-auth-localization
 pnpm add better-auth-localization
 ```
 
+> Requires `better-auth` **v1.7** or newer. For better-auth v1.5/v1.6, use `better-auth-localization@3`.
+
 ## Quick Start
 
 ### Basic Usage with Built-in Locale
@@ -223,15 +225,19 @@ The plugin comes with built-in translations for all Better Auth error codes, inc
 **Official Plugins:**
 - Admin plugin error messages
 - Anonymous authentication plugin
-- API Key plugin
+- API Key plugin (`@better-auth/api-key`)
+- Captcha plugin
 - Device authorization plugin
+- Electron plugin (`@better-auth/electron`)
 - Email OTP plugin
 - Generic OAuth plugin
 - Have I Been Pwned plugin
 - Multi-session plugin
 - Organization plugin
-- Passkey plugin
+- Passkey plugin (`@better-auth/passkey`)
 - Phone number plugin
+- SSO plugin (`@better-auth/sso`) - coded SAML/SSO errors with a fixed message
+- Stripe plugin (`@better-auth/stripe`)
 - Two-factor authentication plugin
 - Username plugin
 

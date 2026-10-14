@@ -28,6 +28,13 @@ export const ZH_HANS = {
 	SERVER_ONLY_PROPERTY: "您尝试设置的属性只能从服务器身份验证实例设置。",
 	FAILED_TO_UPDATE_API_KEY: "更新API密钥失败",
 	NAME_REQUIRED: "API密钥名称是必需的。",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "API密鑰的參考 ID 無效。",
+	ORGANIZATION_ID_REQUIRED: "組織所有的API密鑰需要組織 ID。",
+	USER_NOT_MEMBER_OF_ORGANIZATION: "您不是擁有此API密鑰的組織的成員。",
+	INSUFFICIENT_API_KEY_PERMISSIONS: "您沒有權限對組織API密鑰執行此操作。",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND: "找不到預設的 api-key 配置。",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"組織所有的API密鑰需要組織插件。請安裝並配置組織插件。",
 } satisfies ApiKeyErrorCodesType;
 
 export const ZH_HANT = {
@@ -58,6 +65,13 @@ export const ZH_HANT = {
 	SERVER_ONLY_PROPERTY: "您嘗試設置的屬性只能從服務器身份驗證實例設置。",
 	FAILED_TO_UPDATE_API_KEY: "更新API密鑰失敗",
 	NAME_REQUIRED: "API密鑰名稱是必需的。",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "API密钥的引用 ID 无效。",
+	ORGANIZATION_ID_REQUIRED: "组织所有的API密钥需要组织 ID。",
+	USER_NOT_MEMBER_OF_ORGANIZATION: "您不是拥有此API密钥的组织的成员。",
+	INSUFFICIENT_API_KEY_PERMISSIONS: "您没有权限对组织API密钥执行此操作。",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND: "找不到默认的 api-key 配置。",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"组织所有的API密钥需要组织插件。请安装并配置组织插件。",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

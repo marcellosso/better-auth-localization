@@ -40,9 +40,36 @@ export const AZ = createTranslationObject("az", {
 	EMAIL_CAN_NOT_BE_UPDATED: "E-poçt ünvanı yenilənə bilmədi",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Son bağlı hesabı ayıra bilməzsiniz",
 	ACCOUNT_NOT_FOUND: "Hesap tapılmadı",
+	INVALID_USER: "Yanlış istifadəçi",
+	TOKEN_EXPIRED: "Tokenin vaxtı bitib",
+	CHANGE_EMAIL_DISABLED: "E-poçt ünvanının dəyişdirilməsi deaktivdir",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Saytlararası naviqasiya ilə giriş bloklandı. Bu sorğu CSRF hücumuna bənzəyir.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Təsdiq e-poçtu aktiv deyil",
+	EMAIL_ALREADY_VERIFIED: "E-poçt ünvanı artıq təsdiqlənib",
+	EMAIL_MISMATCH: "E-poçt ünvanı uyğun gəlmir",
+	SESSION_NOT_FRESH: "Sessiya təzə deyil",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Əlaqələndirilmiş hesab artıq mövcuddur",
+	INVALID_ORIGIN: "Yanlış mənbə",
+	INVALID_CALLBACK_URL: "Yanlış callbackURL",
+	INVALID_REDIRECT_URL: "Yanlış redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "Yanlış errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "Yanlış newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Origin yoxdur və ya boşdur",
+	CALLBACK_URL_REQUIRED: "callbackURL tələb olunur",
+	FAILED_TO_CREATE_VERIFICATION: "Təsdiq yaradıla bilmədi",
+	FIELD_NOT_ALLOWED: "Sahənin təyin edilməsinə icazə verilmir",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "Asinxron yoxlama dəstəklənmir",
+	VALIDATION_ERROR: "Yoxlama xətası",
+	MISSING_FIELD: "Sahə tələb olunur",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"POST metodu sessiya konfiqurasiyasında deferSessionRefresh seçiminin aktiv olmasını tələb edir",
+	BODY_MUST_BE_AN_OBJECT: "Body obyekt olmalıdır",
+	PASSWORD_ALREADY_SET: "İstifadəçinin artıq şifrəsi təyin edilib",
 });
 
 export const AZ_AZ = createTranslationObject("az-AZ", {
+	...AZ,
 	// User related errors
 	USER_NOT_FOUND: "İstifadəçi tapılmadı",
 	FAILED_TO_CREATE_USER: "İstifadəçi yaradıla bilmədi",

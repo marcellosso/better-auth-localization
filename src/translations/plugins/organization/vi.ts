@@ -75,6 +75,26 @@ export const VI_VN = {
 		"Bạn không có quyền truy cập tổ chức này",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Bạn không phải là thành viên của tổ chức này",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Slug của tổ chức đã được sử dụng",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Cần xác thực email để xem hoặc liệt kê lời mời của email trong session",
+	MISSING_AC_INSTANCE:
+		"Dynamic Access Control yêu cầu một ac instance được định nghĩa sẵn trên plugin auth phía server. Xem log của server để biết thêm thông tin",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Bạn phải thuộc một tổ chức để tạo vai trò",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Bạn không có quyền tạo vai trò",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "Bạn không có quyền cập nhật vai trò",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Bạn không có quyền xóa vai trò",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Bạn không có quyền xem vai trò",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Bạn không có quyền liệt kê vai trò",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Bạn không có quyền lấy thông tin vai trò",
+	TOO_MANY_ROLES: "Tổ chức này có quá nhiều vai trò",
+	INVALID_RESOURCE: "Quyền được cung cấp chứa resource không hợp lệ",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Tên vai trò này đã được sử dụng",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "Không thể xóa vai trò được định nghĩa sẵn",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Không thể xóa vai trò đang được gán cho thành viên. Vui lòng gán các thành viên sang vai trò khác trước",
+	INVALID_TEAM_ID: "ID đội nhóm chứa ký tự được dành riêng",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

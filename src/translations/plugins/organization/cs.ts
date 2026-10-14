@@ -8,8 +8,7 @@ export const CS_CZ_INFORMAL = {
 		"Dosažen limit počtu organizací",
 	ORGANIZATION_ALREADY_EXISTS: "Organizace už existuje",
 	ORGANIZATION_NOT_FOUND: "Organizace nenalezena",
-	USER_IS_NOT_A_MEMBER_OF_THE_ORGANIZATION:
-		"Uživatel není členem organizace",
+	USER_IS_NOT_A_MEMBER_OF_THE_ORGANIZATION: "Uživatel není členem organizace",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_ORGANIZATION:
 		"Nemáš oprávnění upravovat organizaci",
 	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_ORGANIZATION:
@@ -19,23 +18,20 @@ export const CS_CZ_INFORMAL = {
 		"Uživatel už je členem této organizace",
 	MEMBER_NOT_FOUND: "Člen nenalezen",
 	ROLE_NOT_FOUND: "Role nenalezena",
-	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_TEAM:
-		"Nemáš oprávnění vytvořit nový tým",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_TEAM: "Nemáš oprávnění vytvořit nový tým",
 	TEAM_ALREADY_EXISTS: "Tým už existuje",
 	TEAM_NOT_FOUND: "Tým nenalezen",
 	YOU_CANNOT_LEAVE_THE_ORGANIZATION_AS_THE_ONLY_OWNER:
 		"Nemůžeš opustit organizaci jako jediný vlastník",
 	YOU_CANNOT_LEAVE_THE_ORGANIZATION_WITHOUT_AN_OWNER:
 		"Nemůžeš opustit organizaci bez vlastníka",
-	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_MEMBER:
-		"Nemáš oprávnění mazat členy",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_MEMBER: "Nemáš oprávnění mazat členy",
 	YOU_ARE_NOT_ALLOWED_TO_INVITE_USERS_TO_THIS_ORGANIZATION:
 		"Nemáš oprávnění zvát uživatele do této organizace",
 	USER_IS_ALREADY_INVITED_TO_THIS_ORGANIZATION:
 		"Uživatel je už pozvaný do této organizace",
 	INVITATION_NOT_FOUND: "Pozvánka nenalezena",
-	YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION:
-		"Nejsi příjemcem pozvánky",
+	YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION: "Nejsi příjemcem pozvánky",
 	EMAIL_VERIFICATION_REQUIRED_BEFORE_ACCEPTING_OR_REJECTING_INVITATION:
 		"Vyžadováno ověření emailu před přijetím nebo odmítnutím pozvánky",
 	YOU_ARE_NOT_ALLOWED_TO_CANCEL_THIS_INVITATION:
@@ -45,8 +41,7 @@ export const CS_CZ_INFORMAL = {
 	YOU_ARE_NOT_ALLOWED_TO_INVITE_USER_WITH_THIS_ROLE:
 		"Nemáš oprávnění zvát uživatele s touto rolí",
 	FAILED_TO_RETRIEVE_INVITATION: "Nepodařilo se načíst pozvánku",
-	YOU_HAVE_REACHED_THE_MAXIMUM_NUMBER_OF_TEAMS:
-		"Dosažen limit počtu týmů",
+	YOU_HAVE_REACHED_THE_MAXIMUM_NUMBER_OF_TEAMS: "Dosažen limit počtu týmů",
 	UNABLE_TO_REMOVE_LAST_TEAM: "Není možné smazat poslední zbývající tým",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_MEMBER:
 		"Nemáš oprávnění upravit tohoto člena",
@@ -56,10 +51,8 @@ export const CS_CZ_INFORMAL = {
 		"Nemáš oprávnění vytvářet týmy v organizaci",
 	YOU_ARE_NOT_ALLOWED_TO_DELETE_TEAMS_IN_THIS_ORGANIZATION:
 		"Nemáš oprávnění mazat týmy v organizaci",
-	YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_TEAM:
-		"Nemáš oprávnění upravit tento tým",
-	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_TEAM:
-		"Nemáš oprávnění smazat tento tým",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_TEAM: "Nemáš oprávnění upravit tento tým",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_TEAM: "Nemáš oprávnění smazat tento tým",
 	INVITATION_LIMIT_REACHED: "Dosažen limit počtu odeslaných pozvánek",
 	TEAM_MEMBER_LIMIT_REACHED: "Dosažen limit počtu členů týmu",
 	USER_IS_NOT_A_MEMBER_OF_THE_TEAM: "Uživatel není členem týmu",
@@ -72,8 +65,27 @@ export const CS_CZ_INFORMAL = {
 		"Nemáš oprávnění odstranit člena z týmu",
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"Nemáš oprávnění k přístupu do této organizace",
-	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
-		"Nejsi členem této organizace",
+	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "Nejsi členem této organizace",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Slug organizace je již obsazený",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"K zobrazení pozvánek pro email relace je nutné ověřit email",
+	MISSING_AC_INSTANCE:
+		"Dynamické řízení přístupu vyžaduje předdefinovanou instanci ac v serverovém autentizačním pluginu. Další informace najdeš v logu serveru",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Pro vytvoření role musíš být členem organizace",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Nemáš oprávnění vytvořit roli",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "Nemáš oprávnění upravit roli",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Nemáš oprávnění smazat roli",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Nemáš oprávnění zobrazit roli",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Nemáš oprávnění zobrazit seznam rolí",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Nemáš oprávnění získat roli",
+	TOO_MANY_ROLES: "Tato organizace má příliš mnoho rolí",
+	INVALID_RESOURCE: "Zadané oprávnění obsahuje neplatný zdroj",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Tento název role je již obsazený",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "Předdefinovanou roli nelze smazat",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Roli přiřazenou členům nelze smazat. Nejprve členům přiřaď jinou roli",
+	INVALID_TEAM_ID: "ID týmu obsahuje rezervovaný znak",
 } satisfies OrganizationErrorCodesType;
 
 export const CS_CZ_FORMAL = {
@@ -91,12 +103,10 @@ export const CS_CZ_FORMAL = {
 		"Nemůžete opustit organizaci jako jediný vlastník",
 	YOU_CANNOT_LEAVE_THE_ORGANIZATION_WITHOUT_AN_OWNER:
 		"Nemůžete opustit organizaci bez vlastníka",
-	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_MEMBER:
-		"Nemáte oprávnění mazat členy",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_MEMBER: "Nemáte oprávnění mazat členy",
 	YOU_ARE_NOT_ALLOWED_TO_INVITE_USERS_TO_THIS_ORGANIZATION:
 		"Nemáte oprávnění zvát uživatele do této organizace",
-	YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION:
-		"Nejste příjemcem pozvánky",
+	YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION: "Nejste příjemcem pozvánky",
 	YOU_ARE_NOT_ALLOWED_TO_CANCEL_THIS_INVITATION:
 		"Nemáte oprávnění zrušit pozvánku",
 	YOU_ARE_NOT_ALLOWED_TO_INVITE_USER_WITH_THIS_ROLE:
@@ -107,10 +117,8 @@ export const CS_CZ_FORMAL = {
 		"Nemáte oprávnění vytvářet týmy v organizaci",
 	YOU_ARE_NOT_ALLOWED_TO_DELETE_TEAMS_IN_THIS_ORGANIZATION:
 		"Nemáte oprávnění mazat týmy v organizaci",
-	YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_TEAM:
-		"Nemáte oprávnění upravit tento tým",
-	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_TEAM:
-		"Nemáte oprávnění smazat tento tým",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_TEAM: "Nemáte oprávnění upravit tento tým",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_TEAM: "Nemáte oprávnění smazat tento tým",
 	YOU_CAN_NOT_ACCESS_THE_MEMBERS_OF_THIS_TEAM:
 		"Nemáte oprávnění zobrazit členy tohoto týmu",
 	YOU_DO_NOT_HAVE_AN_ACTIVE_TEAM: "Nejste členem žádného aktivního týmu",
@@ -120,12 +128,23 @@ export const CS_CZ_FORMAL = {
 		"Nemáte oprávnění odstranit člena z týmu",
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"Nemáte oprávnění k přístupu do této organizace",
-	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
-		"Nemáte členem této organizace",
+	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "Nemáte členem této organizace",
+	MISSING_AC_INSTANCE:
+		"Dynamické řízení přístupu vyžaduje předdefinovanou instanci ac v serverovém autentizačním pluginu. Další informace najdete v logu serveru",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Pro vytvoření role musíte být členem organizace",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Nemáte oprávnění vytvořit roli",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "Nemáte oprávnění upravit roli",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Nemáte oprávnění smazat roli",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Nemáte oprávnění zobrazit roli",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Nemáte oprávnění zobrazit seznam rolí",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Nemáte oprávnění získat roli",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Roli přiřazenou členům nelze smazat. Nejprve členům přiřaďte jinou roli",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {
-	"cs": CS_CZ_INFORMAL,
+	cs: CS_CZ_INFORMAL,
 	"cs-CZ-informal": CS_CZ_INFORMAL,
 	"cs-CZ-formal": CS_CZ_FORMAL,
 } as const;

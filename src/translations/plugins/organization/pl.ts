@@ -74,6 +74,28 @@ export const PL_PL = {
 		"Nie masz uprawnień do dostępu do tej organizacji jako właściciel",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Nie jesteś członkiem tej organizacji",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Ten slug organizacji jest już zajęty",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Wyświetlanie lub listowanie zaproszeń dla adresu email sesji wymaga weryfikacji adresu email",
+	MISSING_AC_INSTANCE:
+		"Dynamiczna kontrola dostępu wymaga wstępnie zdefiniowanej instancji ac we wtyczce uwierzytelniania na serwerze. Więcej informacji znajdziesz w logach serwera",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Aby utworzyć rolę, musisz należeć do organizacji",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Nie masz uprawnień do tworzenia roli",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Nie masz uprawnień do aktualizacji roli",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Nie masz uprawnień do usunięcia roli",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Nie masz uprawnień do wyświetlenia roli",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Nie masz uprawnień do wyświetlenia listy ról",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Nie masz uprawnień do pobrania roli",
+	TOO_MANY_ROLES: "Ta organizacja ma zbyt wiele ról",
+	INVALID_RESOURCE: "Podane uprawnienie zawiera nieprawidłowy zasób",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Ta nazwa roli jest już zajęta",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "Nie można usunąć roli predefiniowanej",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Nie można usunąć roli przypisanej do członków. Najpierw przypisz członkom inną rolę",
+	INVALID_TEAM_ID: "Identyfikator zespołu zawiera zarezerwowany znak",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

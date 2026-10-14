@@ -39,6 +39,32 @@ export const VI_VN = createTranslationObject("vi-VN", {
 	EMAIL_CAN_NOT_BE_UPDATED: "Email không thể được cập nhật",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Không thể tách tài khoản cuối cùng",
 	ACCOUNT_NOT_FOUND: "Không tìm thấy tài khoản",
+	INVALID_USER: "Người dùng không hợp lệ",
+	TOKEN_EXPIRED: "Token đã hết hạn",
+	CHANGE_EMAIL_DISABLED: "Chức năng đổi email đã bị tắt",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Đăng nhập qua điều hướng chéo trang đã bị chặn. Yêu cầu này có vẻ là một cuộc tấn công CSRF.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Email xác thực chưa được bật",
+	EMAIL_ALREADY_VERIFIED: "Email đã được xác thực",
+	EMAIL_MISMATCH: "Email không khớp",
+	SESSION_NOT_FRESH: "Session không còn mới",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Tài khoản liên kết đã tồn tại",
+	INVALID_ORIGIN: "Origin không hợp lệ",
+	INVALID_CALLBACK_URL: "callbackURL không hợp lệ",
+	INVALID_REDIRECT_URL: "redirectURL không hợp lệ",
+	INVALID_ERROR_CALLBACK_URL: "errorCallbackURL không hợp lệ",
+	INVALID_NEW_USER_CALLBACK_URL: "newUserCallbackURL không hợp lệ",
+	MISSING_OR_NULL_ORIGIN: "Origin bị thiếu hoặc null",
+	CALLBACK_URL_REQUIRED: "Yêu cầu callbackURL",
+	FAILED_TO_CREATE_VERIFICATION: "Không thể tạo xác thực",
+	FIELD_NOT_ALLOWED: "Trường này không được phép thiết lập",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "Không hỗ trợ xác thực bất đồng bộ",
+	VALIDATION_ERROR: "Lỗi xác thực dữ liệu",
+	MISSING_FIELD: "Trường này là bắt buộc",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"Phương thức POST yêu cầu bật deferSessionRefresh trong cấu hình session",
+	BODY_MUST_BE_AN_OBJECT: "Body phải là một đối tượng",
+	PASSWORD_ALREADY_SET: "Người dùng đã đặt mật khẩu",
 });
 
 export const LOCALES = {

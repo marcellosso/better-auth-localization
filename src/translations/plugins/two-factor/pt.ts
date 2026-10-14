@@ -12,6 +12,11 @@ export const PT_BR = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Muitas tentativas. Por favor, solicite um novo código.",
 	INVALID_TWO_FACTOR_COOKIE: "Cookie de autenticação em duas etapas inválido",
+	OTP_NOT_CONFIGURED: "O OTP não está disponível",
+	TOTP_ALREADY_ENABLED: "O TOTP já está ativado",
+	TOTP_NOT_CONFIGURED: "O TOTP não está disponível",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Muitas tentativas de verificação malsucedidas. Sua conta está temporariamente bloqueada. Tente novamente mais tarde.",
 } satisfies TwoFactorErrorCodesType;
 
 export const PT_PT = {
@@ -26,6 +31,11 @@ export const PT_PT = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Muitas tentativas. Por favor, solicite um novo código.",
 	INVALID_TWO_FACTOR_COOKIE: "Cookie de autenticação em duas etapas inválido",
+	OTP_NOT_CONFIGURED: "O OTP não está disponível",
+	TOTP_ALREADY_ENABLED: "O TOTP já está activado",
+	TOTP_NOT_CONFIGURED: "O TOTP não está disponível",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Demasiadas tentativas de verificação falhadas. A sua conta está temporariamente bloqueada. Tente novamente mais tarde.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

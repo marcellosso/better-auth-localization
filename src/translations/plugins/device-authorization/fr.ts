@@ -12,6 +12,8 @@ export const FR_FR = {
 	POLLING_TOO_FREQUENTLY: "Requêtes trop fréquentes",
 	INVALID_DEVICE_CODE_STATUS: "Statut du code d'appareil invalide",
 	AUTHENTICATION_REQUIRED: "Authentification requise",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Le code de l'appareil n'a pas été réclamé par une session de vérification ; appelez `GET /device` avec le `user_code` en étant connecté avant d'approuver ou de refuser",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

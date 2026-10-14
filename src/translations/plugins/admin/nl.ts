@@ -28,6 +28,14 @@ export const NL_NL_INFORMAL = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Je hebt geen toestemming om gebruikers bij te werken",
 	YOU_CANNOT_REMOVE_YOURSELF: "Je kunt jezelf niet verwijderen",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Je mag geen niet-bestaande rolwaarde instellen",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Je kunt je niet voordoen als beheerder",
+	INVALID_ROLE_TYPE: "Ongeldig roltype",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Je mag het e-mailadres van gebruikers niet wijzigen",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Het wachtwoord kan niet worden bijgewerkt via update-user. Gebruik in plaats daarvan het set-user-password-eindpunt",
 } satisfies AdminErrorCodesType;
 
 export const NL_NL_FORMAL = {

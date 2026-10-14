@@ -11,6 +11,11 @@ export const DA_DK = {
 	INVALID_CODE: "Ugyldig kode",
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE: "For mange forsøg. Anmod om en ny kode.",
 	INVALID_TWO_FACTOR_COOKIE: "Ugyldig totrinsgodkendelse cookie",
+	OTP_NOT_CONFIGURED: "Engangskode er ikke tilgængelig",
+	TOTP_ALREADY_ENABLED: "Tidsbaseret engangskode er allerede aktiveret",
+	TOTP_NOT_CONFIGURED: "Tidsbaseret engangskode er ikke tilgængelig",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"For mange mislykkede verifikationsforsøg. Din konto er midlertidigt låst. Prøv igen senere.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

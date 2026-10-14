@@ -10,6 +10,14 @@ export const FR_FR = {
 	AUTHENTICATION_FAILED: "Échec de l'authentification",
 	UNABLE_TO_CREATE_SESSION: "Impossible de créer la session",
 	FAILED_TO_UPDATE_PASSKEY: "Échec de la mise à jour de la clé d'accès",
+	PREVIOUSLY_REGISTERED: "Déjà enregistrée",
+	REGISTRATION_CANCELLED: "Enregistrement annulé",
+	AUTH_CANCELLED: "Authentification annulée",
+	SESSION_REQUIRED:
+		"L'enregistrement d'une clé d'accès nécessite une session authentifiée",
+	RESOLVE_USER_REQUIRED:
+		"L'enregistrement d'une clé d'accès nécessite une session authentifiée ou un callback resolveUser lorsque requireSession est false",
+	RESOLVED_USER_INVALID: "L'utilisateur résolu est invalide",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

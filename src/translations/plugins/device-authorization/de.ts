@@ -12,6 +12,8 @@ export const DE_DE_INFORMAL = {
 	POLLING_TOO_FREQUENTLY: "Zu häufige Abfragen",
 	INVALID_DEVICE_CODE_STATUS: "Ungültiger Gerätecode-Status",
 	AUTHENTICATION_REQUIRED: "Authentifizierung erforderlich",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Der Gerätecode wurde von keiner Verifizierungssitzung beansprucht. Rufen Sie `GET /device` mit dem `user_code` auf, solange Sie angemeldet sind, bevor Sie genehmigen oder ablehnen",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const DE_DE_FORMAL = {

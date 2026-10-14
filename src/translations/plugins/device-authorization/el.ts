@@ -12,6 +12,8 @@ export const EL_GR = {
 	POLLING_TOO_FREQUENTLY: "Πάρα πολλές ερωτήσεις",
 	INVALID_DEVICE_CODE_STATUS: "Μη έγκυρη κατάσταση κωδικού συσκευής",
 	AUTHENTICATION_REQUIRED: "Απαιτείται πιστοποίηση",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Ο κωδικός συσκευής δεν έχει διεκδικηθεί από συνεδρία επαλήθευσης· καλέστε `GET /device` με το `user_code` ενώ είστε συνδεδεμένοι πριν εγκρίνετε ή απορρίψετε",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

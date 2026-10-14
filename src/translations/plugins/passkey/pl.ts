@@ -10,6 +10,13 @@ export const PL_PL = {
 	AUTHENTICATION_FAILED: "Uwierzytelnienie nie powiodło się",
 	UNABLE_TO_CREATE_SESSION: "Nie można utworzyć sesji",
 	FAILED_TO_UPDATE_PASSKEY: "Aktualizacja klucza dostępu nie powiodła się",
+	PREVIOUSLY_REGISTERED: "Wcześniej zarejestrowano",
+	REGISTRATION_CANCELLED: "Rejestracja została anulowana",
+	AUTH_CANCELLED: "Uwierzytelnianie zostało anulowane",
+	SESSION_REQUIRED: "Rejestracja klucza dostępu wymaga uwierzytelnionej sesji",
+	RESOLVE_USER_REQUIRED:
+		"Rejestracja klucza dostępu wymaga uwierzytelnionej sesji lub wywołania zwrotnego resolveUser, gdy requireSession ma wartość false",
+	RESOLVED_USER_INVALID: "Rozpoznany użytkownik jest nieprawidłowy",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

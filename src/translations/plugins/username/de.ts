@@ -9,6 +9,7 @@ export const DE_DE_INFORMAL = {
 	USERNAME_TOO_LONG: "Benutzername zu lang",
 	INVALID_USERNAME: "Ungültiger Benutzername",
 	INVALID_DISPLAY_USERNAME: "Ungültiger Anzeigename",
+	USERNAME_IS_IMMUTABLE: "Der Benutzername kann nicht geändert werden",
 } satisfies UsernameErrorCodesType;
 
 export const DE_DE_FORMAL = {

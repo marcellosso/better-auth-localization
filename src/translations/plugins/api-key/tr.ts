@@ -33,6 +33,18 @@ export const TR_TR = {
 		"ayarlamaya çalıştığınız özellik yalnızca sunucu kimlik doğrulama örneğinden ayarlanabilir.",
 	FAILED_TO_UPDATE_API_KEY: "API anahtarı güncellenemedi",
 	NAME_REQUIRED: "API anahtarı adı gereklidir.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"API anahtarındaki referans ID'si geçersiz.",
+	ORGANIZATION_ID_REQUIRED:
+		"Organizasyona ait API anahtarları için organizasyon ID'si gereklidir.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Bu API anahtarına sahip olan organizasyonun üyesi değilsiniz.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Organizasyon API anahtarlarında bu işlemi gerçekleştirme izniniz yok.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Varsayılan API anahtarı yapılandırması bulunamadı.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Organizasyona ait API anahtarları için organizasyon eklentisi gereklidir. Lütfen organizasyon eklentisini kurun ve yapılandırın.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

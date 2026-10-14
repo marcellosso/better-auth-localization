@@ -13,6 +13,11 @@ export const RO_RO = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Prea multe încercări. Vă rugăm să solicitați un cod nou.",
 	INVALID_TWO_FACTOR_COOKIE: "Cookie de autentificare cu doi factori invalid",
+	OTP_NOT_CONFIGURED: "OTP nu este disponibil",
+	TOTP_ALREADY_ENABLED: "TOTP este deja activat",
+	TOTP_NOT_CONFIGURED: "TOTP nu este disponibil",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Prea multe încercări de verificare eșuate. Contul dumneavoastră este blocat temporar. Încercați din nou mai târziu.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

@@ -12,6 +12,8 @@ export const PT_BR = {
 	POLLING_TOO_FREQUENTLY: "Consultas muito frequentes",
 	INVALID_DEVICE_CODE_STATUS: "Status do código de dispositivo inválido",
 	AUTHENTICATION_REQUIRED: "Autenticação obrigatória",
+	DEVICE_CODE_NOT_CLAIMED:
+		"O código do dispositivo não foi reivindicado por uma sessão de verificação; chame `GET /device` com o `user_code` enquanto estiver autenticado antes de aprovar ou negar",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const PT_PT = {
@@ -26,6 +28,8 @@ export const PT_PT = {
 	POLLING_TOO_FREQUENTLY: "Consultas muito frequentes",
 	INVALID_DEVICE_CODE_STATUS: "Estado do código de dispositivo inválido",
 	AUTHENTICATION_REQUIRED: "Autenticação obrigatória",
+	DEVICE_CODE_NOT_CLAIMED:
+		"O código do dispositivo não foi reivindicado por uma sessão de verificação; chame `GET /device` com o `user_code` enquanto tiver sessão iniciada antes de aprovar ou negar",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

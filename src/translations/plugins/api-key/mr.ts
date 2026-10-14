@@ -1,6 +1,6 @@
 import type { ApiKeyErrorCodesType } from "../../../types";
 
-export const MR_IN = {
+export const MR_MR = {
 	// Api key related errors
 	INVALID_METADATA_TYPE: "मेटाडेटा ऑब्जेक्ट किंवा अपरिभाषित असावे",
 	REFILL_AMOUNT_AND_INTERVAL_REQUIRED:
@@ -31,8 +31,18 @@ export const MR_IN = {
 		"आपण सेट करण्याचा प्रयत्न करत असलेली गुणधर्म फक्त सर्व्हर प्रमाणीकरण उदाहरणावरून सेट केली जाऊ शकते.",
 	FAILED_TO_UPDATE_API_KEY: "API की अपडेट करण्यात अयशस्वी",
 	NAME_REQUIRED: "API की नाव आवश्यक आहे.",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "API की मधील रेफरन्स ID अवैध आहे.",
+	ORGANIZATION_ID_REQUIRED: "संस्थेच्या मालकीच्या API की साठी संस्था ID आवश्यक आहे.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"ही API की ज्या संस्थेच्या मालकीची आहे त्या संस्थेचे तुम्ही सदस्य नाही.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"तुम्हाला संस्थेच्या API की वर ही कृती करण्याची परवानगी नाही.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"डीफॉल्ट api-key कॉन्फिगरेशन सापडले नाही.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"संस्थेच्या मालकीच्या API की साठी संस्था प्लगइन आवश्यक आहे. कृपया संस्था प्लगइन इंस्टॉल आणि कॉन्फिगर करा.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {
-	"mr-IN": MR_IN,
+	"mr-MR": MR_MR,
 } as const;

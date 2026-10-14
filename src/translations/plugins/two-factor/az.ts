@@ -12,8 +12,14 @@ export const AZ = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Çox cəhd etdiniz. Zəhmət olmasa yeni kod tələb edin.",
 	INVALID_TWO_FACTOR_COOKIE: "Yanlış iki mərhələli təsdiqləmə kukisi",
+	OTP_NOT_CONFIGURED: "OTP əlçatan deyil",
+	TOTP_ALREADY_ENABLED: "TOTP artıq aktivdir",
+	TOTP_NOT_CONFIGURED: "TOTP əlçatan deyil",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Çox sayda uğursuz təsdiq cəhdi. Hesabınız müvəqqəti bloklanıb. Zəhmət olmasa sonra yenidən cəhd edin.",
 } satisfies TwoFactorErrorCodesType;
 export const AZ_AZ = {
+	...AZ,
 	OTP_NOT_ENABLED: "Bir dəfəlik şifrə aktiv deyil",
 	OTP_HAS_EXPIRED: "Bir dəfəlik şifrənin müddəti bitib",
 	TOTP_NOT_ENABLED: "Vaxta əsaslanan bir dəfəlik şifrə aktiv deyil",

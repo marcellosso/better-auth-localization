@@ -31,6 +31,16 @@ export const KO_KR = {
 		"설정하려는 속성은 서버 인증 인스턴스에서만 설정할 수 있습니다.",
 	FAILED_TO_UPDATE_API_KEY: "API 키 업데이트에 실패했습니다",
 	NAME_REQUIRED: "API 키 이름이 필요합니다.",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "API 키의 참조 ID가 유효하지 않습니다.",
+	ORGANIZATION_ID_REQUIRED: "조직 소유의 API 키에는 조직 ID가 필요합니다.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"이 API 키를 소유한 조직의 구성원이 아닙니다.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"조직 API 키에 대해 이 작업을 수행할 권한이 없습니다.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"기본 api-key 구성을 찾을 수 없습니다.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"조직 소유의 API 키에는 조직 플러그인이 필요합니다. 조직 플러그인을 설치하고 구성하세요.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

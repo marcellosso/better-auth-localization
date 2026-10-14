@@ -41,6 +41,32 @@ export const ID_ID = createTranslationObject("id-ID", {
 	FAILED_TO_UNLINK_LAST_ACCOUNT:
 		"Anda tidak dapat menghapus tautan akun terakhir Anda",
 	ACCOUNT_NOT_FOUND: "Akun tidak ditemukan",
+	INVALID_USER: "Pengguna tidak valid",
+	TOKEN_EXPIRED: "Token telah kedaluwarsa",
+	CHANGE_EMAIL_DISABLED: "Pengubahan email dinonaktifkan",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Login melalui navigasi lintas situs diblokir. Permintaan ini tampaknya merupakan serangan CSRF.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Email verifikasi tidak diaktifkan",
+	EMAIL_ALREADY_VERIFIED: "Email sudah diverifikasi",
+	EMAIL_MISMATCH: "Email tidak cocok",
+	SESSION_NOT_FRESH: "Sesi tidak baru",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Akun tertaut sudah ada",
+	INVALID_ORIGIN: "Origin tidak valid",
+	INVALID_CALLBACK_URL: "callbackURL tidak valid",
+	INVALID_REDIRECT_URL: "redirectURL tidak valid",
+	INVALID_ERROR_CALLBACK_URL: "errorCallbackURL tidak valid",
+	INVALID_NEW_USER_CALLBACK_URL: "newUserCallbackURL tidak valid",
+	MISSING_OR_NULL_ORIGIN: "Origin tidak ada atau null",
+	CALLBACK_URL_REQUIRED: "callbackURL wajib diisi",
+	FAILED_TO_CREATE_VERIFICATION: "Gagal membuat verifikasi",
+	FIELD_NOT_ALLOWED: "Kolom tidak diizinkan untuk diatur",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "Validasi asinkron tidak didukung",
+	VALIDATION_ERROR: "Kesalahan validasi",
+	MISSING_FIELD: "Kolom wajib diisi",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"Metode POST mengharuskan deferSessionRefresh diaktifkan dalam konfigurasi sesi",
+	BODY_MUST_BE_AN_OBJECT: "Body harus berupa objek",
+	PASSWORD_ALREADY_SET: "Pengguna sudah memiliki kata sandi",
 });
 
 export const LOCALES = {

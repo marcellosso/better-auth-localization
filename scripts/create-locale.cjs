@@ -94,7 +94,9 @@ function getPluginErrorCodeType(pluginName) {
 		admin: "AdminErrorCodesType",
 		anonymous: "AnonymousErrorCodesType",
 		"api-key": "ApiKeyErrorCodesType",
+		captcha: "CaptchaErrorCodesType",
 		"device-authorization": "DeviceAuthorizationErrorCodesType",
+		electron: "ElectronErrorCodesType",
 		"email-otp": "EmailOTPErrorCodesType",
 		"generic-oauth": "GenericOAuthErrorCodesType",
 		"have-i-been-pwned": "HaveIBeenPwnedErrorCodesType",
@@ -102,6 +104,8 @@ function getPluginErrorCodeType(pluginName) {
 		organization: "OrganizationErrorCodesType",
 		passkey: "PasskeyErrorCodesType",
 		"phone-number": "PhoneNumberErrorCodesType",
+		sso: "SSOErrorCodesType",
+		stripe: "StripeErrorCodesType",
 		"two-factor": "TwoFactorErrorCodesType",
 		username: "UsernameErrorCodesType",
 	};

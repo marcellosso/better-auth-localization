@@ -74,6 +74,35 @@ export const DE_DE_INFORMAL = {
 		"Sie haben keine Berechtigung, auf diese Organisation als Besitzer zuzugreifen",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Sie sind kein Mitglied dieser Organisation",
+	ORGANIZATION_SLUG_ALREADY_TAKEN:
+		"Der Organisations-Slug ist bereits vergeben",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"E-Mail-Verifizierung ist erforderlich, um Einladungen für die Sitzungs-E-Mail-Adresse anzuzeigen oder aufzulisten",
+	MISSING_AC_INSTANCE:
+		"Dynamische Zugriffskontrolle erfordert eine vordefinierte ac-Instanz im Server-Auth-Plugin. Weitere Informationen finden Sie in den Server-Logs",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Sie müssen in einer Organisation sein, um eine Rolle zu erstellen",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE:
+		"Sie haben keine Berechtigung, eine Rolle zu erstellen",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Sie haben keine Berechtigung, eine Rolle zu aktualisieren",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Sie haben keine Berechtigung, eine Rolle zu löschen",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE:
+		"Sie haben keine Berechtigung, eine Rolle zu lesen",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Sie haben keine Berechtigung, Rollen aufzulisten",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE:
+		"Sie haben keine Berechtigung, eine Rolle abzurufen",
+	TOO_MANY_ROLES: "Diese Organisation hat zu viele Rollen",
+	INVALID_RESOURCE:
+		"Die angegebene Berechtigung enthält eine ungültige Ressource",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Dieser Rollenname ist bereits vergeben",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Eine vordefinierte Rolle kann nicht gelöscht werden",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Eine Rolle, die Mitgliedern zugewiesen ist, kann nicht gelöscht werden. Weisen Sie die Mitglieder zuerst einer anderen Rolle zu",
+	INVALID_TEAM_ID: "Die Team-ID enthält ein reserviertes Zeichen",
 } satisfies OrganizationErrorCodesType;
 
 export const DE_DE_FORMAL = {

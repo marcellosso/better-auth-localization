@@ -8,6 +8,8 @@ export const AR_SA = {
 	USERNAME_TOO_LONG: "اسم المستخدم طويل جداً",
 	INVALID_USERNAME: "اسم المستخدم غير صالح",
 	INVALID_DISPLAY_USERNAME: "اسم العرض غير صالح",
+
+	USERNAME_IS_IMMUTABLE: "لا يمكن تحديث اسم المستخدم",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

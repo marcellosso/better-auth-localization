@@ -74,6 +74,33 @@ export const NL_NL_INFORMAL = {
 		"Je hebt geen toestemming om toegang te krijgen tot deze organisatie als eigenaar",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Je bent geen lid van deze organisatie",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Organisatie-slug is al in gebruik",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"E-mailverificatie is vereist om uitnodigingen voor het sessie-e-mailadres te bekijken of weer te geven",
+	MISSING_AC_INSTANCE:
+		"Dynamische toegangscontrole vereist een vooraf gedefinieerde ac-instantie in de server-authplugin. Raadpleeg de serverlogs voor meer informatie",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Je moet in een organisatie zitten om een rol aan te maken",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE:
+		"Je hebt geen toestemming om een rol aan te maken",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Je hebt geen toestemming om een rol bij te werken",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Je hebt geen toestemming om een rol te verwijderen",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE:
+		"Je hebt geen toestemming om een rol te lezen",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Je hebt geen toestemming om rollen weer te geven",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE:
+		"Je hebt geen toestemming om een rol op te halen",
+	TOO_MANY_ROLES: "Deze organisatie heeft te veel rollen",
+	INVALID_RESOURCE: "De opgegeven machtiging bevat een ongeldige resource",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Die rolnaam is al in gebruik",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Een vooraf gedefinieerde rol kan niet worden verwijderd",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Een rol die aan leden is toegewezen kan niet worden verwijderd. Wijs de leden eerst aan een andere rol toe",
+	INVALID_TEAM_ID: "Team-ID bevat een gereserveerd teken",
 } satisfies OrganizationErrorCodesType;
 
 export const NL_NL_FORMAL = {

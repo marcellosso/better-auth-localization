@@ -10,6 +10,10 @@ export const AR_SA = {
 	OTP_EXPIRED: "رمز التحقق منتهي الصلاحية",
 	INVALID_OTP: "رمز التحقق غير صالح",
 	PHONE_NUMBER_NOT_VERIFIED: "رقم الهاتف غير محقق",
+
+	PHONE_NUMBER_NOT_EXIST: "رقم الهاتف غير مسجل",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "لا يمكن تحديث رقم الهاتف",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP غير مُنفَّذ",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

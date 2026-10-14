@@ -36,6 +36,18 @@ export const IT_IT = {
 		"la proprietà che stai cercando di impostare può essere impostata solo dall'istanza di autenticazione del server.",
 	FAILED_TO_UPDATE_API_KEY: "impossibile aggiornare la chiave API",
 	NAME_REQUIRED: "il nome della chiave API è richiesto.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"L'ID di riferimento della chiave API non è valido.",
+	ORGANIZATION_ID_REQUIRED:
+		"L'ID dell'organizzazione è obbligatorio per le chiavi API appartenenti a un'organizzazione.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Non sei membro dell'organizzazione proprietaria di questa chiave API.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Non hai il permesso di eseguire questa azione sulle chiavi API dell'organizzazione.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Nessuna configurazione predefinita della chiave API trovata.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Il plugin Organization è obbligatorio per le chiavi API appartenenti a un'organizzazione. Installa e configura il plugin Organization.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

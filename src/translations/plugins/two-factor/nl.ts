@@ -12,6 +12,11 @@ export const NL_NL_INFORMAL = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Te veel pogingen. Vraag een nieuwe code aan.",
 	INVALID_TWO_FACTOR_COOKIE: "Ongeldige twee-factor authenticatie cookie",
+	OTP_NOT_CONFIGURED: "Eenmalig wachtwoord is niet beschikbaar",
+	TOTP_ALREADY_ENABLED: "Tijdgebaseerd eenmalig wachtwoord is al ingeschakeld",
+	TOTP_NOT_CONFIGURED: "Tijdgebaseerd eenmalig wachtwoord is niet beschikbaar",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Te veel mislukte verificatiepogingen. Je account is tijdelijk vergrendeld. Probeer het later opnieuw.",
 } satisfies TwoFactorErrorCodesType;
 
 export const NL_NL_FORMAL = {

@@ -34,6 +34,18 @@ export const NL_NL_INFORMAL = {
 		"de eigenschap die je probeert in te stellen kan alleen worden ingesteld vanuit de serverauthenticatie-instantie.",
 	FAILED_TO_UPDATE_API_KEY: "API-sleutel bijwerken mislukt",
 	NAME_REQUIRED: "API-sleutelnaam is vereist.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"De referentie-ID van de API-sleutel is ongeldig.",
+	ORGANIZATION_ID_REQUIRED:
+		"Een organisatie-ID is vereist voor API-sleutels die eigendom zijn van een organisatie.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Je bent geen lid van de organisatie die eigenaar is van deze API-sleutel.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Je hebt geen toestemming om deze actie uit te voeren op API-sleutels van de organisatie.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Geen standaardconfiguratie voor API-sleutels gevonden.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"De organisatieplugin is vereist voor API-sleutels die eigendom zijn van een organisatie. Installeer en configureer de organisatieplugin.",
 } satisfies ApiKeyErrorCodesType;
 
 export const NL_NL_FORMAL = {

@@ -24,6 +24,14 @@ export const HI_HI = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"आपको उपयोगकर्ताओं को अपडेट करने की अनुमति नहीं है",
 	YOU_CANNOT_REMOVE_YOURSELF: "आप खुद को हटा नहीं सकते",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"आपको अस्तित्वहीन भूमिका मान सेट करने की अनुमति नहीं है",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "आप एडमिन का रूप धारण नहीं कर सकते",
+	INVALID_ROLE_TYPE: "अमान्य भूमिका प्रकार",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"आपको उपयोगकर्ताओं का ईमेल अपडेट करने की अनुमति नहीं है",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"पासवर्ड update-user के माध्यम से अपडेट नहीं किया जा सकता। इसके बजाय set-user-password एंडपॉइंट का उपयोग करें",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

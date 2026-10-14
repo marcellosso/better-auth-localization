@@ -9,6 +9,7 @@ export const TR_TR = {
 	USERNAME_TOO_LONG: "Kullanıcı adı çok uzun",
 	INVALID_USERNAME: "Geçersiz kullanıcı adı",
 	INVALID_DISPLAY_USERNAME: "Geçersiz görüntüleme adı",
+	USERNAME_IS_IMMUTABLE: "Kullanıcı adı güncellenemez",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

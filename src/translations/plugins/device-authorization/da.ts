@@ -12,6 +12,8 @@ export const DA_DK = {
 	POLLING_TOO_FREQUENTLY: "For hyppige forespørgsler",
 	INVALID_DEVICE_CODE_STATUS: "Ugyldig enhedskode status",
 	AUTHENTICATION_REQUIRED: "Godkendelse påkrævet",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Enhedskoden er ikke gjort krav på af en verificerende session. Kald `GET /device` med `user_code`, mens du er logget ind, før du godkender eller afviser",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

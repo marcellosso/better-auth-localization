@@ -74,6 +74,28 @@ export const RU_RU = {
 		"У вас нет разрешения на доступ к этой организации как владелец",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Вы не являетесь членом этой организации",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Slug организации уже занят",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Для просмотра приглашений на email сессии необходимо подтвердить email",
+	MISSING_AC_INSTANCE:
+		"Динамическое управление доступом требует заранее определенного экземпляра ac в серверном плагине аутентификации. Подробнее см. в логах сервера",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Чтобы создать роль, нужно состоять в организации",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "У вас нет разрешения на создание роли",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"У вас нет разрешения на изменение роли",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "У вас нет разрешения на удаление роли",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "У вас нет разрешения на просмотр роли",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"У вас нет разрешения на просмотр списка ролей",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "У вас нет разрешения на получение роли",
+	TOO_MANY_ROLES: "В этой организации слишком много ролей",
+	INVALID_RESOURCE: "Указанное разрешение содержит недействительный ресурс",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Это название роли уже занято",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "Невозможно удалить предопределенную роль",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Невозможно удалить роль, назначенную участникам. Сначала назначьте участникам другую роль",
+	INVALID_TEAM_ID: "ID команды содержит зарезервированный символ",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

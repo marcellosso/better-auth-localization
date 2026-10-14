@@ -68,6 +68,26 @@ export const TR_TR = {
 		"Bu organizasyona sahip olarak erişim yetkiniz yok",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Bu organizasyonun üyesi değilsiniz",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Organizasyon slug'ı zaten alınmış",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Oturum e-posta adresine ait davetleri görüntülemek veya listelemek için e-posta doğrulaması gerekli",
+	MISSING_AC_INSTANCE:
+		"Dinamik Erişim Kontrolü, sunucu auth eklentisinde önceden tanımlanmış bir ac örneği gerektirir. Daha fazla bilgi için sunucu günlüklerine bakın",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Rol oluşturmak için bir organizasyonda olmalısınız",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Rol oluşturma izniniz yok",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "Rol güncelleme izniniz yok",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Rol silme izniniz yok",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Rol okuma izniniz yok",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Rolleri listeleme izniniz yok",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Rol alma izniniz yok",
+	TOO_MANY_ROLES: "Bu organizasyonda çok fazla rol var",
+	INVALID_RESOURCE: "Sağlanan izin geçersiz bir kaynak içeriyor",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Bu rol adı zaten alınmış",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "Önceden tanımlanmış bir rol silinemez",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Üyelere atanmış bir rol silinemez. Lütfen önce üyeleri başka bir role atayın",
+	INVALID_TEAM_ID: "Takım ID'si ayrılmış bir karakter içeriyor",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {
