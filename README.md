@@ -45,95 +45,61 @@ export const auth = betterAuth({
 
 ### Dynamic Locale Detection
 
-The `getLocale` option lets you **dynamically detect the locale** for each request.  
-It receives a **raw `Request` object**, so you can read cookies, headers, JWT tokens, database info, whatever makes sense in your app.
+The `getLocale` option resolves the locale **per request**. It receives the raw `Request` (or `undefined` for server-side `auth.api.*` calls made without headers) and returns a locale. The plugin knows nothing about your users, so you decide where the locale comes from: a header, a cookie, or the user's session.
 
-This plugin does *not* know your user/session automatically. You decide how to extract the locale.
+`getLocale` only runs when a request fails with an error, so successful requests don't pay for it. If it throws or returns an unknown locale, the plugin falls back to `defaultLocale`.
 
----
-
-## Example
+#### From a header or cookie
 
 ```ts
 localization({
   defaultLocale: "pt-BR",
-  fallbackLocale: "default",
-  getLocale: async (req) => {
-    try {
-      const locale = await getUserLocale(req);
-      return locale ?? "default";
-    } catch (err) {
-      console.warn("Error detecting locale:", err);
-      return "default";
-    }
-  }
+  getLocale: (request) => {
+    const header = request?.headers.get("x-user-locale");
+    return (header as BuiltInLocales | null) ?? "pt-BR";
+  },
 });
 ```
 
----
+Use the same approach for a cookie (`request.headers.get("cookie")`) or `accept-language`.
 
-## Implementing `getUserLocale` (choose the strategy you prefer)
+#### From the user's session
 
-Below are a few common ways to detect the locale.  
-Pick one or combine them depending on your app’s architecture.
-
----
-
-### **1. Read locale directly from a cookie** (simplest)
+To use a locale saved on the user, call `auth.api.getSession` inside `getLocale`. It reads the session from the request's cookies, the same way your app does:
 
 ```ts
-async function getUserLocale(req: Request): Promise<string | null> {
-  const cookieHeader = req.headers.get("cookie");
-  const cookies = parseCookie(cookieHeader);
-  return cookies.locale ?? null;
-}
+import { betterAuth } from "better-auth";
+import { type BuiltInLocales, localization } from "better-auth-localization";
+
+export const auth = betterAuth({
+  user: {
+    additionalFields: {
+      locale: { type: "string", required: false },
+    },
+  },
+  plugins: [
+    localization({
+      defaultLocale: "default",
+      // The explicit return type is required: `auth` is referenced inside its own
+      // config, so TypeScript can't infer it.
+      getLocale: async (request): Promise<BuiltInLocales> => {
+        if (!request) return "default";
+
+        const session = await auth.api.getSession({ headers: request.headers });
+        if (session?.user.locale) return session.user.locale as BuiltInLocales;
+
+        // No session (e.g. a failed sign-in): fall back to a header.
+        return (request.headers.get("x-user-locale") as BuiltInLocales | null) ?? "default";
+      },
+    }),
+  ],
+});
 ```
 
----
-
-### **2. Read locale from a custom header**
-
-```ts
-async function getUserLocale(req: Request): Promise<string | null> {
-  return req.headers.get("x-user-locale");
-}
-```
-
----
-
-### **3. Decode your session/JWT and read the user's preferred locale**
-
-Useful if your authentication stores user data inside a token.
-
-```ts
-async function getUserLocale(req: Request): Promise<string | null> {
-  const cookieHeader = req.headers.get("cookie");
-  const session = decodeSession(cookieHeader); // your own logic
-
-  return session?.user?.locale ?? null;
-}
-```
-
----
-
-### **4. Look up user locale in your database**
-
-Only makes sense if your session/cookie includes a userId.
-
-```ts
-async function getUserLocale(req: Request): Promise<string | null> {
-  const cookieHeader = req.headers.get("cookie");
-  const session = decodeSession(cookieHeader); // extract userId
-  const userId = session?.userId;
-
-  if (!userId) return null;
-
-  const locale = await db.user.getLocale(userId);
-  return locale ?? null;
-}
-```
-
-If you have suggestions for more examples or want to see a built-in helper, feel free to open an issue!
+Notes:
+- Errors on sign-in and sign-up happen before a session exists, so always keep a fallback such as a header, a cookie or `accept-language`.
+- `getSession` reads the session from your database on each translated error. Enable [`session.cookieCache`](https://www.better-auth.com/docs/concepts/session-management#cookie-cache) to avoid the lookup.
+- If you use custom translations, annotate with `AvailableLocales<typeof translations>` instead of `BuiltInLocales`.
 
 ### Custom Translations
 
