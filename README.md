@@ -139,6 +139,31 @@ localization({
 });
 ```
 
+### Translating Outside a Request
+
+`translateError` translates an error code without going through the plugin. Use it when the locale is only known in your UI, for example from the URL path (`/pt-BR/login`):
+
+```ts
+import { translateError } from "better-auth-localization/translate";
+
+const { error } = await authClient.signIn.email({ email, password });
+
+if (error?.code) {
+  const message = translateError(error.code, "pt-BR") ?? error.message;
+}
+```
+
+It returns `undefined` when there is no translation, and for the `"default"` locale, so you can fall back to the original message. It accepts the same `fallbackLocale` and `translations` options as the plugin:
+
+```ts
+translateError(error.code, locale, {
+  fallbackLocale: "pt-BR",
+  translations: { "fr-CA": { USER_NOT_FOUND: "Utilisateur introuvable" } },
+});
+```
+
+Import it from `better-auth-localization/translate` in client code: that entry doesn't load any server code. It is also exported from `better-auth-localization`.
+
 ### Language Support Status
 
 Currently supported languages:
