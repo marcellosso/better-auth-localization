@@ -16,6 +16,18 @@
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.mjs",
 			"require": "./dist/index.js"
+		},
+		"./translate": {
+			"types": "./dist/translate.d.ts",
+			"import": "./dist/translate.mjs",
+			"require": "./dist/translate.js"
+		}
+	},
+	"typesVersions": {
+		"*": {
+			"translate": [
+				"./dist/translate.d.ts"
+			]
 		}
 	},
 	"scripts": {

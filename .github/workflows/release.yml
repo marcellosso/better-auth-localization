@@ -28,8 +28,10 @@ jobs:
           node-version: 22.x
           cache: 'pnpm'
 
-      - name: Update npm to latest version for OIDC support
-        run: npm install -g npm@latest
+      # npm 11.5+ supports OIDC trusted publishing. npm 12 rejects the unknown
+      # `--git-checks` flag that `pnpm publish` forwards, so stay on 11.
+      - name: Update npm for OIDC support
+        run: npm install -g npm@11
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
@@ -39,6 +41,9 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+      - name: Type Check
+        run: pnpm tsc
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
