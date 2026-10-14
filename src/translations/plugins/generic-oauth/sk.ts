@@ -8,7 +8,7 @@ export const SK_SK_FORMAL = {
 } satisfies GenericOAuthErrorCodesType;
 
 export const LOCALES = {
-  "sk": SK_SK_INFORMAL,
+  "sk-SK": SK_SK_INFORMAL,
   "sk-SK-informal": SK_SK_INFORMAL,
   "sk-SK-formal": SK_SK_FORMAL,
 } as const;
