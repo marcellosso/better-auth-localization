@@ -9,6 +9,7 @@ export const VI_VN = {
 	USERNAME_TOO_LONG: "Tên người dùng quá dài",
 	INVALID_USERNAME: "Tên người dùng không hợp lệ",
 	INVALID_DISPLAY_USERNAME: "Tên hiển thị không hợp lệ",
+	USERNAME_IS_IMMUTABLE: "Không thể cập nhật tên người dùng",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

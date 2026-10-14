@@ -22,6 +22,14 @@ export const KO_KR = {
 	NO_DATA_TO_UPDATE: "업데이트할 데이터가 없습니다",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS: "사용자를 업데이트할 권한이 없습니다",
 	YOU_CANNOT_REMOVE_YOURSELF: "자신을 제거할 수 없습니다",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"존재하지 않는 역할 값을 설정할 권한이 없습니다",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "관리자를 가장할 수 없습니다",
+	INVALID_ROLE_TYPE: "잘못된 역할 유형입니다",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"사용자의 이메일을 업데이트할 권한이 없습니다",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"비밀번호는 update-user로 업데이트할 수 없습니다. 대신 set-user-password 엔드포인트를 사용하세요",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

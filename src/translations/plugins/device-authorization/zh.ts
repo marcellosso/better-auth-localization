@@ -12,6 +12,8 @@ export const ZH_HANS = {
 	POLLING_TOO_FREQUENTLY: "轮询过于频繁",
 	INVALID_DEVICE_CODE_STATUS: "无效的设备代码状态",
 	AUTHENTICATION_REQUIRED: "需要身份验证",
+	DEVICE_CODE_NOT_CLAIMED:
+		"設備代碼尚未被驗證會話認領；請先在登錄狀態下使用 `user_code` 調用 `GET /device`，然後再批准或拒絕",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const ZH_HANT = {
@@ -26,6 +28,8 @@ export const ZH_HANT = {
 	POLLING_TOO_FREQUENTLY: "輪詢過於頻繁",
 	INVALID_DEVICE_CODE_STATUS: "無效的設備代碼狀態",
 	AUTHENTICATION_REQUIRED: "需要身份驗證",
+	DEVICE_CODE_NOT_CLAIMED:
+		"设备代码尚未被验证会话认领；请先在登录状态下使用 `user_code` 调用 `GET /device`，然后再批准或拒绝",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

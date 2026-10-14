@@ -7,6 +7,7 @@ export const AZ = {
 } satisfies CaptchaErrorCodesType;
 
 export const AZ_AZ = {
+	...AZ,
 	VERIFICATION_FAILED: "CAPTCHA doğrulaması uğursuz oldu",
 	MISSING_RESPONSE: "CAPTCHA cavabı yoxdur",
 	UNKNOWN_ERROR: "Naməlum xəta",

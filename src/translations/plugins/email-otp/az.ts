@@ -5,6 +5,7 @@ export const AZ = {
 	TOO_MANY_ATTEMPTS: "Çox cəhd edilib",
 } satisfies EmailOTPErrorCodesType;
 export const AZ_AZ = {
+	...AZ,
 	// E-poçt OTP ilə bağlı səhvlər
 	TOO_MANY_ATTEMPTS: "Çox cəhd edilib",
 } satisfies EmailOTPErrorCodesType;

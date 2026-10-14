@@ -12,6 +12,8 @@ export const KO_KR = {
 	POLLING_TOO_FREQUENTLY: "폴링이 너무 자주 발생합니다",
 	INVALID_DEVICE_CODE_STATUS: "유효하지 않은 디바이스 코드 상태",
 	AUTHENTICATION_REQUIRED: "인증이 필요합니다",
+	DEVICE_CODE_NOT_CLAIMED:
+		"기기 코드가 인증 세션에 연결되지 않았습니다. 승인하거나 거부하기 전에 로그인한 상태에서 `user_code`로 `GET /device`를 호출하세요",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

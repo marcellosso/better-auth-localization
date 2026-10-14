@@ -12,6 +12,9 @@ export const FA_IR = {
 	POLLING_TOO_FREQUENTLY: "درخواست‌های بیش از حد مکرر",
 	INVALID_DEVICE_CODE_STATUS: "وضعیت کد دستگاه نامعتبر",
 	AUTHENTICATION_REQUIRED: "احراز هویت مورد نیاز",
+
+	DEVICE_CODE_NOT_CLAIMED:
+		"کد دستگاه توسط هیچ نشست تأییدکننده‌ای دریافت نشده است؛ پیش از تأیید یا رد، در حالت ورود به حساب، `GET /device` را با `user_code` فراخوانی کنید",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

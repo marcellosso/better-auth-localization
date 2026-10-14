@@ -26,6 +26,14 @@ export const MR_MR = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"तुम्हाला वापरकर्त्यांना अद्यतन करण्याची परवानगी नाही",
 	YOU_CANNOT_REMOVE_YOURSELF: "तुम्ही स्वतःला काढू शकत नाही",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"तुम्हाला अस्तित्वात नसलेले भूमिका मूल्य सेट करण्याची परवानगी नाही",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "तुम्ही ॲडमिनचे रूप धारण करू शकत नाही",
+	INVALID_ROLE_TYPE: "अवैध भूमिका प्रकार",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"तुम्हाला वापरकर्त्यांचा ईमेल अपडेट करण्याची परवानगी नाही",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"पासवर्ड update-user द्वारे अपडेट करता येत नाही. त्याऐवजी set-user-password एंडपॉइंट वापरा",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

@@ -10,6 +10,14 @@ export const RO_RO = {
 	AUTHENTICATION_FAILED: "Autentificarea a eșuat",
 	UNABLE_TO_CREATE_SESSION: "Nu se poate crea sesiunea",
 	FAILED_TO_UPDATE_PASSKEY: "Actualizarea cheii de acces a eșuat",
+	PREVIOUSLY_REGISTERED: "Înregistrat anterior",
+	REGISTRATION_CANCELLED: "Înregistrarea a fost anulată",
+	AUTH_CANCELLED: "Autentificarea a fost anulată",
+	SESSION_REQUIRED:
+		"Înregistrarea cheii de acces necesită o sesiune autentificată",
+	RESOLVE_USER_REQUIRED:
+		"Înregistrarea cheii de acces necesită o sesiune autentificată sau un callback resolveUser atunci când requireSession este false",
+	RESOLVED_USER_INVALID: "Utilizatorul rezolvat este invalid",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

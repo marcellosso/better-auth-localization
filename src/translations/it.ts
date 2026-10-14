@@ -40,6 +40,32 @@ export const IT_IT = createTranslationObject("it-IT", {
 	EMAIL_CAN_NOT_BE_UPDATED: "L'email non può essere aggiornata",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Non puoi scollegare il tuo ultimo account",
 	ACCOUNT_NOT_FOUND: "Account non trovato",
+	INVALID_USER: "Utente non valido",
+	TOKEN_EXPIRED: "Token scaduto",
+	CHANGE_EMAIL_DISABLED: "La modifica dell'email è disabilitata",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Accesso tramite navigazione tra siti bloccato. Questa richiesta sembra essere un attacco CSRF.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "L'email di verifica non è abilitata",
+	EMAIL_ALREADY_VERIFIED: "L'email è già verificata",
+	EMAIL_MISMATCH: "Le email non corrispondono",
+	SESSION_NOT_FRESH: "La sessione non è recente",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "L'account collegato esiste già",
+	INVALID_ORIGIN: "Origine non valida",
+	INVALID_CALLBACK_URL: "callbackURL non valido",
+	INVALID_REDIRECT_URL: "redirectURL non valido",
+	INVALID_ERROR_CALLBACK_URL: "errorCallbackURL non valido",
+	INVALID_NEW_USER_CALLBACK_URL: "newUserCallbackURL non valido",
+	MISSING_OR_NULL_ORIGIN: "Origin mancante o nullo",
+	CALLBACK_URL_REQUIRED: "callbackURL è obbligatorio",
+	FAILED_TO_CREATE_VERIFICATION: "Impossibile creare la verifica",
+	FIELD_NOT_ALLOWED: "Non è consentito impostare questo campo",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "La validazione asincrona non è supportata",
+	VALIDATION_ERROR: "Errore di validazione",
+	MISSING_FIELD: "Il campo è obbligatorio",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"Il metodo POST richiede che deferSessionRefresh sia abilitato nella configurazione della sessione",
+	BODY_MUST_BE_AN_OBJECT: "Il corpo deve essere un oggetto",
+	PASSWORD_ALREADY_SET: "L'utente ha già una password impostata",
 });
 
 export const LOCALES = {

@@ -40,13 +40,38 @@ export const CS_CZ_INFORMAL = createTranslationObject("cs-CZ-informal", {
 	ID_TOKEN_NOT_SUPPORTED: "Nepodporovaný id_token",
 
 	// This error is used during signInSocial and linkSocialAccount and is returned when the provider does not return userInfo.
-	FAILED_TO_GET_USER_INFO:
-		"Došlo k chybě při čtení informací o uživateli",
+	FAILED_TO_GET_USER_INFO: "Došlo k chybě při čtení informací o uživateli",
 
 	// Account management errors
 	EMAIL_CAN_NOT_BE_UPDATED: "Email není možné změnit",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Účet se nepodařilo odpojit",
 	ACCOUNT_NOT_FOUND: "Účet nebyl nalezen",
+	INVALID_USER: "Neplatný uživatel",
+	TOKEN_EXPIRED: "Platnost tokenu vypršela",
+	CHANGE_EMAIL_DISABLED: "Změna emailu je zakázána",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Přihlášení prostřednictvím navigace mezi weby bylo zablokováno. Tento požadavek vypadá jako útok CSRF.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Ověřovací email není povolen",
+	EMAIL_ALREADY_VERIFIED: "Email už byl ověřen",
+	EMAIL_MISMATCH: "Emaily se neshodují",
+	SESSION_NOT_FRESH: "Uživatelská relace není aktuální",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Propojený účet již existuje",
+	INVALID_ORIGIN: "Neplatný původ požadavku",
+	INVALID_CALLBACK_URL: "Neplatný callbackURL",
+	INVALID_REDIRECT_URL: "Neplatný redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "Neplatný errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "Neplatný newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Hlavička Origin chybí nebo je prázdná",
+	CALLBACK_URL_REQUIRED: "callbackURL je povinný",
+	FAILED_TO_CREATE_VERIFICATION: "Nepodařilo se vytvořit ověření",
+	FIELD_NOT_ALLOWED: "Nastavení tohoto pole není povoleno",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "Asynchronní validace není podporována",
+	VALIDATION_ERROR: "Chyba validace",
+	MISSING_FIELD: "Pole je povinné",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"Metoda POST vyžaduje povolení deferSessionRefresh v konfiguraci relace",
+	BODY_MUST_BE_AN_OBJECT: "Tělo požadavku musí být objekt",
+	PASSWORD_ALREADY_SET: "Uživatel již má nastavené heslo",
 });
 
 export const CS_CZ_FORMAL = createTranslationObject("cs-CZ-formal", {

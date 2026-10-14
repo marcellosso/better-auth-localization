@@ -12,6 +12,12 @@ export const FA_IR = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"تلاش‌های بیش از حد. لطفاً کد جدیدی درخواست کنید.",
 	INVALID_TWO_FACTOR_COOKIE: "کوکی احراز هویت دو مرحله‌ای نامعتبر",
+
+	OTP_NOT_CONFIGURED: "OTP در دسترس نیست",
+	TOTP_ALREADY_ENABLED: "TOTP از قبل فعال است",
+	TOTP_NOT_CONFIGURED: "TOTP در دسترس نیست",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"تعداد تلاش‌های ناموفق تأیید بیش از حد مجاز بود. حساب شما موقتاً قفل شده است. لطفاً بعداً دوباره تلاش کنید.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

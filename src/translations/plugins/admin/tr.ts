@@ -22,6 +22,14 @@ export const TR_TR = {
 	NO_DATA_TO_UPDATE: "Güncellenecek veri yok",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS: "Kullanıcıları güncelleme izniniz yok",
 	YOU_CANNOT_REMOVE_YOURSELF: "Kendinizi kaldıramazsınız",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Var olmayan bir rol değeri ayarlama izniniz yok",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Yöneticileri taklit edemezsiniz",
+	INVALID_ROLE_TYPE: "Geçersiz rol türü",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Kullanıcıların e-posta adresini güncelleme izniniz yok",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Şifre update-user ile güncellenemez. Bunun yerine set-user-password uç noktasını kullanın",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

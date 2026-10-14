@@ -12,6 +12,8 @@ export const RO_RO = {
 	POLLING_TOO_FREQUENTLY: "Interogări prea frecvente",
 	INVALID_DEVICE_CODE_STATUS: "Status cod dispozitiv invalid",
 	AUTHENTICATION_REQUIRED: "Autentificare necesară",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Codul dispozitivului nu a fost revendicat de o sesiune de verificare; apelați `GET /device` cu `user_code` în timp ce sunteți autentificat, înainte de a aproba sau a refuza",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

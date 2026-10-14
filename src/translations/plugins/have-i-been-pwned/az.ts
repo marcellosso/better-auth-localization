@@ -6,6 +6,7 @@ export const AZ = {
 		"Daxil etdiyiniz şifrə kompromet olunub. Zəhmət olmasa fərqli bir şifrə seçin.",
 } satisfies HaveIBeenPwnedErrorCodesType;
 export const AZ_AZ = {
+	...AZ,
 	// Have I Been Pwned ilə bağlı səhvlər
 	PASSWORD_COMPROMISED:
 		"Daxil etdiyiniz şifrə kompromet olunub. Zəhmət olmasa fərqli bir şifrə seçin.",

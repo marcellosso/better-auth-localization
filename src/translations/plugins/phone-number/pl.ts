@@ -10,6 +10,9 @@ export const PL_PL = {
 	OTP_EXPIRED: "Kod weryfikacyjny wygasł",
 	INVALID_OTP: "Nieprawidłowy kod weryfikacyjny",
 	PHONE_NUMBER_NOT_VERIFIED: "Numer telefonu nie został zweryfikowany",
+	PHONE_NUMBER_NOT_EXIST: "Numer telefonu nie jest zarejestrowany",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Numeru telefonu nie można zmienić",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP nie jest zaimplementowane",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

@@ -74,6 +74,30 @@ export const RO_RO = {
 		"Nu aveți permisiunea să accesați această organizație ca proprietar",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Nu sunteți membru al acestei organizații",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Slug-ul organizației este deja folosit",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Este necesară verificarea adresei de email pentru a vizualiza sau lista invitațiile adresei de email a sesiunii",
+	MISSING_AC_INSTANCE:
+		"Controlul dinamic al accesului necesită o instanță ac predefinită în pluginul de autentificare de pe server. Consultați jurnalele serverului pentru mai multe informații",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Trebuie să faceți parte dintr-o organizație pentru a crea un rol",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Nu aveți permisiunea să creați un rol",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Nu aveți permisiunea să actualizați un rol",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Nu aveți permisiunea să ștergeți un rol",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE:
+		"Nu aveți permisiunea să vizualizați un rol",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Nu aveți permisiunea să listați rolurile",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Nu aveți permisiunea să obțineți un rol",
+	TOO_MANY_ROLES: "Această organizație are prea multe roluri",
+	INVALID_RESOURCE: "Permisiunea furnizată include o resursă invalidă",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Acest nume de rol este deja folosit",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "Nu se poate șterge un rol predefinit",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Nu se poate șterge un rol atribuit membrilor. Reatribuiți mai întâi membrilor un alt rol",
+	INVALID_TEAM_ID: "ID-ul echipei conține un caracter rezervat",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

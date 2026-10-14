@@ -8,6 +8,7 @@ export const ZH_HANS = {
 	USERNAME_TOO_LONG: "用户名太长",
 	INVALID_USERNAME: "无效的用户名",
 	INVALID_DISPLAY_USERNAME: "无效的显示名称",
+	USERNAME_IS_IMMUTABLE: "無法更新用戶名",
 } satisfies UsernameErrorCodesType;
 
 export const ZH_HANT = {
@@ -18,6 +19,7 @@ export const ZH_HANT = {
 	USERNAME_TOO_LONG: "用戶名太長",
 	INVALID_USERNAME: "無效的用戶名",
 	INVALID_DISPLAY_USERNAME: "無效的顯示名稱",
+	USERNAME_IS_IMMUTABLE: "无法更新用户名",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

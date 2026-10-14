@@ -9,6 +9,7 @@ export const EL_GR = {
 	USERNAME_TOO_LONG: "Το όνομα χρήστη είναι πολύ μακρύ",
 	INVALID_USERNAME: "Μη έγκυρο όνομα χρήστη",
 	INVALID_DISPLAY_USERNAME: "Μη έγκυρο όνομα εμφάνισης",
+	USERNAME_IS_IMMUTABLE: "Το όνομα χρήστη δεν μπορεί να ενημερωθεί",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

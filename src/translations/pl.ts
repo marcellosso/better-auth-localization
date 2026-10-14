@@ -40,6 +40,33 @@ export const PL_PL = createTranslationObject("pl-PL", {
 	EMAIL_CAN_NOT_BE_UPDATED: "Nie można zaktulizować adresu email",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "Nie możesz odłączyć swojego ostatniego konta",
 	ACCOUNT_NOT_FOUND: "Nie znaleziono konta",
+	INVALID_USER: "Nieprawidłowy użytkownik",
+	TOKEN_EXPIRED: "Token wygasł",
+	CHANGE_EMAIL_DISABLED: "Zmiana adresu email jest wyłączona",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"Logowanie przez nawigację między witrynami zostało zablokowane. To żądanie wygląda na atak CSRF.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "Weryfikacja przez email nie jest włączona",
+	EMAIL_ALREADY_VERIFIED: "Adres email został już zweryfikowany",
+	EMAIL_MISMATCH: "Adresy email nie są zgodne",
+	SESSION_NOT_FRESH: "Sesja nie jest świeża",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "Połączone konto już istnieje",
+	INVALID_ORIGIN: "Nieprawidłowe źródło żądania",
+	INVALID_CALLBACK_URL: "Nieprawidłowy callbackURL",
+	INVALID_REDIRECT_URL: "Nieprawidłowy redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "Nieprawidłowy errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "Nieprawidłowy newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Brakujący lub pusty nagłówek Origin",
+	CALLBACK_URL_REQUIRED: "callbackURL jest wymagany",
+	FAILED_TO_CREATE_VERIFICATION: "Nie udało się utworzyć weryfikacji",
+	FIELD_NOT_ALLOWED: "Ustawienie tego pola jest niedozwolone",
+	ASYNC_VALIDATION_NOT_SUPPORTED:
+		"Walidacja asynchroniczna nie jest obsługiwana",
+	VALIDATION_ERROR: "Błąd walidacji",
+	MISSING_FIELD: "Pole jest wymagane",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"Metoda POST wymaga włączenia deferSessionRefresh w konfiguracji sesji",
+	BODY_MUST_BE_AN_OBJECT: "Treść żądania musi być obiektem",
+	PASSWORD_ALREADY_SET: "Użytkownik ma już ustawione hasło",
 });
 
 export const LOCALES = {

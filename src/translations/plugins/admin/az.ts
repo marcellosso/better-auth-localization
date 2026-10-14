@@ -25,8 +25,17 @@ export const AZ = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"İstifadəçiləri yeniləməyə icazəniz yoxdur",
 	YOU_CANNOT_REMOVE_YOURSELF: "Özünüzü silə bilməzsiniz",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Mövcud olmayan rol dəyərini təyin etməyə icazəniz yoxdur",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Adminlərin adından çıxış edə bilməzsiniz",
+	INVALID_ROLE_TYPE: "Yanlış rol növü",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"İstifadəçilərin e-poçt ünvanını yeniləməyə icazəniz yoxdur",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Şifrə update-user vasitəsilə yenilənə bilməz. Bunun əvəzinə set-user-password endpointindən istifadə edin",
 } satisfies AdminErrorCodesType;
 export const AZ_AZ = {
+	...AZ,
 	// Admin ilə bağlı səhvlər
 	YOU_CANNOT_BAN_YOURSELF: "Özünüzü ban edə bilməzsiniz",
 	YOU_ARE_NOT_ALLOWED_TO_CHANGE_USERS_ROLE:

@@ -22,6 +22,15 @@ export const FA_IR = {
 	NO_DATA_TO_UPDATE: "هیچ داده‌ای برای به‌روزرسانی وجود ندارد",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS: "شما مجاز به به‌روزرسانی کاربران نیستید",
 	YOU_CANNOT_REMOVE_YOURSELF: "شما نمی‌توانید خودتان را حذف کنید",
+
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"شما مجاز به تنظیم نقشی که وجود ندارد نیستید",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "شما نمی‌توانید به جای مدیران وارد شوید",
+	INVALID_ROLE_TYPE: "نوع نقش نامعتبر",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"شما مجاز به به‌روزرسانی ایمیل کاربران نیستید",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"رمز عبور از طریق update-user قابل به‌روزرسانی نیست. به جای آن از نقطه پایانی set-user-password استفاده کنید",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

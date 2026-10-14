@@ -1,6 +1,6 @@
 import type { OrganizationErrorCodesType } from "../../../types";
 
-export const MR_IN = {
+export const MR_MR = {
 	// Organization related errors
 	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_ORGANIZATION:
 		"तुम्हाला नवीन संस्था तयार करण्याची परवानगी नाही",
@@ -70,8 +70,31 @@ export const MR_IN = {
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"तुम्हाला मालक म्हणून या संस्थेत प्रवेश करण्याची परवानगी नाही",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "तुम्ही या संस्थेचे सदस्य नाही",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "संस्थेचा स्लग आधीच वापरला गेला आहे",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"सत्राच्या ईमेलची आमंत्रणे पाहण्यासाठी किंवा यादी करण्यासाठी ईमेल सत्यापन आवश्यक आहे",
+	MISSING_AC_INSTANCE:
+		"डायनॅमिक ॲक्सेस कंट्रोलसाठी सर्व्हर ऑथ प्लगइनवर पूर्वनिर्धारित ac इन्स्टन्स आवश्यक आहे. अधिक माहितीसाठी सर्व्हर लॉग पहा",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"भूमिका तयार करण्यासाठी तुम्ही संस्थेत असणे आवश्यक आहे",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE:
+		"तुम्हाला भूमिका तयार करण्याची परवानगी नाही",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"तुम्हाला भूमिका अपडेट करण्याची परवानगी नाही",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "तुम्हाला भूमिका हटवण्याची परवानगी नाही",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "तुम्हाला भूमिका वाचण्याची परवानगी नाही",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"तुम्हाला भूमिकांची यादी पाहण्याची परवानगी नाही",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "तुम्हाला भूमिका मिळवण्याची परवानगी नाही",
+	TOO_MANY_ROLES: "या संस्थेत खूप जास्त भूमिका आहेत",
+	INVALID_RESOURCE: "दिलेल्या परवानगीमध्ये अवैध संसाधन आहे",
+	ROLE_NAME_IS_ALREADY_TAKEN: "हे भूमिकेचे नाव आधीच वापरले गेले आहे",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "पूर्वनिर्धारित भूमिका हटवता येत नाही",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"सदस्यांना नियुक्त केलेली भूमिका हटवता येत नाही. कृपया आधी सदस्यांना दुसऱ्या भूमिकेवर पुन्हा नियुक्त करा",
+	INVALID_TEAM_ID: "टीम ID मध्ये राखीव वर्ण आहे",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {
-	"mr-IN": MR_IN,
+	"mr-MR": MR_MR,
 } as const;

@@ -9,6 +9,7 @@ export const JA_JP = {
 	USERNAME_TOO_LONG: "ユーザー名が長すぎます",
 	INVALID_USERNAME: "無効なユーザー名",
 	INVALID_DISPLAY_USERNAME: "無効な表示名",
+	USERNAME_IS_IMMUTABLE: "ユーザー名は更新できません",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

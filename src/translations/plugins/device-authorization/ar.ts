@@ -12,6 +12,9 @@ export const AR_SA = {
 	POLLING_TOO_FREQUENTLY: "الاستعلامات متكررة جداً",
 	INVALID_DEVICE_CODE_STATUS: "حالة رمز الجهاز غير صالحة",
 	AUTHENTICATION_REQUIRED: "المصادقة مطلوبة",
+
+	DEVICE_CODE_NOT_CLAIMED:
+		"لم تتم المطالبة برمز الجهاز من قبل جلسة تحقق؛ استدعِ `GET /device` مع `user_code` أثناء تسجيل الدخول قبل الموافقة أو الرفض",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

@@ -27,6 +27,14 @@ export const PT_BR = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Você não tem permissão para atualizar usuários",
 	YOU_CANNOT_REMOVE_YOURSELF: "Você não pode se remover",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Você não tem permissão para definir um valor de cargo inexistente",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Você não pode se passar por administradores",
+	INVALID_ROLE_TYPE: "Tipo de cargo inválido",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Você não tem permissão para atualizar o email de usuários",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"A senha não pode ser atualizada por meio de update-user. Use o endpoint set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const PT_PT = {
@@ -55,6 +63,14 @@ export const PT_PT = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Não tem permissão para actualizar utilizadores",
 	YOU_CANNOT_REMOVE_YOURSELF: "Não pode remover-se",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Não tem permissão para definir um valor de cargo inexistente",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Não pode fazer-se passar por administradores",
+	INVALID_ROLE_TYPE: "Tipo de cargo inválido",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Não tem permissão para actualizar o e-mail de utilizadores",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"A palavra-passe não pode ser actualizada através de update-user. Utilize o endpoint set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

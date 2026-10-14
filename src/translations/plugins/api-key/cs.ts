@@ -1,4 +1,7 @@
-import type {AnonymousErrorCodesType, ApiKeyErrorCodesType} from "../../../types";
+import type {
+	AnonymousErrorCodesType,
+	ApiKeyErrorCodesType,
+} from "../../../types";
 
 export const CS_CZ_INFORMAL = {
 	// Api key related errors
@@ -24,8 +27,7 @@ export const CS_CZ_INFORMAL = {
 	METADATA_DISABLED: "Metadata jsou zakázána",
 	RATE_LIMIT_EXCEEDED: "Limit překročen",
 	NO_VALUES_TO_UPDATE: "Žádné hodnoty k uložení",
-	KEY_DISABLED_EXPIRATION:
-		"Nastavení platnosti vlastních klíčů je zakázané",
+	KEY_DISABLED_EXPIRATION: "Nastavení platnosti vlastních klíčů je zakázané",
 	INVALID_API_KEY: "Neplatný klíč",
 	INVALID_USER_ID_FROM_API_KEY: "ID uživatele z klíče je neplatné",
 	INVALID_API_KEY_GETTER_RETURN_TYPE:
@@ -34,16 +36,33 @@ export const CS_CZ_INFORMAL = {
 		"Atribut, který se pokoušíš nastavit může být změněn pouze z instance autentikačního serveru",
 	FAILED_TO_UPDATE_API_KEY: "Nepodařilo se aktualizovat klíč",
 	NAME_REQUIRED: "Název klíče je povinný",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "Referenční ID z API klíče je neplatné.",
+	ORGANIZATION_ID_REQUIRED:
+		"Pro API klíče vlastněné organizací je vyžadováno ID organizace.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Nejsi členem organizace, která vlastní tento API klíč.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Nemáš oprávnění provést tuto akci s API klíči organizace.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Nebyla nalezena výchozí konfigurace API klíče.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"API klíče vlastněné organizací vyžadují plugin organizací. Nainstaluj a nakonfiguruj plugin organizací.",
 } satisfies ApiKeyErrorCodesType;
 
 export const CS_CZ_FORMAL = {
 	...CS_CZ_INFORMAL,
 	SERVER_ONLY_PROPERTY:
 		"Atribut, který se pokoušíte nastavit může být změněn pouze z instance autentikačního serveru",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Nejste členem organizace, která vlastní tento API klíč.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Nemáte oprávnění provést tuto akci s API klíči organizace.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"API klíče vlastněné organizací vyžadují plugin organizací. Nainstalujte a nakonfigurujte plugin organizací.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {
-	"cs": CS_CZ_INFORMAL,
+	cs: CS_CZ_INFORMAL,
 	"cs-CZ-informal": CS_CZ_INFORMAL,
 	"cs-CZ-formal": CS_CZ_FORMAL,
 } as const;

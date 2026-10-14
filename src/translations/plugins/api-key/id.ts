@@ -33,6 +33,17 @@ export const ID_ID = {
 		"properti yang Anda coba atur hanya dapat diatur dari instance autentikasi server.",
 	FAILED_TO_UPDATE_API_KEY: "gagal memperbarui kunci API",
 	NAME_REQUIRED: "nama kunci API diperlukan.",
+	INVALID_REFERENCE_ID_FROM_API_KEY: "ID referensi dari kunci API tidak valid.",
+	ORGANIZATION_ID_REQUIRED:
+		"ID organisasi wajib diisi untuk kunci API milik organisasi.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Anda bukan anggota organisasi yang memiliki kunci API ini.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Anda tidak memiliki izin untuk melakukan tindakan ini pada kunci API organisasi.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Konfigurasi kunci API default tidak ditemukan.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Plugin organisasi diperlukan untuk kunci API milik organisasi. Silakan instal dan konfigurasikan plugin organisasi.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

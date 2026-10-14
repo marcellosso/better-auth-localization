@@ -28,6 +28,15 @@ export const UK_UA = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Ви не маєте дозволу оновлювати користувачів",
 	YOU_CANNOT_REMOVE_YOURSELF: "Ви не можете видалити себе",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Ви не маєте дозволу встановлювати неіснуюче значення ролі",
+	YOU_CANNOT_IMPERSONATE_ADMINS:
+		"Ви не можете видавати себе за адміністраторів",
+	INVALID_ROLE_TYPE: "Недійсний тип ролі",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Ви не маєте дозволу змінювати email користувачів",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Пароль не можна змінити через update-user. Натомість використовуйте endpoint set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

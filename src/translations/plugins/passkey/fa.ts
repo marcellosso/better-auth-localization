@@ -10,6 +10,14 @@ export const FA_IR = {
 	AUTHENTICATION_FAILED: "احراز هویت با شکست مواجه شد",
 	UNABLE_TO_CREATE_SESSION: "قادر به ایجاد جلسه نیست",
 	FAILED_TO_UPDATE_PASSKEY: "به‌روزرسانی کلید دسترسی با شکست مواجه شد",
+
+	PREVIOUSLY_REGISTERED: "قبلاً ثبت شده است",
+	REGISTRATION_CANCELLED: "ثبت‌نام لغو شد",
+	AUTH_CANCELLED: "احراز هویت لغو شد",
+	SESSION_REQUIRED: "ثبت کلید دسترسی نیازمند یک نشست احراز هویت‌شده است",
+	RESOLVE_USER_REQUIRED:
+		"ثبت کلید دسترسی نیازمند یک نشست احراز هویت‌شده یا تابع resolveUser در صورت false بودن requireSession است",
+	RESOLVED_USER_INVALID: "کاربر شناسایی‌شده نامعتبر است",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

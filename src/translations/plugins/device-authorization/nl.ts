@@ -12,6 +12,8 @@ export const NL_NL_INFORMAL = {
 	POLLING_TOO_FREQUENTLY: "Te frequente polls",
 	INVALID_DEVICE_CODE_STATUS: "Ongeldige apparaatcode status",
 	AUTHENTICATION_REQUIRED: "Authenticatie vereist",
+	DEVICE_CODE_NOT_CLAIMED:
+		"De apparaatcode is niet geclaimd door een verificatiesessie. Roep `GET /device` aan met de `user_code` terwijl je bent ingelogd, voordat je goedkeurt of afwijst",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const NL_NL_FORMAL = {

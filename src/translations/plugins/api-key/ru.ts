@@ -36,6 +36,18 @@ export const RU_RU = {
 		"свойство которое вы пытаетесь установить может быть установлено только из экземпляра аутентификации сервера.",
 	FAILED_TO_UPDATE_API_KEY: "не удалось обновить API ключ",
 	NAME_REQUIRED: "имя API ключа обязательно.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"Идентификатор ссылки из API ключа недействителен.",
+	ORGANIZATION_ID_REQUIRED:
+		"Для API ключей, принадлежащих организации, требуется ID организации.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Вы не являетесь участником организации, которой принадлежит этот API ключ.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"У вас нет разрешения на выполнение этого действия с API ключами организации.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Конфигурация API ключа по умолчанию не найдена.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Для API ключей, принадлежащих организации, требуется плагин организации. Установите и настройте плагин организации.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

@@ -10,6 +10,9 @@ export const RU_RU = {
 	OTP_EXPIRED: "Код подтверждения истек",
 	INVALID_OTP: "Неверный код подтверждения",
 	PHONE_NUMBER_NOT_VERIFIED: "Номер телефона не подтвержден",
+	PHONE_NUMBER_NOT_EXIST: "Номер телефона не зарегистрирован",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Номер телефона нельзя изменить",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP не реализован",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

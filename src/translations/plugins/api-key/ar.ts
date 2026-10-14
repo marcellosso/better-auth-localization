@@ -31,6 +31,17 @@ export const AR_SA = {
 		"الخاصية التي تحاول تعيينها يمكن تعيينها فقط من مثيل المصادقة في الخادم.",
 	FAILED_TO_UPDATE_API_KEY: "فشل في تحديث مفتاح API",
 	NAME_REQUIRED: "اسم مفتاح API مطلوب.",
+
+	INVALID_REFERENCE_ID_FROM_API_KEY: "معرّف المرجع في مفتاح API غير صالح.",
+	ORGANIZATION_ID_REQUIRED: "معرّف المنظمة مطلوب لمفاتيح API المملوكة للمنظمات.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"أنت لست عضواً في المنظمة التي تملك مفتاح API هذا.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"ليس لديك صلاحية لتنفيذ هذا الإجراء على مفاتيح API الخاصة بالمنظمة.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"لم يتم العثور على إعدادات مفتاح API الافتراضية.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"إضافة المنظمة مطلوبة لمفاتيح API المملوكة للمنظمات. يرجى تثبيت إضافة المنظمة وإعدادها.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

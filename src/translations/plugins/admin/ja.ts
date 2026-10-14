@@ -22,6 +22,14 @@ export const JA_JP = {
 	NO_DATA_TO_UPDATE: "更新するデータがありません",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS: "ユーザーを更新する権限がありません",
 	YOU_CANNOT_REMOVE_YOURSELF: "自分自身を削除することはできません",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"存在しないロール値を設定する権限がありません",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "管理者になりすますことはできません",
+	INVALID_ROLE_TYPE: "無効なロールタイプです",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"ユーザーのメールアドレスを更新する権限がありません",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"パスワードは update-user では更新できません。代わりに set-user-password エンドポイントを使用してください",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

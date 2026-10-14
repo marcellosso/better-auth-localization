@@ -34,6 +34,18 @@ export const FR_FR = {
 		"la propriété que vous essayez de définir ne peut être définie que depuis l'instance d'authentification du serveur.",
 	FAILED_TO_UPDATE_API_KEY: "échec de la mise à jour de la clé API",
 	NAME_REQUIRED: "le nom de la clé API est requis.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"L'ID de référence de la clé API est invalide.",
+	ORGANIZATION_ID_REQUIRED:
+		"L'ID de l'organisation est requis pour les clés API appartenant à une organisation.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Vous n'êtes pas membre de l'organisation propriétaire de cette clé API.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Vous n'avez pas la permission d'effectuer cette action sur les clés API de l'organisation.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Aucune configuration de clé API par défaut trouvée.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Le plugin d'organisation est requis pour les clés API appartenant à une organisation. Veuillez installer et configurer le plugin d'organisation.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

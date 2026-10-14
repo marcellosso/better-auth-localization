@@ -10,6 +10,13 @@ export const VI_VN = {
 	AUTHENTICATION_FAILED: "Xác thực thất bại",
 	UNABLE_TO_CREATE_SESSION: "Không thể tạo phiên đăng nhập",
 	FAILED_TO_UPDATE_PASSKEY: "Cập nhật passkey thất bại",
+	PREVIOUSLY_REGISTERED: "Đã được đăng ký trước đó",
+	REGISTRATION_CANCELLED: "Đã hủy đăng ký",
+	AUTH_CANCELLED: "Đã hủy xác thực",
+	SESSION_REQUIRED: "Đăng ký passkey yêu cầu một session đã xác thực",
+	RESOLVE_USER_REQUIRED:
+		"Đăng ký passkey yêu cầu một session đã xác thực hoặc callback resolveUser khi requireSession là false",
+	RESOLVED_USER_INVALID: "Người dùng được xác định không hợp lệ",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

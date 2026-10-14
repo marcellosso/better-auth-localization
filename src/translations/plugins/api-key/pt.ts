@@ -35,6 +35,18 @@ export const PT_BR = {
 		"A propriedade que você está tentando definir só pode ser definida a partir da instância de autenticação do servidor.",
 	FAILED_TO_UPDATE_API_KEY: "Falha ao atualizar a chave de API",
 	NAME_REQUIRED: "O nome da chave de API é obrigatório.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"O ID de referência da chave de API é inválido.",
+	ORGANIZATION_ID_REQUIRED:
+		"O ID da organização é obrigatório para chaves de API pertencentes a uma organização.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Você não é membro da organização proprietária desta chave de API.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Você não tem permissão para realizar esta ação em chaves de API da organização.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Nenhuma configuração padrão de chave de API encontrada.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"O plugin de organização é obrigatório para chaves de API pertencentes a uma organização. Instale e configure o plugin de organização.",
 } satisfies ApiKeyErrorCodesType;
 
 export const PT_PT = {
@@ -73,6 +85,18 @@ export const PT_PT = {
 		"A propriedade que está a tentar definir só pode ser definida a partir da instância de autenticação do servidor.",
 	FAILED_TO_UPDATE_API_KEY: "Falha ao actualizar a chave de API",
 	NAME_REQUIRED: "O nome da chave de API é obrigatório.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"O ID de referência da chave de API é inválido.",
+	ORGANIZATION_ID_REQUIRED:
+		"O ID da organização é obrigatório para chaves de API pertencentes a uma organização.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Não é membro da organização proprietária desta chave de API.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Não tem permissão para realizar esta acção em chaves de API da organização.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Nenhuma configuração predefinida de chave de API encontrada.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"O plugin de organização é obrigatório para chaves de API pertencentes a uma organização. Instale e configure o plugin de organização.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

@@ -1,6 +1,6 @@
-import type { ErrorCodesType } from "../types";
+import { createTranslationObject } from "../utils/create-translation-object";
 
-export const CKB_IQ = {
+export const CKB_IQ = createTranslationObject("ckb-IQ", {
 	// User related errors
 	USER_NOT_FOUND: "بەکارهێنەر نەدۆزرایەوە",
 	FAILED_TO_CREATE_USER: "هەڵەیەک ڕوویدا لە درووست کردنی هەژمار",
@@ -40,7 +40,34 @@ export const CKB_IQ = {
 	EMAIL_CAN_NOT_BE_UPDATED: "ناتوانرێت ئیمەیڵ نوێ بکرێتەوە",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "ناتوانرێت دوایین هەژمار بپچرێنرێت",
 	ACCOUNT_NOT_FOUND: "هەژمار نەدۆزرایەوە",
-} satisfies ErrorCodesType;
+
+	INVALID_USER: "بەکارهێنەری نادروست",
+	TOKEN_EXPIRED: "تۆکن بەسەرچووە",
+	CHANGE_EMAIL_DISABLED: "گۆڕینی ئیمەیڵ ناچالاک کراوە",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"چوونەژوورەوە لە ڕێگەی گەڕان لە نێوان وێبسایتەکان ڕێگری لێکراوە. وادیارە ئەم داواکارییە هێرشی CSRF بێت.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "ئیمەیڵی پشتڕاستکردنەوە چالاک نەکراوە",
+	EMAIL_ALREADY_VERIFIED: "ئیمەیڵ پێشتر پشتڕاست کراوەتەوە",
+	EMAIL_MISMATCH: "ئیمەیڵەکان یەک ناگرنەوە",
+	SESSION_NOT_FRESH: "سێشنەکە تازە نییە",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "هەژماری پەیوەستکراو پێشتر هەیە",
+	INVALID_ORIGIN: "سەرچاوەی نادروست",
+	INVALID_CALLBACK_URL: "callbackURL نادروستە",
+	INVALID_REDIRECT_URL: "redirectURL نادروستە",
+	INVALID_ERROR_CALLBACK_URL: "errorCallbackURL نادروستە",
+	INVALID_NEW_USER_CALLBACK_URL: "newUserCallbackURL نادروستە",
+	MISSING_OR_NULL_ORIGIN: "Origin نییە یان بەتاڵە",
+	CALLBACK_URL_REQUIRED: "callbackURL پێویستە",
+	FAILED_TO_CREATE_VERIFICATION: "نەتوانرا پشتڕاستکردنەوە دروست بکرێت",
+	FIELD_NOT_ALLOWED: "ڕێگە نەدراوە ئەم خانەیە دابنرێت",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "پشتڕاستکردنەوەی ناهاوکات پشتگیری ناکرێت",
+	VALIDATION_ERROR: "هەڵەی پشتڕاستکردنەوە",
+	MISSING_FIELD: "خانەکە پێویستە",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"شێوازی POST پێویستی بە چالاککردنی deferSessionRefresh هەیە لە ڕێکخستنی سێشندا",
+	BODY_MUST_BE_AN_OBJECT: "لەشی داواکارییەکە دەبێت ئۆبجێکت بێت",
+	PASSWORD_ALREADY_SET: "بەکارهێنەر پێشتر وشەی نهێنی داناوە",
+});
 
 export const LOCALES = {
 	"ckb-IQ": CKB_IQ,

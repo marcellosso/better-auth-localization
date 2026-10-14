@@ -10,6 +10,14 @@ export const UK_UA = {
 	AUTHENTICATION_FAILED: "Помилка автентифікації",
 	UNABLE_TO_CREATE_SESSION: "Не вдалося створити сесію",
 	FAILED_TO_UPDATE_PASSKEY: "Не вдалося оновити ключ доступу",
+	PREVIOUSLY_REGISTERED: "Раніше зареєстровано",
+	REGISTRATION_CANCELLED: "Реєстрацію скасовано",
+	AUTH_CANCELLED: "Автентифікацію скасовано",
+	SESSION_REQUIRED:
+		"Для реєстрації ключа доступу потрібна автентифікована сесія",
+	RESOLVE_USER_REQUIRED:
+		"Для реєстрації ключа доступу потрібна автентифікована сесія або callback resolveUser, якщо requireSession має значення false",
+	RESOLVED_USER_INVALID: "Визначений користувач недійсний",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

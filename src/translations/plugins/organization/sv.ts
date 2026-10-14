@@ -73,6 +73,30 @@ export const SV_SE = {
 		"Du har inte behörighet att komma åt denna organisation som ägare",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Du är inte medlem i denna organisation",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Organisationens slug är redan upptagen",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"E-postverifiering krävs för att visa eller lista inbjudningar för sessionens e-postadress",
+	MISSING_AC_INSTANCE:
+		"Dynamisk åtkomstkontroll kräver en fördefinierad ac-instans i serverns auth-plugin. Läs serverloggarna för mer information",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Du måste vara i en organisation för att skapa en roll",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE:
+		"Du har inte behörighet att skapa en roll",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Du har inte behörighet att uppdatera en roll",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Du har inte behörighet att ta bort en roll",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Du har inte behörighet att läsa en roll",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Du har inte behörighet att lista roller",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Du har inte behörighet att hämta en roll",
+	TOO_MANY_ROLES: "Den här organisationen har för många roller",
+	INVALID_RESOURCE: "Den angivna behörigheten innehåller en ogiltig resurs",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Det rollnamnet är redan upptaget",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Det går inte att ta bort en fördefinierad roll",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Det går inte att ta bort en roll som är tilldelad medlemmar. Tilldela medlemmarna en annan roll först",
+	INVALID_TEAM_ID: "Team-ID innehåller ett reserverat tecken",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

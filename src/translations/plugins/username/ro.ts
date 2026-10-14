@@ -9,6 +9,7 @@ export const RO_RO = {
 	USERNAME_TOO_LONG: "Numele de utilizator este prea lung",
 	INVALID_USERNAME: "Nume de utilizator invalid",
 	INVALID_DISPLAY_USERNAME: "Nume de afișare invalid",
+	USERNAME_IS_IMMUTABLE: "Numele de utilizator nu poate fi actualizat",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

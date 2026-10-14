@@ -1,8 +1,10 @@
 import type { Auth } from "better-auth";
+import type { ORGANIZATION_ERROR_CODES } from "better-auth/client/plugins";
 import type {
 	AdminOptions,
 	admin,
 	anonymous,
+	captcha,
 	deviceAuthorization,
 	emailOTP,
 	genericOAuth,
@@ -11,12 +13,23 @@ import type {
 	phoneNumber,
 	TWO_FACTOR_ERROR_CODES,
 	USERNAME_ERROR_CODES,
-	captcha,
 } from "better-auth/plugins";
-import type { ORGANIZATION_ERROR_CODES } from "better-auth/client/plugins";
-import type { apiKey } from "@better-auth/api-key";
-import type { passkey } from "@better-auth/passkey";
 import type { defaultTranslations } from "../translations";
+import type {
+	ApiKeyErrorCodesType,
+	ElectronErrorCodesType,
+	PasskeyErrorCodesType,
+	SSOErrorCodesType,
+	StripeErrorCodesType,
+} from "./external-plugins";
+
+export type {
+	ApiKeyErrorCodesType,
+	ElectronErrorCodesType,
+	PasskeyErrorCodesType,
+	SSOErrorCodesType,
+	StripeErrorCodesType,
+} from "./external-plugins";
 
 type Prettify<T> = {
 	[K in keyof T]: T[K];
@@ -67,14 +80,8 @@ export type AdminErrorCodesType = RemoveReadonly<
 	ReturnType<typeof admin<AdminOptions>>["$ERROR_CODES"]
 >;
 
-export type CaptchaErrorCodesType = {
-	VERIFICATION_FAILED?: string | undefined;
-	MISSING_RESPONSE?: string | undefined;
-	UNKNOWN_ERROR?: string | undefined;
-}
-
-export type ApiKeyErrorCodesType = RemoveReadonly<
-	ReturnType<typeof apiKey>["$ERROR_CODES"]
+export type CaptchaErrorCodesType = RemoveReadonly<
+	ReturnType<typeof captcha>["$ERROR_CODES"]
 >;
 
 export type DeviceAuthorizationErrorCodesType = RemoveReadonly<
@@ -87,10 +94,6 @@ export type HaveIBeenPwnedErrorCodesType = RemoveReadonly<
 
 export type MultiSessionErrorCodesType = RemoveReadonly<
 	ReturnType<typeof multiSession>["$ERROR_CODES"]
->;
-
-export type PasskeyErrorCodesType = RemoveReadonly<
-	ReturnType<typeof passkey>["$ERROR_CODES"]
 >;
 
 export type ErrorCodesType = Partial<
@@ -110,6 +113,9 @@ export type ErrorCodesType = Partial<
 		| MultiSessionErrorCodesType
 		| PasskeyErrorCodesType
 		| CaptchaErrorCodesType
+		| StripeErrorCodesType
+		| ElectronErrorCodesType
+		| SSOErrorCodesType
 	>
 >;
 /**

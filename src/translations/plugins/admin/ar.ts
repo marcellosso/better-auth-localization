@@ -22,6 +22,15 @@ export const AR_SA = {
 	NO_DATA_TO_UPDATE: "لا توجد بيانات للتحديث",
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS: "ليس لديك صلاحية لتحديث المستخدمين",
 	YOU_CANNOT_REMOVE_YOURSELF: "لا يمكنك إزالة نفسك",
+
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"ليس لديك صلاحية لتعيين دور غير موجود",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "لا يمكنك انتحال شخصية المسؤولين",
+	INVALID_ROLE_TYPE: "نوع الدور غير صالح",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"ليس لديك صلاحية لتحديث البريد الإلكتروني للمستخدمين",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"لا يمكن تحديث كلمة المرور عبر update-user. استخدم نقطة النهاية set-user-password بدلاً من ذلك",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

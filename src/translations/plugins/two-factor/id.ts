@@ -12,6 +12,11 @@ export const ID_ID = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Terlalu banyak percobaan. Silakan minta kode baru.",
 	INVALID_TWO_FACTOR_COOKIE: "Cookie autentikasi dua faktor tidak valid",
+	OTP_NOT_CONFIGURED: "OTP tidak tersedia",
+	TOTP_ALREADY_ENABLED: "TOTP sudah diaktifkan",
+	TOTP_NOT_CONFIGURED: "TOTP tidak tersedia",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Terlalu banyak percobaan verifikasi yang gagal. Akun Anda dikunci sementara. Silakan coba lagi nanti.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

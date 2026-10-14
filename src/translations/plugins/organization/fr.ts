@@ -75,6 +75,31 @@ export const FR_FR = {
 		"Vous n'êtes pas autorisé à accéder à cette organisation en tant que propriétaire",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Vous n'êtes pas membre de cette organisation",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Le slug de l'organisation est déjà utilisé",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"La vérification de l'e-mail est requise pour afficher ou lister les invitations de l'e-mail de la session",
+	MISSING_AC_INSTANCE:
+		"Le contrôle d'accès dynamique nécessite une instance ac prédéfinie dans le plugin d'authentification du serveur. Consultez les journaux du serveur pour plus d'informations",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Vous devez faire partie d'une organisation pour créer un rôle",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE:
+		"Vous n'êtes pas autorisé à créer un rôle",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Vous n'êtes pas autorisé à modifier un rôle",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE:
+		"Vous n'êtes pas autorisé à supprimer un rôle",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Vous n'êtes pas autorisé à lire un rôle",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Vous n'êtes pas autorisé à lister les rôles",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE:
+		"Vous n'êtes pas autorisé à obtenir un rôle",
+	TOO_MANY_ROLES: "Cette organisation a trop de rôles",
+	INVALID_RESOURCE: "La permission fournie inclut une ressource invalide",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Ce nom de rôle est déjà utilisé",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "Impossible de supprimer un rôle prédéfini",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Impossible de supprimer un rôle attribué à des membres. Veuillez d'abord réattribuer les membres à un autre rôle",
+	INVALID_TEAM_ID: "L'ID de l'équipe contient un caractère réservé",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

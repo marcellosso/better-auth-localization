@@ -1,6 +1,6 @@
 import type { OrganizationErrorCodesType } from "../../../types";
 
-export const HI_IN = {
+export const HI_HI = {
 	// Organization related errors
 	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_ORGANIZATION:
 		"आपको नई संगठन बनाने की अनुमति नहीं है",
@@ -68,8 +68,28 @@ export const HI_IN = {
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"आपको मालिक के रूप में इस संगठन तक पहुंचने की अनुमति नहीं है",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "आप इस संगठन के सदस्य नहीं हैं",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "संगठन का स्लग पहले से लिया जा चुका है",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"सत्र के ईमेल के आमंत्रण देखने या सूचीबद्ध करने के लिए ईमेल सत्यापन आवश्यक है",
+	MISSING_AC_INSTANCE:
+		"डायनामिक एक्सेस कंट्रोल के लिए सर्वर ऑथ प्लगइन पर पूर्व-परिभाषित ac इंस्टेंस आवश्यक है। अधिक जानकारी के लिए सर्वर लॉग देखें",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"भूमिका बनाने के लिए आपका किसी संगठन में होना आवश्यक है",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "आपको भूमिका बनाने की अनुमति नहीं है",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "आपको भूमिका अपडेट करने की अनुमति नहीं है",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "आपको भूमिका हटाने की अनुमति नहीं है",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "आपको भूमिका पढ़ने की अनुमति नहीं है",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "आपको भूमिकाओं की सूची देखने की अनुमति नहीं है",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "आपको भूमिका प्राप्त करने की अनुमति नहीं है",
+	TOO_MANY_ROLES: "इस संगठन में बहुत अधिक भूमिकाएं हैं",
+	INVALID_RESOURCE: "दी गई अनुमति में अमान्य संसाधन शामिल है",
+	ROLE_NAME_IS_ALREADY_TAKEN: "यह भूमिका नाम पहले से लिया जा चुका है",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "पूर्व-परिभाषित भूमिका को हटाया नहीं जा सकता",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"सदस्यों को सौंपी गई भूमिका को हटाया नहीं जा सकता। कृपया पहले सदस्यों को किसी अन्य भूमिका में पुनः असाइन करें",
+	INVALID_TEAM_ID: "टीम ID में आरक्षित वर्ण है",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {
-	"hi-IN": HI_IN,
+	"hi-HI": HI_HI,
 } as const;

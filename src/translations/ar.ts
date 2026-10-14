@@ -40,6 +40,33 @@ export const AR_SA = createTranslationObject("ar-SA", {
 	EMAIL_CAN_NOT_BE_UPDATED: "لا يمكن تحديث البريد الإلكتروني",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "لا يمكن إلغاء ربط الحساب الأخير",
 	ACCOUNT_NOT_FOUND: "الحساب غير موجود",
+
+	INVALID_USER: "مستخدم غير صالح",
+	TOKEN_EXPIRED: "انتهت صلاحية الرمز",
+	CHANGE_EMAIL_DISABLED: "تغيير البريد الإلكتروني معطل",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"تم حظر تسجيل الدخول عبر التنقل بين المواقع. يبدو أن هذا الطلب هجوم CSRF.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "بريد التحقق غير مفعّل",
+	EMAIL_ALREADY_VERIFIED: "تم التحقق من البريد الإلكتروني بالفعل",
+	EMAIL_MISMATCH: "البريد الإلكتروني غير متطابق",
+	SESSION_NOT_FRESH: "الجلسة ليست حديثة",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "الحساب المرتبط موجود بالفعل",
+	INVALID_ORIGIN: "المصدر غير صالح",
+	INVALID_CALLBACK_URL: "callbackURL غير صالح",
+	INVALID_REDIRECT_URL: "redirectURL غير صالح",
+	INVALID_ERROR_CALLBACK_URL: "errorCallbackURL غير صالح",
+	INVALID_NEW_USER_CALLBACK_URL: "newUserCallbackURL غير صالح",
+	MISSING_OR_NULL_ORIGIN: "Origin مفقود أو فارغ",
+	CALLBACK_URL_REQUIRED: "callbackURL مطلوب",
+	FAILED_TO_CREATE_VERIFICATION: "تعذر إنشاء التحقق",
+	FIELD_NOT_ALLOWED: "لا يُسمح بتعيين هذا الحقل",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "التحقق غير المتزامن غير مدعوم",
+	VALIDATION_ERROR: "خطأ في التحقق",
+	MISSING_FIELD: "الحقل مطلوب",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"يتطلب أسلوب POST تفعيل deferSessionRefresh في إعدادات الجلسة",
+	BODY_MUST_BE_AN_OBJECT: "يجب أن يكون المحتوى كائناً",
+	PASSWORD_ALREADY_SET: "لدى المستخدم كلمة مرور بالفعل",
 });
 
 export const LOCALES = {

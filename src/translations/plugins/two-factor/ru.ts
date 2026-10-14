@@ -12,6 +12,11 @@ export const RU_RU = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Слишком много попыток. Запросите новый код.",
 	INVALID_TWO_FACTOR_COOKIE: "Неверный cookie двухфакторной аутентификации",
+	OTP_NOT_CONFIGURED: "OTP недоступен",
+	TOTP_ALREADY_ENABLED: "TOTP уже включен",
+	TOTP_NOT_CONFIGURED: "TOTP недоступен",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Слишком много неудачных попыток проверки. Ваш аккаунт временно заблокирован. Повторите попытку позже.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

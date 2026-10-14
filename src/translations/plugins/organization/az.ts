@@ -69,8 +69,30 @@ export const AZ = {
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"Bu təşkilata sahib kimi giriş icazəniz yoxdur",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "Bu təşkilatın üzvü deyilsiniz",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Təşkilat slug-ı artıq istifadə olunur",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Sessiya e-poçtu üçün dəvətlərə baxmaq və ya onları siyahılamaq üçün e-poçt təsdiqi tələb olunur",
+	MISSING_AC_INSTANCE:
+		"Dinamik Giriş Nəzarəti server auth plaginində əvvəlcədən təyin edilmiş ac instansiyası tələb edir. Ətraflı məlumat üçün server loglarına baxın",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Rol yaratmaq üçün təşkilatda olmalısınız",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Rol yaratmağa icazəniz yoxdur",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "Rolu yeniləməyə icazəniz yoxdur",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Rolu silməyə icazəniz yoxdur",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Rolu oxumağa icazəniz yoxdur",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "Rolları siyahılamağa icazəniz yoxdur",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Rolu əldə etməyə icazəniz yoxdur",
+	TOO_MANY_ROLES: "Bu təşkilatda çox sayda rol var",
+	INVALID_RESOURCE: "Təqdim edilən icazə yanlış resurs ehtiva edir",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Bu rol adı artıq istifadə olunur",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Əvvəlcədən təyin edilmiş rol silinə bilməz",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Üzvlərə təyin edilmiş rol silinə bilməz. Əvvəlcə üzvləri başqa rola təyin edin",
+	INVALID_TEAM_ID: "Komanda ID-si rezerv edilmiş simvol ehtiva edir",
 } satisfies OrganizationErrorCodesType;
 export const AZ_AZ = {
+	...AZ,
 	// Təşkilatla bağlı səhvlər
 	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_ORGANIZATION:
 		"Yeni təşkilat yaratmağa icazəniz yoxdur",

@@ -12,6 +12,8 @@ export const SV_SE = {
 	POLLING_TOO_FREQUENTLY: "För frekventa förfrågningar",
 	INVALID_DEVICE_CODE_STATUS: "Ogiltig enhetskod status",
 	AUTHENTICATION_REQUIRED: "Autentisering krävs",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Enhetskoden har inte gjorts anspråk på av en verifierande session. Anropa `GET /device` med `user_code` medan du är inloggad innan du godkänner eller nekar",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

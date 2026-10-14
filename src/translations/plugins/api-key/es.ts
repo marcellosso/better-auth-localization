@@ -37,6 +37,18 @@ export const ES_ES = {
 		"la propiedad que intentas establecer solo puede ser establecida desde la instancia de autenticación del servidor.",
 	FAILED_TO_UPDATE_API_KEY: "fallo al actualizar la clave API",
 	NAME_REQUIRED: "el nombre de la clave API es requerido.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"El ID de referencia de la clave API no es válido.",
+	ORGANIZATION_ID_REQUIRED:
+		"El ID de la organización es obligatorio para las claves API que pertenecen a una organización.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"No eres miembro de la organización propietaria de esta clave API.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"No tienes permiso para realizar esta acción en las claves API de la organización.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"No se encontró ninguna configuración predeterminada de clave API.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"El plugin de organización es obligatorio para las claves API que pertenecen a una organización. Instala y configura el plugin de organización.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

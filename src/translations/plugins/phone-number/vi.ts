@@ -10,6 +10,9 @@ export const VI_VN = {
 	OTP_EXPIRED: "Mã OTP đã hết hạn",
 	INVALID_OTP: "Mã OTP không hợp lệ",
 	PHONE_NUMBER_NOT_VERIFIED: "Số điện thoại chưa được xác minh",
+	PHONE_NUMBER_NOT_EXIST: "Số điện thoại chưa được đăng ký",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Không thể cập nhật số điện thoại",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP chưa được triển khai",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

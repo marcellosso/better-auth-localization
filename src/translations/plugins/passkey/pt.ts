@@ -10,6 +10,14 @@ export const PT_BR = {
 	AUTHENTICATION_FAILED: "Falha na autenticação",
 	UNABLE_TO_CREATE_SESSION: "Não foi possível criar a sessão",
 	FAILED_TO_UPDATE_PASSKEY: "Falha ao atualizar a chave de acesso",
+	PREVIOUSLY_REGISTERED: "Já registrada anteriormente",
+	REGISTRATION_CANCELLED: "Registro cancelado",
+	AUTH_CANCELLED: "Autenticação cancelada",
+	SESSION_REQUIRED:
+		"O registro de chave de acesso exige uma sessão autenticada",
+	RESOLVE_USER_REQUIRED:
+		"O registro de chave de acesso exige uma sessão autenticada ou um callback resolveUser quando requireSession é false",
+	RESOLVED_USER_INVALID: "O usuário resolvido é inválido",
 } satisfies PasskeyErrorCodesType;
 
 export const PT_PT = {
@@ -22,6 +30,13 @@ export const PT_PT = {
 	AUTHENTICATION_FAILED: "Falha na autenticação",
 	UNABLE_TO_CREATE_SESSION: "Não foi possível criar a sessão",
 	FAILED_TO_UPDATE_PASSKEY: "Falha ao actualizar a chave de acesso",
+	PREVIOUSLY_REGISTERED: "Já registada anteriormente",
+	REGISTRATION_CANCELLED: "Registo cancelado",
+	AUTH_CANCELLED: "Autenticação cancelada",
+	SESSION_REQUIRED: "O registo de chave de acesso exige uma sessão autenticada",
+	RESOLVE_USER_REQUIRED:
+		"O registo de chave de acesso exige uma sessão autenticada ou um callback resolveUser quando requireSession é false",
+	RESOLVED_USER_INVALID: "O utilizador resolvido é inválido",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

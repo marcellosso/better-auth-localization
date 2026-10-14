@@ -33,6 +33,17 @@ export const FA_IR = {
 		"خاصیتی که سعی می‌کنید تنظیم کنید فقط می‌تواند از نمونه احراز هویت سرور تنظیم شود.",
 	FAILED_TO_UPDATE_API_KEY: "به‌روزرسانی کلید API با شکست مواجه شد",
 	NAME_REQUIRED: "نام کلید API الزامی است.",
+
+	INVALID_REFERENCE_ID_FROM_API_KEY: "شناسه مرجع در کلید API نامعتبر است.",
+	ORGANIZATION_ID_REQUIRED:
+		"شناسه سازمان برای کلیدهای API متعلق به سازمان الزامی است.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"شما عضو سازمانی که مالک این کلید API است نیستید.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"شما مجوز انجام این عملیات روی کلیدهای API سازمان را ندارید.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND: "پیکربندی پیش‌فرض کلید API یافت نشد.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"افزونه سازمان برای کلیدهای API متعلق به سازمان لازم است. لطفاً افزونه سازمان را نصب و پیکربندی کنید.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

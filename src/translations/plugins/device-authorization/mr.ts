@@ -1,6 +1,6 @@
 import type { DeviceAuthorizationErrorCodesType } from "../../../types";
 
-export const MR_IN = {
+export const MR_MR = {
 	// Device authorization related errors
 	INVALID_DEVICE_CODE: "अवैध डिव्हाइस कोड",
 	EXPIRED_DEVICE_CODE: "डिव्हाइस कोड कालबाह्य झाले",
@@ -12,8 +12,10 @@ export const MR_IN = {
 	POLLING_TOO_FREQUENTLY: "खूप वेळा विचारणे",
 	INVALID_DEVICE_CODE_STATUS: "अवैध डिव्हाइस कोड स्थिती",
 	AUTHENTICATION_REQUIRED: "प्रमाणीकरण आवश्यक",
+	DEVICE_CODE_NOT_CLAIMED:
+		"डिव्हाइस कोड कोणत्याही सत्यापन सत्राने क्लेम केलेला नाही; मंजूर किंवा नाकारण्यापूर्वी साइन इन असताना `user_code` सह `GET /device` कॉल करा",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {
-	"mr-IN": MR_IN,
+	"mr-MR": MR_MR,
 } as const;

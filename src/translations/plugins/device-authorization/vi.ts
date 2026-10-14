@@ -12,6 +12,8 @@ export const VI_VN = {
 	POLLING_TOO_FREQUENTLY: "Polling diễn ra quá thường xuyên",
 	INVALID_DEVICE_CODE_STATUS: "Trạng thái mã thiết bị không hợp lệ",
 	AUTHENTICATION_REQUIRED: "Yêu cầu xác thực",
+	DEVICE_CODE_NOT_CLAIMED:
+		"Mã thiết bị chưa được session xác minh nhận; hãy gọi `GET /device` với `user_code` khi đã đăng nhập trước khi chấp thuận hoặc từ chối",
 } satisfies DeviceAuthorizationErrorCodesType;
 
 export const LOCALES = {

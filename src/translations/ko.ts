@@ -40,6 +40,32 @@ export const KO_KO = createTranslationObject("ko-KR", {
 	EMAIL_CAN_NOT_BE_UPDATED: "이메일을 업데이트할 수 없습니다",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "마지막 계정의 연결을 해제할 수 없습니다",
 	ACCOUNT_NOT_FOUND: "계정을 찾을 수 없습니다",
+	INVALID_USER: "잘못된 사용자입니다",
+	TOKEN_EXPIRED: "토큰이 만료되었습니다",
+	CHANGE_EMAIL_DISABLED: "이메일 변경이 비활성화되어 있습니다",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"교차 사이트 탐색 로그인이 차단되었습니다. 이 요청은 CSRF 공격으로 보입니다.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "인증 이메일이 활성화되어 있지 않습니다",
+	EMAIL_ALREADY_VERIFIED: "이메일이 이미 인증되었습니다",
+	EMAIL_MISMATCH: "이메일이 일치하지 않습니다",
+	SESSION_NOT_FRESH: "세션이 최신 상태가 아닙니다",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "연결된 계정이 이미 존재합니다",
+	INVALID_ORIGIN: "잘못된 출처입니다",
+	INVALID_CALLBACK_URL: "잘못된 callbackURL입니다",
+	INVALID_REDIRECT_URL: "잘못된 redirectURL입니다",
+	INVALID_ERROR_CALLBACK_URL: "잘못된 errorCallbackURL입니다",
+	INVALID_NEW_USER_CALLBACK_URL: "잘못된 newUserCallbackURL입니다",
+	MISSING_OR_NULL_ORIGIN: "Origin이 없거나 null입니다",
+	CALLBACK_URL_REQUIRED: "callbackURL은 필수입니다",
+	FAILED_TO_CREATE_VERIFICATION: "인증을 생성하지 못했습니다",
+	FIELD_NOT_ALLOWED: "이 필드는 설정할 수 없습니다",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "비동기 검증은 지원되지 않습니다",
+	VALIDATION_ERROR: "유효성 검사 오류",
+	MISSING_FIELD: "필수 입력 항목입니다",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"POST 메서드를 사용하려면 세션 설정에서 deferSessionRefresh를 활성화해야 합니다",
+	BODY_MUST_BE_AN_OBJECT: "Body는 객체여야 합니다",
+	PASSWORD_ALREADY_SET: "사용자에게 이미 비밀번호가 설정되어 있습니다",
 });
 
 export const LOCALES = {

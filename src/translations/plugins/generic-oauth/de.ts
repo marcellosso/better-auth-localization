@@ -3,6 +3,8 @@ import type { GenericOAuthErrorCodesType } from "../../../types";
 export const DE_DE_INFORMAL = {
 	// Generic OAuth related errors
 	INVALID_OAUTH_CONFIGURATION: "Ungültige OAuth-Konfiguration",
+	TOKEN_URL_NOT_FOUND:
+		"Ungültige OAuth-Konfiguration. Token-URL nicht gefunden.",
 } satisfies GenericOAuthErrorCodesType;
 
 export const DE_DE_FORMAL = {

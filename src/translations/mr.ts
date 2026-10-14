@@ -39,6 +39,32 @@ export const MR_MR = createTranslationObject("mr-MR", {
 	EMAIL_CAN_NOT_BE_UPDATED: "ईमेल अद्यतनित करता येत नाही",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "शेवटचे खाते अनलिंक करण्यात अयशस्वी",
 	ACCOUNT_NOT_FOUND: "खाते सापडले नाही",
+	INVALID_USER: "अवैध वापरकर्ता",
+	TOKEN_EXPIRED: "टोकनची मुदत संपली आहे",
+	CHANGE_EMAIL_DISABLED: "ईमेल बदलणे अक्षम आहे",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"क्रॉस-साइट नेव्हिगेशन लॉगिन अवरोधित केले. ही विनंती CSRF हल्ल्यासारखी दिसते.",
+	VERIFICATION_EMAIL_NOT_ENABLED: "सत्यापन ईमेल सक्षम नाही",
+	EMAIL_ALREADY_VERIFIED: "ईमेल आधीच सत्यापित आहे",
+	EMAIL_MISMATCH: "ईमेल जुळत नाही",
+	SESSION_NOT_FRESH: "सत्र नवीन नाही",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "लिंक केलेले खाते आधीपासून अस्तित्वात आहे",
+	INVALID_ORIGIN: "अवैध ओरिजिन",
+	INVALID_CALLBACK_URL: "अवैध callbackURL",
+	INVALID_REDIRECT_URL: "अवैध redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "अवैध errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "अवैध newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Origin अनुपस्थित किंवा शून्य आहे",
+	CALLBACK_URL_REQUIRED: "callbackURL आवश्यक आहे",
+	FAILED_TO_CREATE_VERIFICATION: "सत्यापन तयार करता आले नाही",
+	FIELD_NOT_ALLOWED: "हे फील्ड सेट करण्याची परवानगी नाही",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "असिंक्रोनस सत्यापन समर्थित नाही",
+	VALIDATION_ERROR: "सत्यापन त्रुटी",
+	MISSING_FIELD: "फील्ड आवश्यक आहे",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"POST मेथडसाठी सत्र कॉन्फिगरेशनमध्ये deferSessionRefresh सक्षम असणे आवश्यक आहे",
+	BODY_MUST_BE_AN_OBJECT: "बॉडी ऑब्जेक्ट असणे आवश्यक आहे",
+	PASSWORD_ALREADY_SET: "वापरकर्त्याने आधीच पासवर्ड सेट केला आहे",
 });
 
 export const LOCALES = {

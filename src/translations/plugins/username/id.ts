@@ -9,6 +9,7 @@ export const ID_ID = {
 	USERNAME_TOO_LONG: "Nama pengguna terlalu panjang",
 	INVALID_USERNAME: "Nama pengguna tidak valid",
 	INVALID_DISPLAY_USERNAME: "Nama tampilan tidak valid",
+	USERNAME_IS_IMMUTABLE: "Nama pengguna tidak dapat diperbarui",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

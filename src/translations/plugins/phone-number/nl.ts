@@ -10,6 +10,9 @@ export const NL_NL_INFORMAL = {
 	OTP_EXPIRED: "Verificatiecode verlopen",
 	INVALID_OTP: "Ongeldige verificatiecode",
 	PHONE_NUMBER_NOT_VERIFIED: "Telefoonnummer niet geverifieerd",
+	PHONE_NUMBER_NOT_EXIST: "Telefoonnummer is niet geregistreerd",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Telefoonnummer kan niet worden bijgewerkt",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP is niet geïmplementeerd",
 } satisfies PhoneNumberErrorCodesType;
 
 export const NL_NL_FORMAL = {

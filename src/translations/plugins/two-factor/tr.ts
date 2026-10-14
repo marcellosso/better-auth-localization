@@ -12,6 +12,11 @@ export const TR_TR = {
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE:
 		"Çok fazla deneme. Lütfen yeni bir kod isteyin.",
 	INVALID_TWO_FACTOR_COOKIE: "Geçersiz iki faktörlü kimlik doğrulama çerezi",
+	OTP_NOT_CONFIGURED: "OTP kullanılamıyor",
+	TOTP_ALREADY_ENABLED: "TOTP zaten etkin",
+	TOTP_NOT_CONFIGURED: "TOTP kullanılamıyor",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Çok fazla başarısız doğrulama denemesi. Hesabınız geçici olarak kilitlendi. Lütfen daha sonra tekrar deneyin.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

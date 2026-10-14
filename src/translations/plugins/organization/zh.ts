@@ -53,6 +53,25 @@ export const ZH_HANT = {
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"您沒有權限以所有者身份訪問此組織",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "您不是此組織的成員",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "組織 slug 已被使用",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"查看或列出會話電子郵件的邀請需要先驗證電子郵件",
+	MISSING_AC_INSTANCE:
+		"動態存取控制需要在伺服器認證插件上預先定義 ac 實例。詳情請查看伺服器日誌",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE: "您必須在組織中才能創建角色",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "您沒有權限創建角色",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "您沒有權限更新角色",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "您沒有權限刪除角色",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "您沒有權限查看角色",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "您沒有權限列出角色",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "您沒有權限獲取角色",
+	TOO_MANY_ROLES: "此組織的角色過多",
+	INVALID_RESOURCE: "提供的權限包含無效資源",
+	ROLE_NAME_IS_ALREADY_TAKEN: "該角色名稱已被使用",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "無法刪除預定義角色",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"無法刪除已分配給成員的角色。請先將成員重新分配到其他角色",
+	INVALID_TEAM_ID: "團隊 ID 包含保留字元",
 } satisfies OrganizationErrorCodesType;
 
 export const ZH_HANS = {
@@ -108,6 +127,25 @@ export const ZH_HANS = {
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"您没有权限以所有者身份访问此组织",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "您不是此组织的成员",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "组织 slug 已被使用",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"查看或列出会话电子邮件的邀请需要先验证电子邮件",
+	MISSING_AC_INSTANCE:
+		"动态访问控制需要在服务器认证插件上预先定义 ac 实例。详情请查看服务器日志",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE: "您必须在组织中才能创建角色",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "您没有权限创建角色",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "您没有权限更新角色",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "您没有权限删除角色",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "您没有权限查看角色",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "您没有权限列出角色",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "您没有权限获取角色",
+	TOO_MANY_ROLES: "此组织的角色过多",
+	INVALID_RESOURCE: "提供的权限包含无效资源",
+	ROLE_NAME_IS_ALREADY_TAKEN: "该角色名称已被使用",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "无法删除预定义角色",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"无法删除已分配给成员的角色。请先将成员重新分配到其他角色",
+	INVALID_TEAM_ID: "团队 ID 包含保留字符",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

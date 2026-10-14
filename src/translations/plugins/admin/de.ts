@@ -28,6 +28,15 @@ export const DE_DE_INFORMAL = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Du hast keine Berechtigung, Benutzer zu aktualisieren",
 	YOU_CANNOT_REMOVE_YOURSELF: "Du kannst dich nicht selbst entfernen",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Sie dürfen keinen nicht existierenden Rollenwert festlegen",
+	YOU_CANNOT_IMPERSONATE_ADMINS:
+		"Sie können sich nicht als Administrator ausgeben",
+	INVALID_ROLE_TYPE: "Ungültiger Rollentyp",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Sie dürfen die E-Mail-Adresse von Benutzern nicht ändern",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Das Passwort kann nicht über update-user geändert werden. Verwenden Sie stattdessen den Endpunkt set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const DE_DE_FORMAL = {

@@ -9,6 +9,7 @@ export const DA_DK = {
 	USERNAME_TOO_LONG: "Brugernavn for langt",
 	INVALID_USERNAME: "Ugyldigt brugernavn",
 	INVALID_DISPLAY_USERNAME: "Ugyldigt visningsnavn",
+	USERNAME_IS_IMMUTABLE: "Brugernavnet kan ikke ændres",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

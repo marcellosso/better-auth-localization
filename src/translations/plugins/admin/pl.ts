@@ -28,6 +28,14 @@ export const PL_PL = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Nie masz uprawnień do aktualizowania użytkowników",
 	YOU_CANNOT_REMOVE_YOURSELF: "Nie możesz usunąć siebie",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Nie masz uprawnień do ustawienia nieistniejącej wartości roli",
+	YOU_CANNOT_IMPERSONATE_ADMINS: "Nie możesz podszywać się pod administratorów",
+	INVALID_ROLE_TYPE: "Nieprawidłowy typ roli",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Nie masz uprawnień do zmiany adresu email użytkowników",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Hasła nie można zmienić przez update-user. Użyj zamiast tego endpointu set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

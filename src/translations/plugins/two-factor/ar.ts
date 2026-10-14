@@ -11,6 +11,12 @@ export const AR_SA = {
 	INVALID_CODE: "رمز غير صالح",
 	TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE: "محاولات كثيرة جداً. يرجى طلب رمز جديد.",
 	INVALID_TWO_FACTOR_COOKIE: "ملف تعريف الارتباط للمصادقة الثنائية غير صالح",
+
+	OTP_NOT_CONFIGURED: "OTP غير متاح",
+	TOTP_ALREADY_ENABLED: "TOTP مفعّل بالفعل",
+	TOTP_NOT_CONFIGURED: "TOTP غير متاح",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"محاولات تحقق فاشلة كثيرة جداً. تم قفل حسابك مؤقتاً. يرجى المحاولة لاحقاً.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {

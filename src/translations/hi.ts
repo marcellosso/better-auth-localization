@@ -40,6 +40,32 @@ export const HI_HI = createTranslationObject("hi-HI", {
 	EMAIL_CAN_NOT_BE_UPDATED: "ईमेल अपडेट नहीं किया जा सकता",
 	FAILED_TO_UNLINK_LAST_ACCOUNT: "आखिरी खाते का लिंक हटाने में विफल",
 	ACCOUNT_NOT_FOUND: "खाता नहीं मिला",
+	INVALID_USER: "अमान्य उपयोगकर्ता",
+	TOKEN_EXPIRED: "टोकन समाप्त हो गया है",
+	CHANGE_EMAIL_DISABLED: "ईमेल बदलना अक्षम है",
+	CROSS_SITE_NAVIGATION_LOGIN_BLOCKED:
+		"क्रॉस-साइट नेविगेशन लॉगिन अवरुद्ध किया गया। यह अनुरोध CSRF हमले जैसा प्रतीत होता है।",
+	VERIFICATION_EMAIL_NOT_ENABLED: "सत्यापन ईमेल सक्षम नहीं है",
+	EMAIL_ALREADY_VERIFIED: "ईमेल पहले से सत्यापित है",
+	EMAIL_MISMATCH: "ईमेल मेल नहीं खाता",
+	SESSION_NOT_FRESH: "सत्र नया नहीं है",
+	LINKED_ACCOUNT_ALREADY_EXISTS: "लिंक किया गया खाता पहले से मौजूद है",
+	INVALID_ORIGIN: "अमान्य ओरिजिन",
+	INVALID_CALLBACK_URL: "अमान्य callbackURL",
+	INVALID_REDIRECT_URL: "अमान्य redirectURL",
+	INVALID_ERROR_CALLBACK_URL: "अमान्य errorCallbackURL",
+	INVALID_NEW_USER_CALLBACK_URL: "अमान्य newUserCallbackURL",
+	MISSING_OR_NULL_ORIGIN: "Origin अनुपस्थित या शून्य है",
+	CALLBACK_URL_REQUIRED: "callbackURL आवश्यक है",
+	FAILED_TO_CREATE_VERIFICATION: "सत्यापन बनाने में असमर्थ",
+	FIELD_NOT_ALLOWED: "इस फ़ील्ड को सेट करने की अनुमति नहीं है",
+	ASYNC_VALIDATION_NOT_SUPPORTED: "एसिंक्रोनस सत्यापन समर्थित नहीं है",
+	VALIDATION_ERROR: "सत्यापन त्रुटि",
+	MISSING_FIELD: "फ़ील्ड आवश्यक है",
+	METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED:
+		"POST मेथड के लिए सत्र कॉन्फ़िगरेशन में deferSessionRefresh सक्षम होना आवश्यक है",
+	BODY_MUST_BE_AN_OBJECT: "बॉडी एक ऑब्जेक्ट होनी चाहिए",
+	PASSWORD_ALREADY_SET: "उपयोगकर्ता ने पहले से पासवर्ड सेट किया हुआ है",
 });
 
 export const LOCALES = {

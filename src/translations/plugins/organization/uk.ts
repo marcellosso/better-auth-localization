@@ -34,8 +34,7 @@ export const UK_UA = {
 	USER_IS_ALREADY_INVITED_TO_THIS_ORGANIZATION:
 		"Користувача вже запрошено до цієї організації",
 	INVITATION_NOT_FOUND: "Запрошення не знайдено",
-	YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION:
-		"Ви не є отримувачем запрошення",
+	YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION: "Ви не є отримувачем запрошення",
 	EMAIL_VERIFICATION_REQUIRED_BEFORE_ACCEPTING_OR_REJECTING_INVITATION:
 		"Потрібна перевірка електронної пошти перед прийняттям або відхиленням запрошення",
 	YOU_ARE_NOT_ALLOWED_TO_CANCEL_THIS_INVITATION:
@@ -72,8 +71,29 @@ export const UK_UA = {
 		"Ви не маєте дозволу на видалення члена команди",
 	YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION:
 		"Ви не маєте дозволу на доступ до цієї організації як власник",
-	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
-		"Ви не є членом цієї організації",
+	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION: "Ви не є членом цієї організації",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Slug організації вже зайнятий",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Для перегляду запрошень на email сесії потрібно підтвердити email",
+	MISSING_AC_INSTANCE:
+		"Динамічне керування доступом потребує наперед визначеного екземпляра ac у серверному плагіні автентифікації. Докладніше дивіться в логах сервера",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Щоб створити роль, потрібно бути в організації",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Ви не маєте дозволу створювати роль",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "Ви не маєте дозволу змінювати роль",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Ви не маєте дозволу видаляти роль",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Ви не маєте дозволу переглядати роль",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Ви не маєте дозволу переглядати список ролей",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Ви не маєте дозволу отримувати роль",
+	TOO_MANY_ROLES: "В цій організації забагато ролей",
+	INVALID_RESOURCE: "Наданий дозвіл містить недійсний ресурс",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Ця назва ролі вже зайнята",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE:
+		"Неможливо видалити попередньо визначену роль",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Неможливо видалити роль, призначену учасникам. Спочатку призначте учасникам іншу роль",
+	INVALID_TEAM_ID: "ID команди містить зарезервований символ",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

@@ -28,6 +28,15 @@ export const RO_RO = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Nu aveți permisiunea să actualizați utilizatori",
 	YOU_CANNOT_REMOVE_YOURSELF: "Nu vă puteți elimina singur",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Nu aveți permisiunea să setați o valoare de rol inexistentă",
+	YOU_CANNOT_IMPERSONATE_ADMINS:
+		"Nu puteți uzurpa identitatea administratorilor",
+	INVALID_ROLE_TYPE: "Tip de rol invalid",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Nu aveți permisiunea să actualizați adresa de email a utilizatorilor",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Parola nu poate fi actualizată prin update-user. Folosiți în schimb endpoint-ul set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

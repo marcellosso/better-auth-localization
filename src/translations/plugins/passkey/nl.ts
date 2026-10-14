@@ -10,6 +10,14 @@ export const NL_NL_INFORMAL = {
 	AUTHENTICATION_FAILED: "Authenticatie mislukt",
 	UNABLE_TO_CREATE_SESSION: "Kan geen sessie maken",
 	FAILED_TO_UPDATE_PASSKEY: "Toegangssleutel bijwerken mislukt",
+	PREVIOUSLY_REGISTERED: "Eerder geregistreerd",
+	REGISTRATION_CANCELLED: "Registratie geannuleerd",
+	AUTH_CANCELLED: "Authenticatie geannuleerd",
+	SESSION_REQUIRED:
+		"Registratie van een toegangssleutel vereist een geauthenticeerde sessie",
+	RESOLVE_USER_REQUIRED:
+		"Registratie van een toegangssleutel vereist een geauthenticeerde sessie of een resolveUser-callback wanneer requireSession false is",
+	RESOLVED_USER_INVALID: "De opgeloste gebruiker is ongeldig",
 } satisfies PasskeyErrorCodesType;
 
 export const NL_NL_FORMAL = {

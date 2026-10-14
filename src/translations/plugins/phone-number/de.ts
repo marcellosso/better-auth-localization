@@ -10,6 +10,9 @@ export const DE_DE_INFORMAL = {
 	OTP_EXPIRED: "Einmalpasswort abgelaufen",
 	INVALID_OTP: "Ungültiges Einmalpasswort",
 	PHONE_NUMBER_NOT_VERIFIED: "Telefonnummer nicht verifiziert",
+	PHONE_NUMBER_NOT_EXIST: "Telefonnummer ist nicht registriert",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "Telefonnummer kann nicht geändert werden",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP ist nicht implementiert",
 } satisfies PhoneNumberErrorCodesType;
 
 export const DE_DE_FORMAL = {

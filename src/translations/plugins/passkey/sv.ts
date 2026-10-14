@@ -10,6 +10,14 @@ export const SV_SE = {
 	AUTHENTICATION_FAILED: "Autentisering misslyckades",
 	UNABLE_TO_CREATE_SESSION: "Kunde inte skapa session",
 	FAILED_TO_UPDATE_PASSKEY: "Uppdatering av åtkomstnyckel misslyckades",
+	PREVIOUSLY_REGISTERED: "Tidigare registrerad",
+	REGISTRATION_CANCELLED: "Registreringen avbröts",
+	AUTH_CANCELLED: "Autentiseringen avbröts",
+	SESSION_REQUIRED:
+		"Registrering av åtkomstnyckel kräver en autentiserad session",
+	RESOLVE_USER_REQUIRED:
+		"Registrering av åtkomstnyckel kräver antingen en autentiserad session eller en resolveUser-callback när requireSession är false",
+	RESOLVED_USER_INVALID: "Den matchade användaren är ogiltig",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

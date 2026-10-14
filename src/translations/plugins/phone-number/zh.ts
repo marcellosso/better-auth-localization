@@ -10,6 +10,9 @@ export const ZH_HANS = {
 	OTP_EXPIRED: "验证码已过期",
 	INVALID_OTP: "无效的验证码",
 	PHONE_NUMBER_NOT_VERIFIED: "电话号码未验证",
+	PHONE_NUMBER_NOT_EXIST: "電話號碼未註冊",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "無法更新電話號碼",
+	SEND_OTP_NOT_IMPLEMENTED: "未實現 sendOTP",
 } satisfies PhoneNumberErrorCodesType;
 
 export const ZH_HANT = {
@@ -22,6 +25,9 @@ export const ZH_HANT = {
 	OTP_EXPIRED: "驗證碼已過期",
 	INVALID_OTP: "無效的驗證碼",
 	PHONE_NUMBER_NOT_VERIFIED: "電話號碼未驗證",
+	PHONE_NUMBER_NOT_EXIST: "电话号码未注册",
+	PHONE_NUMBER_CANNOT_BE_UPDATED: "无法更新电话号码",
+	SEND_OTP_NOT_IMPLEMENTED: "未实现 sendOTP",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

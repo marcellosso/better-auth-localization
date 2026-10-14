@@ -10,6 +10,10 @@ export const PT_BR = {
 	OTP_EXPIRED: "Senha descartável expirada",
 	INVALID_OTP: "Senha descartável inválida",
 	PHONE_NUMBER_NOT_VERIFIED: "Número de telefone não verificado",
+	PHONE_NUMBER_NOT_EXIST: "O número de telefone não está registrado",
+	PHONE_NUMBER_CANNOT_BE_UPDATED:
+		"O número de telefone não pode ser atualizado",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP não implementado",
 } satisfies PhoneNumberErrorCodesType;
 
 export const PT_PT = {
@@ -23,6 +27,10 @@ export const PT_PT = {
 	OTP_EXPIRED: "Palavra-passe descartável expirada",
 	INVALID_OTP: "Palavra-passe descartável inválida",
 	PHONE_NUMBER_NOT_VERIFIED: "Número de telefone não verificado",
+	PHONE_NUMBER_NOT_EXIST: "O número de telefone não está registado",
+	PHONE_NUMBER_CANNOT_BE_UPDATED:
+		"O número de telefone não pode ser actualizado",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP não implementado",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

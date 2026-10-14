@@ -10,6 +10,10 @@ export const IT_IT = {
 	OTP_EXPIRED: "Codice di verifica scaduto",
 	INVALID_OTP: "Codice di verifica non valido",
 	PHONE_NUMBER_NOT_VERIFIED: "Numero di telefono non verificato",
+	PHONE_NUMBER_NOT_EXIST: "Il numero di telefono non è registrato",
+	PHONE_NUMBER_CANNOT_BE_UPDATED:
+		"Il numero di telefono non può essere aggiornato",
+	SEND_OTP_NOT_IMPLEMENTED: "sendOTP non implementato",
 } satisfies PhoneNumberErrorCodesType;
 
 export const LOCALES = {

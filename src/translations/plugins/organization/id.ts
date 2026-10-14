@@ -72,6 +72,28 @@ export const ID_ID = {
 		"Anda tidak diizinkan untuk mengakses organisasi ini sebagai pemilik",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"Anda bukan anggota organisasi ini",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "Slug organisasi sudah digunakan",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"Verifikasi email diperlukan untuk melihat atau mencantumkan undangan untuk email sesi",
+	MISSING_AC_INSTANCE:
+		"Dynamic Access Control memerlukan instance ac yang telah didefinisikan sebelumnya pada plugin auth server. Baca log server untuk informasi lebih lanjut",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"Anda harus berada dalam organisasi untuk membuat peran",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "Anda tidak diizinkan membuat peran",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE:
+		"Anda tidak diizinkan memperbarui peran",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "Anda tidak diizinkan menghapus peran",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "Anda tidak diizinkan membaca peran",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE:
+		"Anda tidak diizinkan melihat daftar peran",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "Anda tidak diizinkan mengambil peran",
+	TOO_MANY_ROLES: "Organisasi ini memiliki terlalu banyak peran",
+	INVALID_RESOURCE: "Izin yang diberikan menyertakan resource yang tidak valid",
+	ROLE_NAME_IS_ALREADY_TAKEN: "Nama peran tersebut sudah digunakan",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "Tidak dapat menghapus peran bawaan",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"Tidak dapat menghapus peran yang ditetapkan kepada anggota. Harap tetapkan ulang anggota ke peran lain terlebih dahulu",
+	INVALID_TEAM_ID: "ID tim mengandung karakter yang dicadangkan",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

@@ -10,6 +10,14 @@ export const TR_TR = {
 	AUTHENTICATION_FAILED: "Kimlik doğrulama başarısız",
 	UNABLE_TO_CREATE_SESSION: "Oturum oluşturulamadı",
 	FAILED_TO_UPDATE_PASSKEY: "Erişim anahtarı güncelleme başarısız",
+	PREVIOUSLY_REGISTERED: "Daha önce kaydedilmiş",
+	REGISTRATION_CANCELLED: "Kayıt iptal edildi",
+	AUTH_CANCELLED: "Kimlik doğrulama iptal edildi",
+	SESSION_REQUIRED:
+		"Erişim anahtarı kaydı için kimliği doğrulanmış bir oturum gerekir",
+	RESOLVE_USER_REQUIRED:
+		"requireSession false olduğunda erişim anahtarı kaydı için kimliği doğrulanmış bir oturum veya resolveUser callback'i gerekir",
+	RESOLVED_USER_INVALID: "Çözümlenen kullanıcı geçersiz",
 } satisfies PasskeyErrorCodesType;
 
 export const LOCALES = {

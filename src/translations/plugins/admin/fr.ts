@@ -28,6 +28,15 @@ export const FR_FR = {
 	YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS:
 		"Vous n'êtes pas autorisé à mettre à jour les utilisateurs",
 	YOU_CANNOT_REMOVE_YOURSELF: "Vous ne pouvez pas vous supprimer vous-même",
+	YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE:
+		"Vous n'êtes pas autorisé à définir une valeur de rôle inexistante",
+	YOU_CANNOT_IMPERSONATE_ADMINS:
+		"Vous ne pouvez pas usurper l'identité des administrateurs",
+	INVALID_ROLE_TYPE: "Type de rôle invalide",
+	YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL:
+		"Vous n'êtes pas autorisé à modifier l'e-mail des utilisateurs",
+	PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER:
+		"Le mot de passe ne peut pas être modifié via update-user. Utilisez plutôt l'endpoint set-user-password",
 } satisfies AdminErrorCodesType;
 
 export const LOCALES = {

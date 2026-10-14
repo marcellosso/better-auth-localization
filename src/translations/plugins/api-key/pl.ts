@@ -35,6 +35,18 @@ export const PL_PL = {
 		"właściwość którą próbujesz ustawić może być ustawiona tylko z instancji uwierzytelniania serwera.",
 	FAILED_TO_UPDATE_API_KEY: "nie udało się zaktualizować klucza API",
 	NAME_REQUIRED: "nazwa klucza API jest wymagana.",
+	INVALID_REFERENCE_ID_FROM_API_KEY:
+		"Identyfikator referencyjny z klucza API jest nieprawidłowy.",
+	ORGANIZATION_ID_REQUIRED:
+		"Identyfikator organizacji jest wymagany dla kluczy API należących do organizacji.",
+	USER_NOT_MEMBER_OF_ORGANIZATION:
+		"Nie jesteś członkiem organizacji, do której należy ten klucz API.",
+	INSUFFICIENT_API_KEY_PERMISSIONS:
+		"Nie masz uprawnień do wykonania tej czynności na kluczach API organizacji.",
+	NO_DEFAULT_API_KEY_CONFIGURATION_FOUND:
+		"Nie znaleziono domyślnej konfiguracji klucza API.",
+	ORGANIZATION_PLUGIN_REQUIRED:
+		"Klucze API należące do organizacji wymagają wtyczki organizacji. Zainstaluj i skonfiguruj wtyczkę organizacji.",
 } satisfies ApiKeyErrorCodesType;
 
 export const LOCALES = {

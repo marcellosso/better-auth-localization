@@ -72,6 +72,26 @@ export const JA_JP = {
 		"オーナーとしてこの組織にアクセスする権限がありません",
 	YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION:
 		"あなたはこの組織のメンバーではありません",
+	ORGANIZATION_SLUG_ALREADY_TAKEN: "この組織のスラッグはすでに使用されています",
+	EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION:
+		"セッションのメールアドレスに対する招待を表示または一覧表示するには、メールアドレスの確認が必要です",
+	MISSING_AC_INSTANCE:
+		"動的アクセス制御には、サーバーの認証プラグインに事前定義された ac インスタンスが必要です。詳細はサーバーログを確認してください",
+	YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE:
+		"ロールを作成するには組織に所属している必要があります",
+	YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE: "ロールを作成する権限がありません",
+	YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE: "ロールを更新する権限がありません",
+	YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE: "ロールを削除する権限がありません",
+	YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE: "ロールを閲覧する権限がありません",
+	YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE: "ロールを一覧表示する権限がありません",
+	YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE: "ロールを取得する権限がありません",
+	TOO_MANY_ROLES: "この組織のロール数が多すぎます",
+	INVALID_RESOURCE: "指定された権限に無効なリソースが含まれています",
+	ROLE_NAME_IS_ALREADY_TAKEN: "そのロール名はすでに使用されています",
+	CANNOT_DELETE_A_PRE_DEFINED_ROLE: "事前定義されたロールは削除できません",
+	ROLE_IS_ASSIGNED_TO_MEMBERS:
+		"メンバーに割り当てられているロールは削除できません。先にメンバーを別のロールに割り当て直してください",
+	INVALID_TEAM_ID: "チームIDに予約文字が含まれています",
 } satisfies OrganizationErrorCodesType;
 
 export const LOCALES = {

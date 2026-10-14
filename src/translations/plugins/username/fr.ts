@@ -9,6 +9,7 @@ export const FR_FR = {
 	USERNAME_TOO_LONG: "Nom d'utilisateur trop long",
 	INVALID_USERNAME: "Nom d'utilisateur invalide",
 	INVALID_DISPLAY_USERNAME: "Nom d'affichage invalide",
+	USERNAME_IS_IMMUTABLE: "Le nom d'utilisateur ne peut pas être modifié",
 } satisfies UsernameErrorCodesType;
 
 export const LOCALES = {

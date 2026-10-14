@@ -13,6 +13,11 @@ export const FR_FR = {
 		"Trop de tentatives. Veuillez demander un nouveau code.",
 	INVALID_TWO_FACTOR_COOKIE:
 		"Cookie d'authentification à deux facteurs invalide",
+	OTP_NOT_CONFIGURED: "L'OTP n'est pas disponible",
+	TOTP_ALREADY_ENABLED: "Le TOTP est déjà activé",
+	TOTP_NOT_CONFIGURED: "Le TOTP n'est pas disponible",
+	ACCOUNT_TEMPORARILY_LOCKED:
+		"Trop de tentatives de vérification échouées. Votre compte est temporairement verrouillé. Veuillez réessayer plus tard.",
 } satisfies TwoFactorErrorCodesType;
 
 export const LOCALES = {
